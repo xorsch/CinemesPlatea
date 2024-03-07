@@ -1,15 +1,12 @@
-# SocCinemes
+# Projecte Cinemes Platea
 
-Crear un site real d'un cinema fictici
+Crear un lloc web, amb la informació apresa
+que compleixi les retriccions proposades
 
+## Contactes
 Grup élit cine platea és conformat per
 - A
 - B
 - C
 
-**El disseny de la pàgina es de Roger**
-
-
-## Contactes
-- A 
-- B****
+**El disseny i maquetació és de Roger**
