@@ -1,7 +1,8 @@
 # SocCinemes
 
-Crear un site real d'un cinema fictici 
-el grup élit cine platea és conformat per
+Crear un site real d'un cinema fictici
+
+Grup élit cine platea és conformat per
 - A
 - B
 - C
