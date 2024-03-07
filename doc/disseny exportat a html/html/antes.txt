@@ -3,20 +3,19 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="keywords" content="cine, cineclub, proyecciones"/>
-		<meta name="description" content="El mejor cineclub de Barcelona"/>
+		<meta name="description" content="El cine más valorado con su club"/>
 		<meta name="author" content="elitegroup"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Platea cineclub</title>
-		<link rel="javascript" href="javascript/menu.js"/>
-		<link rel="stylesheet" href="css/menu.css"/>
-		<link rel="stylesheet" href="css/cards.css"/>
-		<link rel="stylesheet" href="css/footer.css"/>
+		<link rel="javascript" href="javascript/menu.js">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/cards.css">
+		<link rel="stylesheet" href="css/footer.css">
 	</head>
 	<body>
-
+		<!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
 		<header>
 			<!-- Exemple w3s que ho resol-->			
-			<!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
 			<nav>
 				<div style="margin: center;">
 					<img src="img/Logo.png" height="60px" width="400px" alt="Logo" />
@@ -79,85 +78,93 @@
 				</div>
 			</article>
 
-			<article style="width: 100%;">
-				<!-- això potser seria millor amb una taula-->
-				<div style="text-align: center;">
-					<ul>
-						<li>ÚNETE A NUESTRO CLUB</li>
-						<li><p>Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea, puedes elegir entre estas tres modalidades de suscripción.</p></li>
-					</ul>
+			<article>
+
+
+
+
+		<article style="width: 100%;">
+			<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_column_cards -->
+			<div style="background-color: red;">
+				<ul>
+					<li>ÚNETE A NUESTRO CLUB</li>
+					<li><p>Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea, puedes elegir entre estas tres modalidades de suscripción.</p></li>
+				</ul>
+			</div>
+			<div class="row" style="width: 100%;">		
+				<div class="column">
+					<div class="card">
+						<table>
+							<tr>
+								<img src="img/01.jpeg" alt="">
+							</tr>
+							<tr>
+								<p>Club Cinéfilo: Precio: 60 € / año</p>
+							</tr>
+							<tr>
+								<p>Club Amigo: Precio: 30€ / año</p>
+								<p>Descuento en todas las proyecciones regulares del año, charlas y talleres. Invitaciones prioritarias a eventos especiales.
+								Acceso a los talleres y podcast de nuestra web.</p>
+								<button onclick="">INSCRÍBETE</button>
+							</tr>
+						</table>
+					</div>
 				</div>
-
-				<div class="row" style="width: 100%;">	
-					<div class="column">
-						<div class="card">
-							<table>
-								<tr>
-									<img src="img/01.jpeg" alt="">
-								</tr>
-								<tr>
-									<p>Club Cinéfilo: Precio: 60 € / año</p>
-								</tr>
-								<tr>
-									<p>Club Amigo: Precio: 30€ / año</p>
-									<p>Descuento en todas las proyecciones regulares del año, charlas y talleres. Invitaciones prioritarias a eventos especiales.
-									Acceso a los talleres y podcast de nuestra web.</p>
-									<button onclick="">INSCRÍBETE</button>
-								</tr>
-							</table>
-						</div>
-					</div>
-					
-					<div class="column">
-						<div class="card">
-							<table>
-								<tr>
-									<img src="img/03.jpeg" alt="">
-								</tr>
-								<tr>
-									<p>Club Cinéfilo: Precio: 60 € / año</p>
-								</tr>
-								<tr>
-									<p>Acceso ilimitado a todas las proyecciones,
-									incluyendo estrenos exclusivos.
-									Asientos preferenciales en las
-									proyecciones.
-									Acceso a los talleres y podcast
-									de nuestra web.
-									Descuentos significativos en cines asociados.
-									Invitaciones exclusivas a preestrenos y
-									encuentros con cineastas.</p>
-									<button onclick="">INSCRÍBETE</button>
-								</tr>
-							</table>
-						</div>
-					</div>
-
-					<div class="column">
-						<div class="card">
-							<table>
-								<tr>
-									<img src="img/03.jpeg" alt="">
-								</tr>
-								<tr>
-									<p>Club Pigmalión (solo para estudiantes): Precio: 15 € / año</p>
-								</tr>
-								<tr>
-									<p>Acceso a proyecciones comerciales regulares
-										a precio reducido en Cines Odeón.
-										Acceso exclusivo a sesiones de debate y
-										análisis cinematográfico conducidas por
-										profesionales del cine.
-										Acceso gratuito a charlas y talleres.
-										Oportunidades de voluntariado y participación
-										activa en la programación del cineclub.</p>
 				
-										<button onclick="">INSCRÍBETE</button>
-								</tr>
-							</table>
-						</div>
+				<div class="column">
+					<div class="card">
+						<table>
+							<tr>
+								<img src="img/03.jpeg" alt="">
+							</tr>
+							<tr>
+								<p>Club Cinéfilo: Precio: 60 € / año</p>
+							</tr>
+							<tr>
+								<p>Acceso ilimitado a todas las proyecciones,
+								incluyendo estrenos exclusivos.
+								Asientos preferenciales en las
+								proyecciones.
+								Acceso a los talleres y podcast
+								de nuestra web.
+								Descuentos significativos en cines asociados.
+								Invitaciones exclusivas a preestrenos y
+								encuentros con cineastas.</p>
+								<button onclick="">INSCRÍBETE</button>
+							</tr>
+						</table>
 					</div>
 				</div>
+
+				<div class="column">
+					<div class="card">
+						<table>
+							<tr>
+								<img src="img/03.jpeg" alt="">
+							</tr>
+							<tr>
+								<p>Club Pigmalión (solo para estudiantes): Precio: 15 € / año</p>
+							</tr>
+							<tr>
+								<p>Acceso a proyecciones comerciales regulares
+									a precio reducido en Cines Odeón.
+									Acceso exclusivo a sesiones de debate y
+									análisis cinematográfico conducidas por
+									profesionales del cine.
+									Acceso gratuito a charlas y talleres.
+									Oportunidades de voluntariado y participación
+									activa en la programación del cineclub.</p>
+			
+									<button onclick="">INSCRÍBETE</button>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</article>
+
+
+
 			</article>
 		</main>
 
@@ -192,3 +199,5 @@
 
 	</body>
 </html>
+
+<!-- https://www.w3schools.com/html/html_examples.asp exemples de pàgines 'semàntiques' -->
