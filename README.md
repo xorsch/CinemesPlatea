@@ -10,3 +10,4 @@ Grup élit cine platea és conformat per
 - C
 
 **El disseny i maquetació és de Roger**
+-- un col modifica --
