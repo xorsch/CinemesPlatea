@@ -31,8 +31,9 @@
 /* fi de les tarjetes */
 
 /* el footer */
+
 footer{
-    background-color: tomato;
+    background-color: var(--bg-color);
 }
 
 #foot_tab{
@@ -41,9 +42,14 @@ footer{
     font-size: .7em;    
     border-collapse: collapse;
 }
-
-.td_foot {
-    vertical-align: top;
+#foot_tab p{
+    color: var(--white);
+}
+.tr_foot td{
     text-align: center; 
     width: 50%;
+}
+
+.td_foot {
+    text-align: center;
 }

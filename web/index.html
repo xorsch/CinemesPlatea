@@ -9,10 +9,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Platea cineclub</title>
 		<link rel="javascript" href="javascript/menu.js"/>
+		<link rel="javascript" href="javascript/main.js"/>
 		<link rel="stylesheet" href="css/menu.css"/>
 		<link rel="stylesheet" href="css/cards.css"/>
 		<link rel="stylesheet" href="css/footer.css"/>
         <link rel="stylesheet" href="css/main.css">
+		<script src="main.js"></script>
 	</head>
 
 	<body>
@@ -21,14 +23,14 @@
 			<!-- Exemple w3s que ho resol-->			
 			<!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
 			<nav>
-				<div style="margin: center;">
+				<div id="logoBG">
 					<img src="img/Logo.png" height="60px" width="400px" alt="Logo" />
 				</div>
 				<div id="navbar">
-					<a href="#">Inicio</a>
-					<a href="#">Quiénes somos</a>
-					<a href="#">Inicio sesión</a>
+					<a href="#">Sobre nosotros</a>
 					<a href="#">Contacto</a>
+					<a href="#">Únete a nuestro club</a>
+					<a href="#">Acceso miembros</a>
 				</div>
 			</nav>
 		</header>
@@ -79,28 +81,19 @@
             </article>
 
 			<article class="cards">
+				<h2>ÚNETE A NUESTRO CLUB</h2>
+            	<p>Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea, puedes elegir entre estas tres modalidades de suscripción.</p>
 				<table>
                     <tr>
-                        <td><img src="img/01.jpeg" alt="acción foto"></td>
                         <td><img src="img/02.jpeg" alt="cinta foto"></td>
-                        <td><img src="img/03.jpeg" alt="cinta calidad foto"></td>
                     </tr>
                     <tr>
                         <td>
-                            <dt>Club Amigo: Precio: 30€ / año</dt>
-                        </td>
-                        <td>
-                            <dt>Club Cinéfilo: Precio: 60 € / año</dt>
-                        </td>
-                        <td>
-                            <dt>Club Pigmalión (solo para estudiantes): Precio: 15 € / año</dt>
+                            <dt>Club Cinéfilo: </dt>
+							<dt>Precio: 60 € / año</dt>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <dd>Descuento en todas las proyecciones regulares del año, charlas y talleres. Invitaciones prioritarias a eventos especiales.
-                            Acceso a los talleres y podcast de nuestra web.</dd>
-                        </td>
                         <td>
                             <dd>Acceso ilimitado a todas las proyecciones,
                             incluyendo estrenos exclusivos.
@@ -112,37 +105,29 @@
                             Invitaciones exclusivas a preestrenos y
                             encuentros con cineastas.</dd>
                         </td>
-                        <td>
-                            <dd>Acceso a proyecciones comerciales regulares
-                            a precio reducido en Cines Odeón.
-                            Acceso exclusivo a sesiones de debate y
-                            análisis cinematográfico conducidas por
-                            profesionales del cine.
-                            Acceso gratuito a charlas y talleres.
-                            Oportunidades de voluntariado y participación
-                            activa en la programación del cineclub.</dd>
-                        </td>
                     </tr>
                     <tr>
-                        <td><button onclick="">INSCRÍBETE</button></td>
-                        <td><button onclick="">INSCRÍBETE</button></td>
-                        <td><button onclick="">INSCRÍBETE</button></td>
+                         <td><button id="buttonCard">INSCRÍBETE</button></td> <!-- No funciona -->
                     </tr>
                 </table>
 			</article>
+			<div id="myPopup" class="popup">
+				<button onclick="closePopup()">Cerrar</button>
+			</div>
+			<script src="main.js"></script>
 		</main>
 
 		<footer>
 			<table id="foot_tab">
-				<tr>
-					<td class="td_foot">
+				<tr class="tr_foot">
+					<td >
 						<p>Cineclub Platea</p>
 						<p>Dirección: Carrer de la Filmació, 123, 080001 Barcelona</p>
 						<p>Correo Electrónico: info@cineclubplatea.cat</p>
 						<p>Teléfono: 555 123 456</p>
 						<p>Sitio Web: www.cineclubplatea.cat</p>
 					</td>
-					<td class="td_foot">
+					<td>
 						<p>Redes Social</p>
 						<p>Facebook: @CineclubPlatea</p>
 						<p>Instagram: @cineclubplatea</p>
@@ -150,16 +135,12 @@
 					</td>
 				</tr>
 				<tr>
-					<td colspan="2" class="td_foot"></td>
-				</tr>
-				<tr>
-					<td colspan="2" class="td_foot">
+					<td class="td_foot" colspan="2">
 						<p>Maquetación y diseño del Landing Page Roger Artero Martinez sujeto bajo Creative Commons Reconocimiento, Compartir igual, No Comercial 3.0 (CC BY NC - SA 3.0)</p>
 						<p>Fotografias, logo y textos, propiedad Agrupació Fotografìca Castelló sujeto bajo licencia Creative Commons Reconocimiento, Compartir igual 4.0 (CC BY - SA 4.0)</p>		
 					</td>
 				</tr>
 			</table>
 		</footer>
-
 	</body>
 </html>
