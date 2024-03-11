@@ -11,49 +11,47 @@
 		<link rel="javascript" href="javascript/menu.js"/>
 		<link rel="javascript" href="javascript/main.js"/>
 		<link rel="stylesheet" href="css/menu.css"/>
-		<link rel="stylesheet" href="css/general.css"/>
 		<link rel="stylesheet" href="css/footer.css"/>
         <link rel="stylesheet" href="css/main.css">
 		<script src="main.js"></script>
 	</head>
 
 	<body onload="iniciar">
-		<!-- se m'està fent molt llarg aquest estiu -->
 		<header>
-			<!-- Exemple w3s que ho resol-->			
-			<!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
 			<nav>
 				<div id="logoBG">
 					<img src="img/Logo.png" width="362" height="169" alt="Logo" />
 				</div>
 				<div id="navbar">
-					<a href="#">Sobre nosotros</a>
-					<a href="#">Contacto</a>
-					<a href="#">Únete a nuestro club</a>
-					<a href="#">Acceso miembros</a>
+					<a href="#aboutUs">Sobre nosotros</a>
+					<a href="#contact">Contacto</a>
+					<a href="#enroll">Únete a nuestro club</a>
+					<a href="#join">Acceso miembros</a>
 				</div>
 			</nav>
 		</header>
 
 		<main>
-			<!-- Exemple 4 del web responsive -->
-			<article> 
-				<div id="Foto principal">
-					<h1>Bienvenidas y bienvenidos al espacio online de Cineclub Platea.</h1>
-					<p>No sólo proyectamos películas, creamos experiencias en torno al
-					arte cinematográfico, ofreciendo en este espacio virtual podcast,
-					talleres y charlas en streaming. Nuestra programación se compone
-					de proyecciones de cuidad selección, abarcando desde clásicos
-					atemporales hasta las últimas joyas del cine contemporáneo,
-					ofreciendo una diversidad que refleja la riqueza de las narrativas
-					cinematográficas, talleres con profesionales consagrados y debates
-					y charlas sobre temas candentes relacionados con el arte y
-					la industria cinematográfica.</p>
-					<img src="img/04.jpeg" width="1514" height="639" alt="Sala platea">
-				</div>
-			</article>
+			<div class="welcome" style="background-image: url('img/04.jpeg');">
+				
+				<table border="1"><tr><td>
+				<h2>Bienvenidas y bienvenidos al espacio online de Cineclub Platea.</h2>
+				<p>No sólo proyectamos películas, creamos experiencias en torno al
+				arte cinematográfico, ofreciendo en este espacio virtual podcast,
+				talleres y charlas en streaming. Nuestra programación se compone
+				de proyecciones de cuidad selección, abarcando desde clásicos
+				atemporales hasta las últimas joyas del cine contemporáneo,
+				ofreciendo una diversidad que refleja la riqueza de las narrativas
+				cinematográficas, talleres con profesionales consagrados y debates
+				y charlas sobre temas candentes relacionados con el arte y
+				la industria cinematográfica.</p>
+					<!--
+				<img src="img/04.jpeg" width="1514" height="639" alt="Sala platea"> -->
+				</td></tr></table>
+			</div>
 
 			<div class="aboutUs">
+				<a id="aboutUs"></a>
                 <h2>SOBRE NOSOTROS</h2>
                 <table >
                     <tr>
@@ -81,6 +79,7 @@
             </div>
 
 			<div class="cards">
+				<a id="enroll"></a>
 				<h2>ÚNETE A NUESTRO CLUB</h2>
             	<p>Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea, puedes elegir entre estas tres modalidades de suscripción.</p>
 				<table>
@@ -118,7 +117,8 @@
 		</main>
 
 		<footer >
-			<table id="foot_tab">
+			<a id="contact"></a>
+			<table id="foot_tab">			
 				<tr class="tr_foot">
 					<td >
 						<p>Cineclub Platea</p>

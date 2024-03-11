@@ -30,6 +30,30 @@
 	height: auto;
 }
 
+/* css del benvinguts. Guarro però furrula. */
+
+.welcome table{
+    width: 100%;
+    height: 639px;
+	width: 100%;
+}
+
+.welcome h2 {
+	display: flex;
+    justify-content: Left;
+    translate: 30px;
+	color: var(--bg-color);          
+}
+
+.welcome p{
+    
+    justify-content: Left;
+    max-width: 500px;
+    translate: 30px;
+    color: var(--bg-color);  
+}
+
+
 .cards {
 	text-align: center; /*Centra todo lo de dentro*/
 	color: var(--bg-color);
