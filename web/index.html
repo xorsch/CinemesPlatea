@@ -11,13 +11,13 @@
 		<link rel="javascript" href="javascript/menu.js"/>
 		<link rel="javascript" href="javascript/main.js"/>
 		<link rel="stylesheet" href="css/menu.css"/>
-		<link rel="stylesheet" href="css/cards.css"/>
+		<link rel="stylesheet" href="css/general.css"/>
 		<link rel="stylesheet" href="css/footer.css"/>
         <link rel="stylesheet" href="css/main.css">
 		<script src="main.js"></script>
 	</head>
 
-	<body>
+	<body onload="iniciar">
 		<!-- se m'està fent molt llarg aquest estiu -->
 		<header>
 			<!-- Exemple w3s que ho resol-->			
@@ -53,7 +53,7 @@
 				</div>
 			</article>
 
-			<article class="aboutUs">
+			<div class="aboutUs">
                 <h2>SOBRE NOSOTROS</h2>
                 <table >
                     <tr>
@@ -78,9 +78,9 @@
                         </td>
                     </tr>
                 </table>
-            </article>
+            </div>
 
-			<article class="cards">
+			<div class="cards">
 				<h2>ÚNETE A NUESTRO CLUB</h2>
             	<p>Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea, puedes elegir entre estas tres modalidades de suscripción.</p>
 				<table>
@@ -107,17 +107,17 @@
                         </td>
                     </tr>
                     <tr>
-                         <td><button id="buttonCard">INSCRÍBETE</button></td> <!-- No funciona -->
+                        <td><button id="buttonCard">INSCRÍBETE</button></td> <!-- No funciona -->
                     </tr>
                 </table>
-			</article>
+			</div>
 			<div id="myPopup" class="popup">
 				<button onclick="closePopup()">Cerrar</button>
 			</div>
 			<script src="main.js"></script>
 		</main>
 
-		<footer>
+		<footer >
 			<table id="foot_tab">
 				<tr class="tr_foot">
 					<td >
