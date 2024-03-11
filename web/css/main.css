@@ -1,0 +1,64 @@
+.header {
+    background-color: var(--bg-color);
+}
+
+.aboutUs h2 {
+	display: flex;
+    justify-content: center;
+	color: var(--bg-color);
+}
+.aboutUs table {
+	width: 100%;
+	table-layout: fixed;
+	border: 1px solid black;
+}
+
+.aboutUs tr{
+	width: 50%;
+}
+
+.aboutUs td p{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: var(--bg-color);
+}
+
+.aboutUs img{
+	max-width: 100%;
+	height: auto;
+}
+
+.cards {
+	text-align: center; /*Centra todo lo de dentro*/
+	color: var(--bg-color);
+}
+
+.cards button{
+	background-color: var(--bg-color);
+	border: none;
+    color: white;
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center;
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Como elemento en línea */
+    font-size: 16px;
+    border-radius: 50px; /* En pixeles no es tan brusco */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.popup:hover {
+    background-color: #E64D00;
+}

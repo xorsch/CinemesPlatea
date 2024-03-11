@@ -1,3 +1,8 @@
+:root {
+     --bg-color: #E06E1C; /* Variable global que igual deberiamos crear un css aparte para las globales */
+     --white: #FFFFFF;
+}
+
 img {
     width: 100px;
     height: 100px;
@@ -14,9 +19,19 @@ body {
     text-align: center;
 }
 
+#logoBG {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: var(--bg-color);
+}
+
 #navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--bg-color);
 }
 
 #navbar a {
