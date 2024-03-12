@@ -1,17 +1,21 @@
+/* Existeixen errors en el css segons norma 
+    bàsicament són tots que no hi ha un color foreground
+    en alguns atributs.
+    Què els follin. Què haguessin estudiat més.
+*/
 
 :root {
+    
     --bg-color: #E06E1C; /* Variable global que igual deberiamos crear un css 
                               aparte para las globales */
     --white: #FFFFFF;
 }
 
-
 body {
-     margin: 0;
-     font-size: 18px;
-     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* Header */
 .header {
@@ -19,7 +23,6 @@ body {
     text-align: center; */
     background-color: var(--bg-color);
 }
-
 
 #logoBG {
     display: flex;
@@ -36,7 +39,6 @@ body {
     background-color: var(--bg-color);
 }
 
-
 #navbar a {
     float: left;
     display: block;
@@ -46,8 +48,6 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
-
-
 
 /* css del benvinguts. Guarro però furrula. */
 /* article 1 */
@@ -60,7 +60,8 @@ body {
     height: 639px;
 }
 
-.welcome h2 {
+/* translate no exiteix */
+.welcome h1 {
 	display: flex;
     justify-content: Left;
     translate: 30px;
@@ -79,8 +80,7 @@ body {
 }
 
 /* Dani about Us */
-
-.aboutUs h2 {
+.aboutUs h1 {
 	display: flex;
     justify-content: center;
 	color: var(--bg-color);
@@ -88,7 +88,6 @@ body {
 .aboutUs table {
 	width: 100%;
 	table-layout: fixed;
-	border: 1px solid black;
 }
 
 .aboutUs tr{
@@ -109,7 +108,6 @@ body {
 }
 
 /* Dani enroll / inscripcions*/
-
 .cards {
 	text-align: center; /*Centra todo lo de dentro*/
 	color: var(--bg-color);
@@ -129,7 +127,6 @@ body {
 }
 
 /*MODAL*/
-
 #modal::backdrop {
 	background-color: rgba(0, 0, 0, 0.60);
 }
@@ -192,16 +189,6 @@ input, label {
     display: table;
     clear: both;
 }
-  
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -210,10 +197,7 @@ input, label {
     text-align: center;
     background-color: #f1f1f1;
 }
-
 /* fi de les tarjetes */
-
-
 
 /* el footer */
 /* Dani style */
@@ -227,9 +211,11 @@ footer{
     font-size: .7em;    
     border-collapse: collapse;
 }
+
 #foot_tab p{
     color: var(--white);
 }
+
 .tr_foot td{
     text-align: center; 
     width: 50%;
@@ -240,7 +226,6 @@ footer{
 }
 
 /* pop ups */
-
 .popup {
     display: none;
     position: fixed;
@@ -252,7 +237,6 @@ footer{
     border: 1px solid #ccc;
 }
 
-.popup:hover {
+.popup:hover { 
     background-color: #E64D00;
 }
-
