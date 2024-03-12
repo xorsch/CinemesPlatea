@@ -1,5 +1,4 @@
-// Boton Modal
-// Errors en javascript 
+
 
 const btnAbrirModal =
     document.querySelector("#btn-abrir-modal");
