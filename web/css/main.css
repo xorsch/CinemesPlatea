@@ -1,3 +1,4 @@
+
 :root {
     --bg-color: #E06E1C; /* Variable global que igual deberiamos crear un css 
                               aparte para las globales */
@@ -8,6 +9,7 @@
    width: 100px;
    height: 100px;
 } */
+
 body {
      margin: 0;
      font-size: 18px;
@@ -37,6 +39,7 @@ body {
     background-color: var(--bg-color);
 }
 
+
 #navbar a {
     float: left;
     display: block;
@@ -46,11 +49,15 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
+*/
 
+/*
 .content {
     padding: 16px;
 }
+*/
 
+/*
 .sticky {
     position: fixed;
     top: 0;
@@ -60,7 +67,7 @@ body {
 .sticky + .content {
     padding-top: 60px;
 }
-
+*/
 
 .header {
     background-color: var(--bg-color);
@@ -96,7 +103,7 @@ body {
 	height: auto;
 }
 
-/* Dani enroll */
+/* Dani enroll / inscripcions*/
 
 .cards {
 	text-align: center; /*Centra todo lo de dentro*/
@@ -130,6 +137,7 @@ body {
     clear: both;
 }
   
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -137,6 +145,7 @@ body {
     margin-bottom: 20px;
   }
 }
+
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -150,7 +159,7 @@ body {
 
 /* css del benvinguts. Guarro però furrula. */
 
-div.welcome {
+.welcome {
     background-image: url('../img/04.jpeg');
 }
 
