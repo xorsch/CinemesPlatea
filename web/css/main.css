@@ -5,10 +5,6 @@
     --white: #FFFFFF;
 }
 
-/* img {
-   width: 100px;
-   height: 100px;
-} */
 
 body {
      margin: 0;
@@ -16,13 +12,14 @@ body {
      font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 
+
+/* Header */
 .header {
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
+    /* padding: 30px;
+    text-align: center; */
+    background-color: var(--bg-color);
 }
-*/
+
 
 #logoBG {
     display: flex;
@@ -49,28 +46,36 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
-*/
 
-/*
-.content {
-    padding: 16px;
+
+
+/* css del benvinguts. Guarro però furrula. */
+/* article 1 */
+.welcome {
+    background-image: url('../img/04.jpeg');
 }
-*/
 
-/*
-.sticky {
-    position: fixed;
-    top: 0;
+.welcome table{
     width: 100%;
+    height: 639px;
 }
 
-.sticky + .content {
-    padding-top: 60px;
+.welcome h2 {
+	display: flex;
+    justify-content: Left;
+    translate: 30px;
+	color: var(--bg-color);    
+    /* font */      
 }
-*/
 
-.header {
-    background-color: var(--bg-color);
+.welcome p{
+    
+    justify-content: Left;
+    max-width: 550px;
+    translate: 50px;
+    top: 30px;
+    color: var(--bg-color); 
+    /* font */
 }
 
 /* Dani about Us */
@@ -123,6 +128,57 @@ body {
     cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
+/*MODAL*/
+
+#modal::backdrop {
+	background-color: rgba(0, 0, 0, 0.60);
+}
+
+#modal {
+	max-width: 50ch;
+    text-align: center;
+}
+/* Salto de linea de las labels dentro del modal */
+label {
+    display: block;
+    font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+input, label {
+    margin: 0.4rem 0;
+}
+
+/* Botón flotante scrollToTop*/
+#scrolltotop_parent {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--bg-color);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 90px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+
+#scrolltotop_arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+    transform: rotate(-135deg) scale(4);
+}
+
+#scrolltotop_parent:hover {
+    opacity: .5;
+}
+
 /* Les tarjetes de sota */
 
 .column {
@@ -157,37 +213,10 @@ body {
 
 /* fi de les tarjetes */
 
-/* css del benvinguts. Guarro però furrula. */
 
-.welcome {
-    background-image: url('../img/04.jpeg');
-}
-
-.welcome table{
-    width: 100%;
-    height: 639px;
-}
-
-.welcome h2 {
-	display: flex;
-    justify-content: Left;
-    translate: 30px;
-	color: var(--bg-color);    
-    /* font */      
-}
-
-.welcome p{
-    
-    justify-content: Left;
-    max-width: 550px;
-    translate: 50px;
-    top: 30px;
-    color: var(--bg-color); 
-    /* font */
-}
 
 /* el footer */
-
+/* Dani style */
 footer{
     background-color: var(--bg-color);
 }

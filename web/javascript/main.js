@@ -1,16 +1,19 @@
-// Abre el pop-up
-function openPopup() {
-    alert('hola');
-    document.getElementById("buttonCard").style.display = "none";
-}
+// Boton Modal
 
-// Cierra el pop-up
-function closePopup() {
-    document.getElementById("myPopup").style.display = "none";
-}
+const btnAbrirModal =
+document.querySelector("#btn-abrir-modal");
 
-function iniciar(){
-    alert('hola');
-    // Asigna el evento al botón
-document.getElementById("buttonCard").addEventListener("click", openPopup);
-}
+const btnCerrarModal =
+document.querySelector("#btn-cerrar-modal");
+
+const modal = 
+document.querySelector("#modal");
+
+btnAbrirModal.addEventListener("click",()=>{modal.showModal();})
+
+btnCerrarModal.addEventListener("click",()=>{modal.close();})
+
+// Botón flotante scrollToTop
+document.getElementById("scrolltotop_parent").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});

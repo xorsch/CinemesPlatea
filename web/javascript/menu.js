@@ -1,3 +1,4 @@
+/* Vas a borrarte en cero coma */
 
 window.onscroll = function() {myFunction()};
 
