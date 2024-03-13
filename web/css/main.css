@@ -8,13 +8,6 @@
     
     --bg-color: #E06E1C; /* Variable global que igual deberiamos crear un css 
                               aparte para las globales */
-    --white: #FFFFFF;
-}
-
-body {
-    color: white;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Header */
@@ -26,8 +19,8 @@ body {
 
 #logoBG {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
     background-color: var(--bg-color);
 }
 
@@ -35,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: var(--bg-color);
 }
 
@@ -49,6 +42,12 @@ body {
     font-size: 17px;
 }
 
+body {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* css del benvinguts. Guarro però furrula. */
 /* article 1 */
 .welcome {
@@ -60,17 +59,15 @@ body {
     height: 639px;
 }
 
-/* translate no exiteix */
+/* translate no exiteix (Si existeix, però sutilitza el transform com etiqueta)*/
 .welcome h1 {
-	display: flex;
-    justify-content: Left;
-    translate: 30px;
-	color: var(--bg-color);    
+	display: flex-start;
+    transform: translate(30px);
+	color: var(--bg-color);
     /* font */      
 }
 
 .welcome p{
-    
     justify-content: Left;
     max-width: 550px;
     translate: 50px;
@@ -217,29 +214,6 @@ input, label {
 #scrolltotop_parent:hover {
     opacity: .5;
 }
-
-/* Les tarjetes de sota */
-
-.column {
-    float: left;
-    width: 30%;
-    padding: 0 10px;
-}
-   
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: 3px solid blue;
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-}
-/* fi de les tarjetes */
 
 /* el footer */
 /* Dani style */
