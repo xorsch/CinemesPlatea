@@ -1,58 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="cine, cineclub, proyecciones" />
-    <meta name="description" content="El mejor cineclub de Barcelona" />
-    <meta name="author" content="elitegroup" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Platea cineclub</title>
-    <link rel="javascript" href="javascript/menu.js" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+<html lang="es">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="cine, cineclub, proyecciones">
+		<meta name="description" content="El mejor cineclub de Barcelona">
+		<meta name="author" content="elitegroup">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Platea cineclub</title>
+		
+    <link rel="stylesheet" href="css/main.css">
+		<link rel="javascript" href="javascript/main.js">
 
-  <body>
-    <!-- se m'està fent molt llarg aquest estiu -->
-    <header>
-      <!-- Exemple w3s que ho resol-->
-      <!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
-      <nav>
-        <div id="logoBG">
-          <img src="img/Logo.png" width="362" height="169" alt="Logo" />
-        </div>
-        <div id="navbar">
-          <a href="#">Sobre nosotros</a>
-          <a href="#">Contacto</a>
-          <a href="#">Únete a nuestro club</a>
-          <a href="#">Acceso miembros</a>
-        </div>
-      </nav>
-    </header>
+	</head>
 
-    <main>
-      <!-- Exemple 4 del web responsive -->
-      <article>
-        <div id="Foto principal">
-          <h1>
-            Bienvenidas y bienvenidos al espacio online de Cineclub Platea.
-          </h1>
-          <p>
-            No sólo proyectamos películas, creamos experiencias en torno al arte
-            cinematográfico, ofreciendo en este espacio virtual podcast,
-            talleres y charlas en streaming. Nuestra programación se compone de
-            proyecciones de cuidad selección, abarcando desde clásicos
-            atemporales hasta las últimas joyas del cine contemporáneo,
-            ofreciendo una diversidad que refleja la riqueza de las narrativas
-            cinematográficas, talleres con profesionales consagrados y debates y
-            charlas sobre temas candentes relacionados con el arte y la
-            industria cinematográfica.
-          </p>
-          <img src="img/04.jpeg" width="1514" height="639" alt="Sala platea" />
-        </div>
-      </article>
+	<body>
 
       <div class="aboutUs">
         <h2>SOBRE NOSOTROS</h2>
@@ -246,39 +208,169 @@
       </div>
     </main>
 
-    <footer>
-      <table id="foot_tab">
-        <tr class="tr_foot">
-          <td>
-            <p>Cineclub Platea</p>
-            <p>Dirección: Carrer de la Filmació, 123, 080001 Barcelona</p>
-            <p>Correo Electrónico: info@cineclubplatea.cat</p>
-            <p>Teléfono: 555 123 456</p>
-            <p>Sitio Web: www.cineclubplatea.cat</p>
-          </td>
-          <td>
-            <p>Redes Social</p>
-            <p>Facebook: @CineclubPlatea</p>
-            <p>Instagram: @cineclubplatea</p>
-            <p>Twitter: @CineclubPlatea</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="td_foot" colspan="2">
-            <p>
-              Maquetación y diseño del Landing Page Roger Artero Martinez sujeto
-              bajo Creative Commons Reconocimiento, Compartir igual, No
-              Comercial 3.0 (CC BY NC - SA 3.0)
-            </p>
-            <p>
-              Fotografias, logo y textos, propiedad Agrupació Fotografìca
-              Castelló sujeto bajo licencia Creative Commons Reconocimiento,
-              Compartir igual 4.0 (CC BY - SA 4.0)
-            </p>
-          </td>
-        </tr>
-      </table>
-    </footer>
-    <script src="javascript/main.js"></script>
-  </body>
+		<header id="begin">
+			<div id="logoBG">
+				<img src="img/Logo.png" width="362" height="169" alt="Logo">
+			</div>
+			<nav>
+				<div id="navbar">
+					<a href="#aboutUs">Sobre nosotros</a>
+					<a href="#contact">Contacto</a>
+					<a href="#enroll">Únete a nuestro club</a>
+					<a href="#join">Acceso miembros</a>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="welcome">				
+				<table>
+					<tr>
+						<td>
+							<h1>Bienvenidas y bienvenidos al espacio online de Cineclub Platea.</h1>
+							<p>No sólo proyectamos películas, creamos experiencias en torno al
+							arte cinematográfico, ofreciendo en este espacio virtual podcast,
+							talleres y charlas en streaming. Nuestra programación se compone
+							de proyecciones de cuidad selección, abarcando desde clásicos
+							atemporales hasta las últimas joyas del cine contemporáneo,
+							ofreciendo una diversidad que refleja la riqueza de las narrativas
+							cinematográficas, talleres con profesionales consagrados y debates
+							y charlas sobre temas candentes relacionados con el arte y
+							la industria cinematográfica.</p>
+					</td>
+				</tr>
+				</table>
+			</div>
+
+
+			<div class="aboutUs" id="aboutUs">
+				<h1>SOBRE NOSOTROS</h1>
+				<table>
+				  <tr>
+					<td>
+					  <p>
+						Desde su creación en 1993, Cineclub Platea ha sido un punto de
+						encuentro para los amantes del séptimo arte. Cineclub Platea
+						nació de la visión compartida de un grupo apasionado de
+						cinéfilos que buscaban ir más allá de la simple proyección de
+						películas. Inspirados por la rica tradición cinematográfica de
+						Barcelona, decidieron crear un espacio donde la magia del cine
+						se fusionara con la energía única de la ciudad. A lo largo de
+						las temporadas, Platea se ha convertido en un marco de
+						confluencia de aquellos que buscan algo más que una sesión de
+						cine, incidiendo en la realización de talleres, charlas y
+						debates en torno al universo cinematográfico, construyendo una
+						comunidad de cinéfilos que comparten la misma pasión por las
+						historias bien contadas. Cineclub Platea invita a todos a unirse
+						a nosotros en esta historia continua, donde cada fotograma es
+						una oportunidad para descubrir, aprender y disfrutar.
+					  </p>
+					</td>
+					<td>
+						<img src="img/cinema-02.jpeg" width="747" height="640" alt="Sala platea">
+					</td>
+				  </tr>
+				</table>
+			  </div>
+
+			  <div class="cards" id="enroll">
+				<h1>ÚNETE A NUESTRO CLUB</h1>
+				<p>
+				  Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea,
+				  puedes elegir entre estas tres modalidades de suscripción.
+				</p>
+				<table>
+				  <tr>
+					<td>
+					  <img src="img/02.jpeg" width="372" height="178" alt="cinta foto">
+					</td>
+				  </tr>
+				  <tr>
+					<td>
+					  <p>Club Cinéfilo:</p>
+					  <p>Precio: 60 € / año</p>
+					</td>
+				  </tr>
+				  <tr>
+					<td>
+					  <p>
+						Acceso ilimitado a todas las proyecciones, incluyendo estrenos
+						exclusivos. Asientos preferenciales en las proyecciones. Acceso
+						a los talleres y podcast de nuestra web. Descuentos
+						significativos en cines asociados. Invitaciones exclusivas a
+						preestrenos y encuentros con cineastas.
+					  </p>
+					</td>
+				  </tr>
+				  <tr>
+					<td>
+					  <button id="btn-abrir-modal">INSCRÍBETE</button>
+					  <!-- No funciona -->
+					</td>
+				  </tr>
+				</table>
+			  </div>
+
+			  <!-- Modal suscripción -->
+			  <dialog id="modal">
+				<h1>Acceso miembros</h1>
+				<form method="dialog">
+				  <label>
+					Correo Electrónico <input type="email" id="mail" name="mail">
+				  </label>
+				  <label>
+					Contraseña <input type="password" id="pwd" name="pwd">				
+				  </label>
+				  <p>
+					Al continuar, aceptas las Condiciones de uso de Platea Cineclub.
+					Consulta Aviso de privacidad, Aviso de cookies y Anuncios por
+					intereses.
+				  </p>
+				  <table>
+					<tr>
+					  <td>¿Aún no eres miembro?</td>
+					  <td>¿No recuerdas tu contraseña?</td>
+					</tr>
+					<tr>
+					  <td colspan="2">Registrate ya</td>
+					</tr>
+				  </table>
+				  <button type="submit">Iniciar sesión</button>
+				</form>
+			  </dialog>
+
+			  <!-- Boton flotante STT-->
+			  <div id="scrolltotop_parent">
+				<div tabindex="0" id="scrolltotop_arrow"></div>
+			  </div>
+
+			  <script src="javascript/main.js"></script>
+		</main>
+
+		<footer >
+			<table id="foot_tab">			
+				<tr class="tr_foot" id="contact">
+					<td >
+						<p>Cineclub Platea</p>
+						<p>Dirección: Carrer de la Filmació, 123, 080001 Barcelona</p>
+						<p>Correo Electrónico: info@cineclubplatea.cat</p>
+						<p>Teléfono: 555 123 456</p>
+						<p>Sitio Web: www.cineclubplatea.cat</p>
+					</td>
+					<td>
+						<p>Redes Social</p>
+						<p>Facebook: @CineclubPlatea</p>
+						<p>Instagram: @cineclubplatea</p>
+						<p>Twitter: @CineclubPlatea</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="td_foot" colspan="2">
+						<p>Maquetación y diseño del Landing Page Roger Artero Martinez sujeto bajo Creative Commons Reconocimiento, Compartir igual, No Comercial 3.0 (CC BY NC - SA 3.0)</p>
+						<p>Fotografias, logo y textos, propiedad Agrupació Fotografìca Castelló sujeto bajo licencia Creative Commons Reconocimiento, Compartir igual 4.0 (CC BY - SA 4.0)</p>		
+					</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
 </html>
