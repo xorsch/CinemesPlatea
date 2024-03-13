@@ -88,49 +88,131 @@
           </tr>
         </table>
       </div>
-
-      <div class="cards">
-        <h2>ÚNETE A NUESTRO CLUB</h2>
-        <p>
-          Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea,
-          puedes elegir entre estas tres modalidades de suscripción.
-        </p>
-        <table>
-          <tr>
-            <td>
-              <img
-                src="img/02.jpeg"
-                width="372"
-                height="178"
-                alt="cinta foto"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <dt>Club Cinéfilo:</dt>
-              <dt>Precio: 60 € / año</dt>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <dd>
-                Acceso ilimitado a todas las proyecciones, incluyendo estrenos
-                exclusivos. Asientos preferenciales en las proyecciones. Acceso
-                a los talleres y podcast de nuestra web. Descuentos
-                significativos en cines asociados. Invitaciones exclusivas a
-                preestrenos y encuentros con cineastas.
-              </dd>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button id="btn-abrir-modal">INSCRÍBETE</button>
-              <!-- No funciona -->
-            </td>
-          </tr>
-        </table>
+      <!-- Carrousel cards -->
+      <h2>ÚNETE A NUESTRO CLUB</h2>
+              <p>
+                Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea,
+                puedes elegir entre estas tres modalidades de suscripción.
+              </p>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- Contenido de la primera tarjeta -->
+            <div class="cards">
+              <table>
+                <tr>
+                  <td>
+                    <img
+                      src="img/01.jpeg"
+                      width="372"
+                      height="178"
+                      alt="cinta foto"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <dt>Club Cinéfilo:</dt>
+                    <dt>Precio: 60 € / año</dt>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <dd>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati dolor aut beatae debitis mollitia voluptate molestiae facilis a delectus nisi quas ut doloribus ab dignissimos, itaque iure eaque eos sint?
+                    </dd>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button id="btn-abrir-modal">INSCRÍBETE</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Contenido de la segunda tarjeta -->
+            <div class="cards">
+              <table>
+                <tr>
+                  <td>
+                    <img
+                      src="img/02.jpeg"
+                      width="372"
+                      height="178"
+                      alt="cinta foto"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <dt>Club Cinéfilo:</dt>
+                    <dt>Precio: 60 € / año</dt>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <dd>
+                      Acceso ilimitado a todas las proyecciones, incluyendo estrenos
+                      exclusivos. Asientos preferenciales en las proyecciones. Acceso
+                      a los talleres y podcast de nuestra web. Descuentos
+                      significativos en cines asociados. Invitaciones exclusivas a
+                      preestrenos y encuentros con cineastas.
+                    </dd>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button id="btn-abrir-modal">INSCRÍBETE</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- Contenido de la tercera tarjeta -->
+          <div class="cards">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    src="img/03.jpeg"
+                    width="372"
+                    height="178"
+                    alt="cinta foto"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <dt>Club Pigmalión</dt>
+                  <dt>(solo para estudiantes):</dt>
+                  <dt>Precio: 15 € / año</dt>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <dd>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum id modi aliquid, aut rerum sunt nemo voluptatum ex adipisci dolorem provident ratione quidem cupiditate! Deserunt sed illum quo laboriosam itaque.
+                  </dd>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="btn-abrir-modal">INSCRÍBETE</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+          <img src="../img/flecha.png" alt="Flecha izquierda">
+        </a>
+        <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+          <img src="../img/flecha.png" alt="Flecha izquierda">
+        </a>
       </div>
+      
       <!-- Modal suscripción -->
       <dialog id="modal">
         <h2>Acceso miembros</h2>
@@ -155,7 +237,7 @@
               <td>Registrate ya</td>
             </tr>
           </table>
-          <button type="submit">Iniciar sesión</button>
+          <button type="button" id="btn-cerrar-modal">Iniciar sesión</button>
         </form>
       </dialog>
       <!-- Boton flotante STT-->
