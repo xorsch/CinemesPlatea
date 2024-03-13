@@ -107,7 +107,48 @@ body {
 	height: auto;
 }
 
-/* Dani enroll / inscripcions*/
+/*Carrousel cards*/
+/* Estilos para el contenedor del carrusel */
+.carousel {
+    display: relative; /* Opcional: para alinear horizontalmente las tarjetas */
+    /* overflow: hidden; Oculta el contenido que se desborda */
+    /* Agrega más estilos según tus necesidades */
+  }
+  
+  /* Estilos para el contenedor interno */
+  /*.carousel-inner {
+    display: flex;  //Opcional: para alinear horizontalmente las tarjetas 
+    transition: transform 0.3s ease; // Animación suave al cambiar de tarjeta 
+    // Agrega más estilos según tus necesidades 
+  } */
+  
+  /* Estilos para cada tarjeta del carrusel */
+  .carousel-item {
+    float: left;
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-color: #a81010; /* Color de fondo de las tarjetas */
+    /* Otros estilos según tus necesidades */
+  }
+  
+  /* Estilos para las flechas de navegación */
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px; /* Ancho de las flechas */
+        height: 30px; /* Altura de las flechas */
+        background-image: url('../img/flecha.png'); /* Ruta de la imagen de la flecha izquierda */
+        /* Otros estilos según tus necesidades */
+        }
+  
+  /* Iconos de las flechas (puedes usar imágenes o iconos de fuentes) */
+  .carousel-control-next {
+    background-image: url('../img/flecha.png'); /* Ruta de la imagen de la flecha derecha */
+  }
+  
+
 .cards {
 	text-align: center; /*Centra todo lo de dentro*/
 	color: var(--bg-color);
