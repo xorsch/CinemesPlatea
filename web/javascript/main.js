@@ -1,13 +1,15 @@
-const btnAbrirModal = document.querySelector(".btn-abrir-modal");
+const btnAbrirModal = document.querySelectorAll(".btn-abrir-modal");
 const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
 const modal = document.querySelector("#modal");
 
-alert(btnAbrirModal);
-alert(modal);
+if ((btnCerrarModal && modal) != null) {
+    btnCerrarModal.addEventListener("click", () => { modal.close(); });
+}
 
-if ((btnAbrirModal && modal) != null) {
-btnAbrirModal.addEventListener("click", () => { modal.showModal(); });
-btnCerrarModal.addEventListener("click", () => { modal.close(); });
+if (btnAbrirModal.length > 0) {
+    btnAbrirModal.forEach((btn) => {
+        btn.addEventListener("click", () => { modal.showModal(); });
+    });
 }
 
 // Botón flotante scrollToTop
