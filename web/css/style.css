@@ -189,7 +189,10 @@ body {
   margin:auto;
 }
 .modal-abajo-centrado {
-  margin:auto;
+  margin: 20px;
+}
+#btn-cerrar-modal {
+  margin: 15px;
 }
 /* Salto de linea de las labels dentro del modal */
 label {
