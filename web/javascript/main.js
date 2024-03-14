@@ -1,38 +1,37 @@
+const btnAbrirModal = document.querySelector(".btn-abrir-modal");
+const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
+const modal = document.querySelector("#modal");
 
+alert(btnAbrirModal);
+alert(modal);
 
-const btnAbrirModal =
-    document.querySelector("#btn-abrir-modal");
-
-const btnCerrarModal =
-    document.querySelector("#btn-cerrar-modal");
-
-const modal = 
-    document.querySelector("#modal");
-
-btnAbrirModal.addEventListener("click",()=>{modal.showModal();})
-
-btnCerrarModal.addEventListener("click",()=>{modal.close();})
+if ((btnAbrirModal && modal) != null) {
+btnAbrirModal.addEventListener("click", () => { modal.showModal(); });
+btnCerrarModal.addEventListener("click", () => { modal.close(); });
+}
 
 // Botón flotante scrollToTop
 document.getElementById("scrolltotop_parent").addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Cards carrousel
-
-const carousel = document.querySelector('.carousel');
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    let currentIndex = 0;
-
-    function showNextItem() {
-      carouselItems[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex + 1) % carouselItems.length;
-      carouselItems[currentIndex].classList.add('active');
-    }
-
-    document.querySelector('.carousel-control-next').addEventListener('click', () => {
-      showNextItem();
-    });
-
-    // Llama a esta función para mostrar la primera tarjeta al cargar la página
-    showNextItem();
+// Cards carrusel Swiper
+var swiper = new Swiper('.swiper', {
+	effect:"coverflow",
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: "auto",
+	loop: true,
+	coverflowEffect:{
+		depth: 500,
+		modifer:1,
+		slidesShadows: true,
+		rotate:0,
+		stretch:0
+	},
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev'
+	},
+	spaceBetween: 1,
+});

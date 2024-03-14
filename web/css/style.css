@@ -1,0 +1,274 @@
+/* Existeixen errors en el css segons norma 
+    bàsicament són tots que no hi ha un color foreground
+    en alguns atributs.
+    Què els follin. Què haguessin estudiat més.
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #e06e1c; /* Variable global */
+}
+/*Fuentes de letras*/
+body {
+  color: white;
+  font-family: Lora Versaleta, Lora-Bold, Poppins-Regular-Bold, Poppins-Regular;
+}
+
+/* Header */
+.header {
+  /* padding: 30px;
+    text-align: center; */
+  background-color: var(--bg-color);
+}
+
+#logoBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* overflow: hidden; */
+  background-color: var(--bg-color);
+}
+
+#navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 48px 48px 48px 73px; /* top, right/left, bottom */
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* css del benvinguts. Guarro però furrula. */
+/* article 1 */
+.welcome {
+  background-image: url("../img/04.jpeg");
+}
+
+.welcome table {
+  width: 100%;
+  height: 639px;
+}
+
+/* translate no exiteix (Si existeix, però sutilitza el transform com etiqueta)*/
+.welcome h1 {
+  display: flex-start;
+  transform: translateX(30px);
+  color: var(--bg-color);
+  /* font */
+}
+
+.welcome p {
+  justify-content: Left;
+  max-width: 550px;
+  translate: 50px;
+  top: 30px;
+  color: var(--bg-color);
+  /* font */
+}
+
+/* Dani about Us */
+.aboutUs h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--bg-color);
+}
+.aboutUs table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.aboutUs tr {
+  width: 50%;
+}
+
+.aboutUs td p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: xx-large;
+  color: var(--bg-color);
+}
+
+.aboutUs img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-club h1 {
+  color: var(--bg-color);
+  text-align: center;
+}
+
+.title-club p {
+  color: var(--bg-color);
+  text-align: center;
+  font-size: 18px;
+}
+/*Slider swiper*/
+.swiper{
+  width: 35%;
+  padding: 150px 0 50px 0;
+  font-size: 14px;
+  color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 35vh; /*Espacio top y botom entre las tarjetas y lo demas*/
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 150px;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 15px;
+  text-align: start;
+  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-description {
+  padding: 1rem 1rem;
+}
+.swiper-slide .card-title,
+.swiper-slide .card-text {
+  margin-bottom: 0.5rem;
+}
+.swiper-slide .card-btn {
+  text-align: center; /*Centra todo lo de dentro*/
+}
+.swiper-slide .card-btn button {
+  background-color: var(--bg-color);
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center;
+  text-decoration: none; /* Sin decoración de texto */
+  display: inline-block; /* Como elemento en línea */
+  font-size: 16px;
+  border-radius: 50px; /* En pixeles no es tan brusco */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+.swiper-button-next {
+  right: 26px !important;
+}
+.swiper-button-prev {
+  left: 26px !important;
+}
+
+/*MODAL*/
+
+#modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#modal {
+  max-width: 50ch;
+  text-align: center;
+  margin:auto;
+}
+.modal-abajo-centrado {
+  margin:auto;
+}
+/* Salto de linea de las labels dentro del modal */
+label {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+/* Botón flotante scrollToTop*/
+#scrolltotop_parent {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--bg-color);
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 90px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+
+#scrolltotop_arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  text-align: center;
+  padding: 3px;
+  transform: rotate(-135deg) scale(4);
+}
+
+#scrolltotop_parent:hover {
+  opacity: 0.5;
+}
+
+/* el footer */
+/* Dani style */
+footer {
+  background-color: var(--bg-color);
+}
+
+#foot_tab {
+  width: 100%;
+  height: 100px;
+  font-size: 0.7em;
+  border-collapse: collapse;
+}
+
+#foot_tab p {
+  color: var(--white);
+}
+
+.tr_foot td {
+  text-align: center;
+  width: 50%;
+}
+
+.td_foot {
+  text-align: center;
+}
+
+/* pop ups */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.popup:hover {
+  background-color: #e64d00;
+}
