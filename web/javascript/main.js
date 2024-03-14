@@ -1,13 +1,13 @@
-const btnAbrirModal = document.querySelector("#btn-abrir-modal");
+const btnAbrirModal = document.querySelector(".btn-abrir-modal");
 const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
 const modal = document.querySelector("#modal");
 
-if (btnAbrirModal && modal) {
-    btnAbrirModal.addEventListener("click", () => { modal.showModal(); });
-}
+alert(btnAbrirModal);
+alert(modal);
 
-if (btnCerrarModal && modal) {
-    btnCerrarModal.addEventListener("click", () => { modal.close(); });
+if ((btnAbrirModal && modal) != null) {
+btnAbrirModal.addEventListener("click", () => { modal.showModal(); });
+btnCerrarModal.addEventListener("click", () => { modal.close(); });
 }
 
 // Botón flotante scrollToTop
@@ -16,7 +16,7 @@ document.getElementById("scrolltotop_parent").addEventListener("click", function
 });
 
 // Cards carrusel Swiper
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper', {
 	effect:"coverflow",
 	grabCursor: true,
 	centeredSlides: true,

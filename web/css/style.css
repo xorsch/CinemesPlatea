@@ -115,11 +115,10 @@ body {
   text-align: center;
   font-size: 18px;
 }
-/*Carrusel swiper*/
-
-body .container {
-  background: #fffefe;
-  font-family: Lora Versaleta, Lora-Bold, Poppins-Regular-Bold, Poppins-Regular;
+/*Slider swiper*/
+.swiper{
+  width: 35%;
+  padding: 150px 0 50px 0;
   font-size: 14px;
   color: var(--bg-color);
   display: flex;
@@ -128,19 +127,11 @@ body .container {
   min-height: 35vh; /*Espacio top y botom entre las tarjetas y lo demas*/
 }
 
-.container {
-  width: 90%;
-  padding: 10px 40px;
-}
-.swiper-container {
-  width: 20%;
-}
-
 .swiper-slide {
   background-position: center;
   background-size: cover;
   text-align: center;
-  width: 250px;
+  width: 150px;
   font-size: 18px;
   background: #fff;
   border-radius: 15px;
@@ -195,6 +186,10 @@ body .container {
 #modal {
   max-width: 50ch;
   text-align: center;
+  margin:auto;
+}
+.modal-abajo-centrado {
+  margin:auto;
 }
 /* Salto de linea de las labels dentro del modal */
 label {
