@@ -9,10 +9,8 @@
     <title>Platea cineclub</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
   <body>
@@ -20,12 +18,70 @@
       <div id="logoBG">
         <img src="img/Logo.png" width="362" height="169" alt="Logo" />
       </div>
-      <nav>
-        <div id="navbar">
-          <a href="#aboutUs">Sobre nosotros</a>
-          <a href="#contact">Contacto</a>
-          <a href="#enroll">Únete a nuestro club</a>
-          <a href="#join">Acceso miembros</a>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#aboutUs">Sobre nosotros</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#enroll">Únete a nuestro club</a></li>
+          <li><a href="#join">Acceso miembros</a></li>
+        </ul>
+  
+        <div class="profile-dropdown">
+          <div onclick="toggle()" class="profile-dropdown-btn">
+            <div class="profile-img">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+  
+            <span
+              >Victoria
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+          </div>
+  
+          <ul class="profile-dropdown-list">
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-regular fa-user"></i>
+                Edit Profile
+              </a>
+            </li>
+  
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-regular fa-envelope"></i>
+                Inbox
+              </a>
+            </li>
+  
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-solid fa-chart-line"></i>
+                Analytics
+              </a>
+            </li>
+  
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-solid fa-sliders"></i>
+                Settings
+              </a>
+            </li>
+  
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-regular fa-circle-question"></i>
+                Help & Support
+              </a>
+            </li>
+            <hr />
+  
+            <li class="profile-dropdown-list-item">
+              <a href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log out
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -94,87 +150,93 @@
           Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea,
           puedes elegir entre estas tres modalidades de suscripción.
         </p>
-          <div class="swiper mySwiper">
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/01.jpeg" alt="" />
-                <div class="card-description">
-                  <div class="card-title">
-                    <h4>Descripción</h4>
-                  </div>
-                  <div class="card-text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eum enim possimus dolorum non, modi sunt ips.
-                    </p>
-                  </div>
-                  <div class="card-btn">
-                    <button class="btn-abrir-modal">Inscríbete</button>
-                  </div>
+        <div class="swiper mySwiper">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/01.jpeg" alt="" />
+              <div class="card-description">
+                <div class="card-title">
+                  <h4>Descripción</h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eum enim possimus dolorum non, modi sunt ips.
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <button class="btn-abrir-modal">Inscríbete</button>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <img src="img/02.jpeg" alt="" />
-                <div class="card-description">
-                  <div class="card-title">
-                    <h4>Descripción</h4>
-                  </div>
-                  <div class="card-text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eum enim possimus dolorum non, modi sunt ips.
-                    </p>
-                  </div>
-                  <div class="card-btn">
-                    <button class="btn-abrir-modal">Inscríbete</button>
-                  </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/02.jpeg" alt="" />
+              <div class="card-description">
+                <div class="card-title">
+                  <h4>Descripción</h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eum enim possimus dolorum non, modi sunt ips.
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <button class="btn-abrir-modal">Inscríbete</button>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <img src="img/03.jpeg" alt="" />
-                <div class="card-description">
-                  <div class="card-title">
-                    <h4>Descripción</h4>
-                  </div>
-                  <div class="card-text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eum enim possimus dolorum non, modi sunt ips.
-                    </p>
-                  </div>
-                  <div class="card-btn">
-                    <button class="btn-abrir-modal">Inscríbete</button>
-                  </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/03.jpeg" alt="" />
+              <div class="card-description">
+                <div class="card-title">
+                  <h4>Descripción</h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eum enim possimus dolorum non, modi sunt ips.
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <button class="btn-abrir-modal">Inscríbete</button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </section>
       <!-- Modal suscripción -->
-      <dialog id="modal">
+      <dialog class="modal">
         <h2>Acceso miembros</h2>
         <form method="dialog">
-          <label>
-            Correo Electrónico <input type="email" id="mail" name="mail" />
-          </label>
-          <label>
-            Contraseña <input type="password" id="pwd" name="pwd" />
-          </label>
+          <div class="username">
+            <input type="email" id="mail" name="mail" />
+            <label for="mail">Correo Electrónico</label>
+          </div>
+          <div class="username">
+            <input type="password" id="pwd" name="pwd" />
+            <label for="pwd">Contraseña</label>
+          </div>
           <p>
             Al continuar, aceptas las Condiciones de uso de Platea Cineclub.
             Consulta Aviso de privacidad, Aviso de cookies y Anuncios por
             intereses.
           </p>
-          <div class="modal-abajo-centrado">
+          <div id="modal-abajo-centrado">
           <table>
             <tr>
               <td>¿Aún no eres miembro?</td>
-              <td>¿No recuerdas tu contraseña?</td>
+              <div class="recordar">
+                <td>¿No recuerdas tu contraseña?</td>
+              </div>
             </tr>
             <tr>
-              <td>Registrate ya</td>
+              <div class="registrar">
+                <td>Registrate ya</td>
+              </div>
             </tr>
           </table>
         </div>
@@ -187,37 +249,29 @@
       </div>
     </main>
     <footer>
-      <table id="foot_tab">
-        <tr class="tr_foot" id="contact">
-          <td>
-            <p>Cineclub Platea</p>
-            <p>Dirección: Carrer de la Filmació, 123, 080001 Barcelona</p>
-            <p>Correo Electrónico: info@cineclubplatea.cat</p>
-            <p>Teléfono: 555 123 456</p>
-            <p>Sitio Web: www.cineclubplatea.cat</p>
-          </td>
-          <td>
-            <p>Redes Social</p>
-            <p>Facebook: @CineclubPlatea</p>
-            <p>Instagram: @cineclubplatea</p>
-            <p>Twitter: @CineclubPlatea</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="td_foot" colspan="2">
-            <p>
-              Maquetación y diseño del Landing Page Roger Artero Martinez sujeto
-              bajo Creative Commons Reconocimiento, Compartir igual, No
-              Comercial 3.0 (CC BY NC - SA 3.0)
-            </p>
-            <p>
-              Fotografias, logo y textos, propiedad Agrupació Fotografìca
-              Castelló sujeto bajo licencia Creative Commons Reconocimiento,
-              Compartir igual 4.0 (CC BY - SA 4.0)
-            </p>
-          </td>
-        </tr>
+      <h1>Cineclub Platea</h1>
+      <table>
+          <tr>
+              <th>Dirección:</th>
+              <td>Carrer de la Filmació, 123, 08001 Barcelona</td>
+          
+              <th>Correo Electrónico:</th>
+              <td><a href="mailto:info@cineclubplatea.cat">info@cineclubplatea.cat</a></td>
+          
+              <th>Teléfono:</th>
+              <td>555 123 456</td>
+
+              <th>Sitio Web:</th>
+              <td><a href="http://www.cineclubplatea.cat">www.cineclubplatea.cat</a></td>
+          </tr>
+          <tr>
+            <th>Redes Sociales:</th>
+            <td>Facebook</td>
+            <td></td>
+            <td></td>
+          </tr>
       </table>
+      Maquetación y diseño del Landing Page Roger Artero Martínez sujeto bajo Creative Commons Reconocimiento, Compartir igual, No Comercial 3.0 (CC BY NC - SA 3.0) Fotografías, logo y textos, propiedad Agrupació Fotográfica Castelló sujeto bajo licencia Creative Commons Reconocimiento, Compartir igual 4.0 (CC BY - SA 4.0)
     </footer>
     <!-- Si no funciona el script, añade el de swiper -->
     <!-- Swiper JS -->
