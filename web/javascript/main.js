@@ -1,6 +1,6 @@
 const btnAbrirModal = document.querySelectorAll(".btn-abrir-modal");
 const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
-const modal = document.querySelector("#modal");
+const modal = document.querySelector(".modal");
 
 if ((btnCerrarModal && modal) != null) {
     btnCerrarModal.addEventListener("click", () => { modal.close(); });
@@ -35,5 +35,17 @@ var swiper = new Swiper('.swiper', {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev'
 	},
-	spaceBetween: 1,
+	spaceBetween: 1
+});
+
+// DropDown Menu
+let profileDropdownList = document.querySelector(".profile-dropdown-list");
+let btn = document.querySelector(".profile-dropdown-btn");
+
+let classList = profileDropdownList.classList;
+
+const toggle = () => classList.toggle("active");
+
+window.addEventListener("click", function (e) {
+  if (!btn.contains(e.target)) classList.remove("active");
 });
