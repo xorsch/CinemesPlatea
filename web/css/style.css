@@ -8,6 +8,17 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+h1{
+  padding: 20px;
+  font-family: lora;
+  font-size: 32px;
+  font-weight: bold;
+
+}
+p{
+  padding: 5px;
+}
 :root {
   /* Variables global */
   --bg-color: #FFFF4A; 
@@ -193,7 +204,6 @@ body {
 /* translate no exiteix (Si existeix, però sutilitza el transform com etiqueta)*/
 .welcome h1 {
   display: flex-start;
-  transform: translateX(30px);
   color: var(--bg-color);
   /* font */
 }
@@ -241,6 +251,7 @@ body {
 /*UNETE AL CLUB*/
 .title-club{
   background-color: var(--secondary);
+  padding-bottom: 10px;
 }
 .title-club h1 {
   color: var(--bg-color);
@@ -251,24 +262,26 @@ body {
   color: var(--bg-color);
   text-align: center;
   font-size: 18px;
+  padding: 10px;
 }
 /*Slider swiper*/
 .swiper{
-  width: 35%;
-  padding: 150px 0 50px 0;
+  padding: 15px 0 50px 0;
+  overflow: visible;
   font-size: 14px;
   color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 35vh; /*Espacio top y botom entre las tarjetas y lo demas*/
+  width: 500px;
+  height: 530px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
   text-align: center;
-  width: 150px;
   font-size: 18px;
   background: var(--primary);
   border-radius: 15px;
@@ -287,6 +300,7 @@ body {
 
 .card-description {
   padding: 1rem 1rem;
+
 }
 .swiper-slide .card-title,
 .swiper-slide .card-text {
@@ -482,4 +496,45 @@ footer {
 
 .popup:hover {
   background-color: #e64d00;
+}
+
+.fotter {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+}
+.fotter h1{
+margin: 10px;
+text-align: center;
+}
+
+.table-fotter{
+  margin-bottom: 175px;
+  margin-top: 20px;
+  padding: auto;
+  justify-items: center;
+}
+
+.contacto {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  float: left;
+  position: absolute;
+  left: 500px;
+}
+
+.redes {
+  float: right;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+  right: 500px;
+}
+
+.p-fotter {
+  text-align: center;
+  margin-bottom: 10px;
 }
