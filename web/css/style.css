@@ -9,19 +9,21 @@
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   padding: 20px;
   font-family: lora;
   font-size: 32px;
   font-weight: bold;
 
 }
-p{
+
+p {
   padding: 5px;
 }
+
 :root {
   /* Variables global */
-  --bg-color: #FFFF4A; 
+  --bg-color: #FFFF4A;
   --primary: #242424;
   --secondary: #3C3C3C;
   --green: #82cd47;
@@ -31,6 +33,7 @@ p{
   --black: black;
   --shadow: 0px 2px 8px 0px var(--secondary-light);
 }
+
 /*Fuentes de letras*/
 body {
   color: var(--secondary);
@@ -41,7 +44,7 @@ body {
 /* Header */
 .header {
   /* padding: 30px;
-    text-align: center; */
+  text-align: center; */
   background-color: var(--bg-color);
 }
 
@@ -51,6 +54,7 @@ body {
   align-items: center;
   background-color: var(--bg-color);
 }
+
 .navbar {
   display: flex;
   padding-left: 200px;
@@ -58,9 +62,11 @@ body {
   height: 70px;
   background-color: var(--bg-color);
 }
+
 .navbar-logo {
   cursor: pointer;
 }
+
 .navbar-list {
   width: 100%;
   display: flex;
@@ -68,6 +74,7 @@ body {
   text-align: center;
   padding-right: 2rem;
 }
+
 .navbar-list li {
   display: inline-block;
   margin: 0 1rem;
@@ -81,12 +88,12 @@ body {
 }
 
 /* .navbar-list a {
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 48px 48px 48px 73px; /* top, right/left, bottom 
-  text-decoration: none;
-  font-size: 24px;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 48px 48px 48px 73px; /* top, right/left, bottom 
+text-decoration: none;
+font-size: 24px;
 } */
 .profile-dropdown {
   position: relative;
@@ -108,7 +115,7 @@ body {
   background-color: var(--bg-color);
   cursor: pointer;
   transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
-    border 0.3s;
+      border 0.3s;
 }
 
 .profile-dropdown-btn:hover {
@@ -124,6 +131,7 @@ body {
   background: url(../img/07.jpeg);
   background-size: cover;
 }
+
 /*Bolita de conexión*/
 .profile-img i {
   position: absolute;
@@ -191,10 +199,11 @@ body {
   padding-left: 1.5rem;
   background-color: var(--secondary-light);
 }
+
 /* css del benvinguts. Guarro però furrula. */
 /* article 1 */
 .welcome {
- background-color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 .welcome table {
@@ -226,14 +235,16 @@ body {
 }
 
 /* Dani about Us */
-.aboutUs{
+.aboutUs {
   background-color: var(--secondary);
 }
+
 .aboutUs h1 {
   display: flex;
   justify-content: center;
   color: var(--bg-color);
 }
+
 .aboutUs table {
   width: 100%;
   table-layout: fixed;
@@ -263,11 +274,13 @@ body {
   height: 647px;
   padding: 10px;
 }
+
 /*UNETE AL CLUB*/
-.title-club{
+.title-club {
   background-color: var(--secondary);
   padding-bottom: 10px;
 }
+
 .title-club h1 {
   color: var(--bg-color);
   text-align: center;
@@ -280,8 +293,9 @@ body {
   padding: 10px;
   font-family: poppins;
 }
+
 /*Slider swiper*/
-.swiper{
+.swiper {
   padding: 15px 0 50px 0;
   overflow: visible;
   font-size: 14px;
@@ -289,7 +303,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 35vh; /*Espacio top y botom entre las tarjetas y lo demas*/
+  min-height: 35vh;
+  /*Espacio top y botom entre las tarjetas y lo demas*/
   width: 500px;
   height: 530px;
 }
@@ -318,25 +333,35 @@ body {
   padding: 1rem 1rem;
 
 }
+
 .swiper-slide .card-title,
 .swiper-slide .card-text {
   margin-bottom: 0.5rem;
 }
+
 .swiper-slide .card-btn {
-  text-align: center; /*Centra todo lo de dentro*/
+  text-align: center;
+  /*Centra todo lo de dentro*/
 }
+
 .swiper-slide .card-btn button {
   background-color: var(--bg-color);
   border: none;
   color: white;
-  padding: 10px 20px; /* Espaciado interno */
+  padding: 10px 20px;
+  /* Espaciado interno */
   text-align: center;
-  text-decoration: none; /* Sin decoración de texto */
-  display: inline-block; /* Como elemento en línea */
+  text-decoration: none;
+  /* Sin decoración de texto */
+  display: inline-block;
+  /* Como elemento en línea */
   font-size: 16px;
-  border-radius: 50px; /* En pixeles no es tan brusco */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  border-radius: 50px;
+  /* En pixeles no es tan brusco */
+  cursor: pointer;
+  /* Cambia el cursor al pasar por encima */
 }
+
 .buttons {
   position: absolute;
   top: 45%;
@@ -346,6 +371,7 @@ body {
   justify-content: space-between;
   /* right: 26px !important; */
 }
+
 .buttons button {
   width: 50px;
   height: 50px;
@@ -368,38 +394,43 @@ body {
   background-color: var(--secondary);
   max-width: 100ch;
   text-align: center;
-  margin:auto;
+  margin: auto;
   border-radius: 10%;
   border-style: initial;
 }
-.modal h2{
+
+.modal h2 {
   padding-top: 10%;
   color: var(--bg-color);
 }
-.modal p{
+
+.modal p {
   font-size: 10px;
   color: var(--bg-color);
 }
+
 .modal form {
   padding: 0 40px;
   box-sizing: border-box;
 }
 
-.username, #mail {
+.username,
+#mail {
   color: #ffffff;
 }
 
-.username, #pwd {
+.username,
+#pwd {
   color: #ffffff;
 }
 
-form .username{
+form .username {
   position: relative;
   border-bottom: 2px solid var(--bg-color);
   margin: 30px 0;
 }
 
-.username input{
+.username input {
   width: 100%;
   padding: 0 5px;
   height: 20px;
@@ -408,7 +439,8 @@ form .username{
   outline: none;
   background-color: var(--secondary);
 }
-.username label{
+
+.username label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -418,26 +450,29 @@ form .username{
   pointer-events: none;
   transition: .5s;
 }
-.username span::before{
+
+.username span::before {
   content: '';
   position: absolute;
   top: 40px;
   left: 0;
   width: 100%;
   height: 2px;
-  background:#6c3483;
+  background: #6c3483;
   transition: .5s;
 }
-.username input:focus ~ label,
-.username input:focus ~ label{
+
+.username input:focus~label,
+.username input:focus~label {
   top: -5px;
   color: var(--bg-color);
 }
 
-.username input:focus ~ span::before,
-.username input:focus ~ span::before{
+.username input:focus~span::before,
+.username input:focus~span::before {
   width: 100%;
 }
+
 .recordar {
   margin: -5px 0 20px 5px;
   color: blue;
@@ -451,7 +486,7 @@ form .username{
   margin-top: 10px;
 }
 
-.recordar:hover{
+.recordar:hover {
   text-decoration: underline;
 }
 
@@ -461,6 +496,7 @@ form .username{
   display: flex;
   justify-content: center;
 }
+
 #btn-cerrar-modal {
   margin: 5% 0 5% 0;
   border-radius: 20px;
@@ -469,11 +505,13 @@ form .username{
   color: var(--secondary);
   background-color: var(--bg-color);
 }
+
 /* Salto de linea de las labels dentro del modal */
 label {
   display: block;
   font: 1rem "Fira Sans", sans-serif;
 }
+
 input,
 label {
   margin: 0.4rem 0;
@@ -556,12 +594,13 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.fotter h1{
-margin: 10px;
-text-align: center;
+
+.fotter h1 {
+  margin: 10px;
+  text-align: center;
 }
 
-.table-fotter{
+.table-fotter {
   margin-bottom: 175px;
   margin-top: 20px;
   padding: auto;
