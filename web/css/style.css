@@ -337,11 +337,25 @@ body {
   border-radius: 50px; /* En pixeles no es tan brusco */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
-.swiper-button-next {
-  right: 26px !important;
+.buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  /* right: 26px !important; */
 }
-.swiper-button-prev {
-  left: 26px !important;
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  /* left: 26px !important; */
 }
 
 /*MODAL*/
