@@ -340,8 +340,8 @@ body {
 .buttons {
   position: absolute;
   top: 45%;
-  left: 5%;
-  width: 90%;
+  width: 1470px;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   /* right: 26px !important; */
