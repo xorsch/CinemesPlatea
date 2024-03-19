@@ -221,6 +221,7 @@ body {
   translate: 50px;
   top: 30px;
   color: var(--bg-color);
+  font-family: poppins;
   /* font */
 }
 
@@ -249,11 +250,12 @@ body {
   padding: 10px;
   width: 747px;
   height: 647px;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--bg-color);
   text-align: center;
   display: flex;
   align-items: center;
+  font-family: poppins;
 }
 
 .aboutUs img {
@@ -276,6 +278,7 @@ body {
   text-align: center;
   font-size: 18px;
   padding: 10px;
+  font-family: poppins;
 }
 /*Slider swiper*/
 .swiper{
@@ -368,6 +371,14 @@ body {
   box-sizing: border-box;
 }
 
+.username, #mail {
+  color: #ffffff;
+}
+
+.username, #pwd {
+  color: #ffffff;
+}
+
 form .username{
   position: relative;
   border-bottom: 2px solid var(--bg-color);
@@ -400,14 +411,15 @@ form .username{
   left: 0;
   width: 100%;
   height: 2px;
-  background: #6c3483;
+  background:#6c3483;
   transition: .5s;
 }
 .username input:focus ~ label,
 .username input:focus ~ label{
   top: -5px;
-  color: #6c3483;
+  color: var(--bg-color);
 }
+
 .username input:focus ~ span::before,
 .username input:focus ~ span::before{
   width: 100%;
@@ -418,6 +430,13 @@ form .username{
   cursor: pointer;
 }
 
+.registro-recordar {
+  width: 480px;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+
 .recordar:hover{
   text-decoration: underline;
 }
@@ -425,9 +444,16 @@ form .username{
 #modal-abajo-centrado {
   margin: 0 20%;
   color: var(--bg-color);
+  display: flex;
+  justify-content: center;
 }
 #btn-cerrar-modal {
-  margin: 10% 0 10% 0;
+  margin: 5% 0 5% 0;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  color: var(--secondary);
+  background-color: var(--bg-color);
 }
 /* Salto de linea de las labels dentro del modal */
 label {
