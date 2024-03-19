@@ -34,6 +34,7 @@ p{
 /*Fuentes de letras*/
 body {
   color: var(--secondary);
+  background-color: var(--secondary);
   font-family: Lora Versaleta, Lora-Bold, Poppins-Regular-Bold, Poppins-Regular;
 }
 
@@ -193,12 +194,18 @@ body {
 /* css del benvinguts. Guarro però furrula. */
 /* article 1 */
 .welcome {
-  background-image: url("../img/04.jpeg");
+ background-color: var(--secondary);
 }
 
 .welcome table {
-  width: 100%;
+  width: 1514px;
   height: 639px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("../img/04.jpeg");
+  margin: auto;
+  margin-top: 50px;
 }
 
 /* translate no exiteix (Si existeix, però sutilitza el transform com etiqueta)*/
@@ -214,6 +221,7 @@ body {
   translate: 50px;
   top: 30px;
   color: var(--bg-color);
+  font-family: poppins;
   /* font */
 }
 
@@ -229,6 +237,8 @@ body {
 .aboutUs table {
   width: 100%;
   table-layout: fixed;
+  display: flex;
+  justify-content: space-around;
 }
 
 .aboutUs tr {
@@ -237,16 +247,21 @@ body {
 
 .aboutUs td p {
   margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  font-size: xx-large;
+  padding: 10px;
+  width: 747px;
+  height: 647px;
+  font-size: 20px;
   color: var(--bg-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: poppins;
 }
 
 .aboutUs img {
-  max-width: 100%;
-  height: auto;
+  width: 747px;
+  height: 647px;
+  padding: 10px;
 }
 /*UNETE AL CLUB*/
 .title-club{
@@ -263,6 +278,7 @@ body {
   text-align: center;
   font-size: 18px;
   padding: 10px;
+  font-family: poppins;
 }
 /*Slider swiper*/
 .swiper{
@@ -324,8 +340,8 @@ body {
 .buttons {
   position: absolute;
   top: 45%;
-  left: 5%;
-  width: 90%;
+  width: 1470px;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   /* right: 26px !important; */
@@ -369,6 +385,14 @@ body {
   box-sizing: border-box;
 }
 
+.username, #mail {
+  color: #ffffff;
+}
+
+.username, #pwd {
+  color: #ffffff;
+}
+
 form .username{
   position: relative;
   border-bottom: 2px solid var(--bg-color);
@@ -401,14 +425,15 @@ form .username{
   left: 0;
   width: 100%;
   height: 2px;
-  background: #6c3483;
+  background:#6c3483;
   transition: .5s;
 }
 .username input:focus ~ label,
 .username input:focus ~ label{
   top: -5px;
-  color: #6c3483;
+  color: var(--bg-color);
 }
+
 .username input:focus ~ span::before,
 .username input:focus ~ span::before{
   width: 100%;
@@ -419,6 +444,13 @@ form .username{
   cursor: pointer;
 }
 
+.registro-recordar {
+  width: 480px;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+
 .recordar:hover{
   text-decoration: underline;
 }
@@ -426,9 +458,16 @@ form .username{
 #modal-abajo-centrado {
   margin: 0 20%;
   color: var(--bg-color);
+  display: flex;
+  justify-content: center;
 }
 #btn-cerrar-modal {
-  margin: 10% 0 10% 0;
+  margin: 5% 0 5% 0;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  color: var(--secondary);
+  background-color: var(--bg-color);
 }
 /* Salto de linea de las labels dentro del modal */
 label {
