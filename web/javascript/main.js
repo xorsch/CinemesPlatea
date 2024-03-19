@@ -18,20 +18,6 @@ document.getElementById("scrolltotop_parent").addEventListener("click", function
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Buttons swiper
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
-
-let active = 0;
-
-next.onclick = function(){
-	active += 1;
-	reloadSlider();
-}
-function reloadSlider(){
-	
-}
-
 // Cards carrusel Swiper
 var swiper = new Swiper('.swiper', {
 	effect:"coverflow",
