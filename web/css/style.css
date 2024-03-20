@@ -202,8 +202,8 @@ font-size: 24px;
 
 /* css del benvinguts. Guarro però furrula. */
 /* article 1 */
-.welcome {
-  background-color: var(--secondary);
+.welcome { 
+ background-color: var(--secondary);
 }
 
 .welcome table {
@@ -215,22 +215,27 @@ font-size: 24px;
   background-image: url("../img/04.jpeg");
   margin: auto;
   margin-top: 50px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
-/* translate no exiteix (Si existeix, però sutilitza el transform com etiqueta)*/
 .welcome h1 {
   display: flex-start;
   color: var(--bg-color);
+  margin-right: 800px;
   /* font */
 }
 
 .welcome p {
-  justify-content: Left;
+  position: relative;
   max-width: 550px;
-  translate: 50px;
-  top: 30px;
+  padding: 0 0 70px 70px;
   color: var(--bg-color);
   font-family: poppins;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 20px;
+  text-decoration-color: #ffff4a3b;
   /* font */
 }
 
@@ -347,9 +352,8 @@ font-size: 24px;
 .swiper-slide .card-btn button {
   background-color: var(--bg-color);
   border: none;
-  color: white;
-  padding: 10px 20px;
-  /* Espaciado interno */
+  color: var(--secondary);
+  padding: 10px 20px; /* Espaciado interno */
   text-align: center;
   text-decoration: none;
   /* Sin decoración de texto */
@@ -376,8 +380,8 @@ font-size: 24px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #fff5;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--secondary);
   border: none;
   font-family: monospace;
   font-weight: bold;
@@ -593,40 +597,37 @@ footer {
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+}
+.fotter-h1{
+float: left;
+display: flex;
+position: relative;
+justify-content: space-between;
+margin: 0 550px 0 550px;
+padding: 30px;
 }
 
-.fotter h1 {
-  margin: 10px;
-  text-align: center;
-}
-
-.table-fotter {
-  margin-bottom: 175px;
-  margin-top: 20px;
-  padding: auto;
-  justify-items: center;
-}
-
-.contacto {
-  justify-content: center;
+.table-fotter{
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: row;
+  padding: 30px;
+}
+.table-fotter1{
+float: left;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.table-fotter2{
   float: left;
-  position: absolute;
-  left: 500px;
-}
-
-.redes {
-  float: right;
   display: flex;
-  text-align: center;
   flex-direction: column;
-  position: absolute;
-  right: 500px;
+  align-items: center;
 }
 
 .p-fotter {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px 0 20px 0 ;
 }
