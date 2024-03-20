@@ -1,8 +1,4 @@
-/* Existeixen errors en el css segons norma 
-    bàsicament són tots que no hi ha un color foreground
-    en alguns atributs.
-    Què els follin. Què haguessin estudiat més.
-*/
+/* Umm */ 
 * {
   margin: 0px;
   padding: 0px;
@@ -14,8 +10,15 @@ h1{
   font-family: lora;
   font-size: 32px;
   font-weight: bold;
-
 }
+
+h2{
+  padding: 20px;
+  font-family: lora;
+  font-size: 32px;
+  font-weight: bold;
+}
+
 p{
   padding: 5px;
 }
@@ -31,11 +34,12 @@ p{
   --black: black;
   --shadow: 0px 2px 8px 0px var(--secondary-light);
 }
+
 /*Fuentes de letras*/
 body {
-  color: var(--secondary);
+  /*color: var(--secondary);*/ /* No li mola que color i background siguin iguals*/
   background-color: var(--secondary);
-  font-family: Lora Versaleta, Lora-Bold, Poppins-Regular-Bold, Poppins-Regular;
+  font-family: 'Lora-Versaleta', 'Lora-Bold', 'Poppins-Regular-Bold', 'Poppins-Regular';
 }
 
 /* Header */
@@ -110,10 +114,12 @@ body {
   transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
     border 0.3s;
 }
-/* El project manager llepa titoles */
+
+/* El project manager llepa titoles 
+   i menja aranyes amb xocolata */
 .profile-dropdown-btn:hover {
-  background-color: var(--secondary-light-2);
-  box-shadow: var(--shadow);
+  /* background-color: var(--secondary-light-2); */
+  /* box-shadow: var(--shadow); */
 }
 
 .profile-img {
@@ -147,7 +153,7 @@ body {
   border-radius: 0px 0px 0px 10px;
   max-height: 0;
   overflow: hidden;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   transition: max-height 0.5s;
 }
 
@@ -194,7 +200,7 @@ body {
 /* css del benvinguts. Guarro però furrula. */
 /* article 1 */
 .welcome { 
- background-color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 .welcome table {
@@ -212,7 +218,17 @@ body {
 }
 
 .welcome h1 {
-  display: flex-start;
+  
+  color: var(--bg-color);
+  margin-right: 800px;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 20px;
+  text-decoration-color: #ffff4a3b;
+  /* font */
+}
+
+.welcome h2 {
+  
   color: var(--bg-color);
   margin-right: 800px;
   text-decoration-line: line-through;
@@ -237,11 +253,19 @@ body {
 .aboutUs{
   background-color: var(--secondary);
 }
+
 .aboutUs h1 {
   display: flex;
   justify-content: center;
   color: var(--bg-color);
 }
+
+.aboutUs h2 {
+  display: flex;
+  justify-content: center;
+  color: var(--bg-color);
+}
+
 .aboutUs table {
   width: 100%;
   table-layout: fixed;
@@ -280,6 +304,12 @@ body {
   color: var(--bg-color);
   text-align: center;
 }
+
+.title-club h2 {
+  color: var(--bg-color);
+  text-align: center;
+}
+
 .P-card p{
   padding: 0px;
   line-height: 26px;
@@ -297,7 +327,6 @@ body {
   font-size: 18px;
   font-family: poppins;
 }
-
 
 /*Slider swiper*/
 .swiper{
@@ -336,10 +365,12 @@ body {
 .card-description {
   padding: 1rem 1rem;
 }
+
 .swiper-slide .card-title,
 .swiper-slide .card-text {
   margin-bottom: 0.5rem;
 }
+
 .swiper-slide .card-btn {
   text-align: center; /*Centra todo lo de dentro*/
 }
@@ -360,6 +391,7 @@ body {
   right: 30%;
   left: 30%;
 }
+
 .buttons {
   position: absolute;
   top: 45%;
@@ -369,6 +401,7 @@ body {
   justify-content: space-between;
   /* right: 26px !important; */
 }
+
 .buttons button {
   width: 50px;
   height: 50px;
@@ -400,10 +433,12 @@ body {
   padding-top: 10%;
   color: var(--bg-color);
 }
+
 .modal p{
   font-size: 10px;
   color: var(--bg-color);
 }
+
 .modal form {
   padding: 0 40px;
   box-sizing: border-box;
@@ -432,6 +467,7 @@ form .username{
   outline: none;
   background-color: var(--secondary);
 }
+
 .username label{
   position: absolute;
   top: 50%;
@@ -442,6 +478,7 @@ form .username{
   pointer-events: none;
   transition: .5s;
 }
+
 .username span::before{
   content: '';
   position: absolute;
@@ -452,6 +489,7 @@ form .username{
   background:#6c3483;
   transition: .5s;
 }
+
 .username input:focus ~ label,
 .username input:focus ~ label{
   top: -5px;
@@ -462,6 +500,7 @@ form .username{
 .username input:focus ~ span::before{
   width: 100%;
 }
+
 .recordar {
   margin: -5px 0 20px 5px;
   color: blue;
@@ -485,6 +524,7 @@ form .username{
   display: flex;
   justify-content: center;
 }
+
 #btn-cerrar-modal {
   margin: 1% 0 1% 0;
   border-radius: 20px;
@@ -493,11 +533,13 @@ form .username{
   color: var(--secondary);
   background-color: var(--bg-color);
 }
+
 /* Salto de linea de las labels dentro del modal */
 label {
   display: block;
   font: 1rem "Fira Sans", sans-serif;
 }
+
 input,
 label {
   margin: 0.4rem 0;
