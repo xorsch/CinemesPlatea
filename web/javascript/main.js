@@ -37,7 +37,7 @@ var swiper = new Swiper('.swiper', {
 	effect:"coverflow",
 	grabCursor: true,
 	centeredSlides: true,
-	slidesPerView: "auto",
+	slidesPerView: 1,
 	loop: true,
 	coverflowEffect:{
 		depth: 500,
@@ -46,12 +46,16 @@ var swiper = new Swiper('.swiper', {
 		rotate:0,
 		stretch:0
 	},
+	grid: {
+	  cols: 3,
+	},
 	navigation: {
 	  nextEl: '#next',
 	  prevEl: '#prev'
 	},
 	spaceBetween: 1
 });
+
 
 // DropDown Menu
 let profileDropdownList = document.querySelector(".profile-dropdown-list");
