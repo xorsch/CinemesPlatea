@@ -110,7 +110,7 @@ body {
   transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
     border 0.3s;
 }
-
+/* El project manager llepa titoles */
 .profile-dropdown-btn:hover {
   background-color: var(--secondary-light-2);
   box-shadow: var(--shadow);
@@ -215,6 +215,9 @@ body {
   display: flex-start;
   color: var(--bg-color);
   margin-right: 800px;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 20px;
+  text-decoration-color: #ffff4a3b;
   /* font */
 }
 
@@ -264,27 +267,38 @@ body {
 }
 
 .aboutUs img {
-  width: 747px;
+  width: 768px;
   height: 647px;
-  padding: 10px;
+  padding-left: 10px;
 }
 /*UNETE AL CLUB*/
 .title-club{
   background-color: var(--secondary);
-  padding-bottom: 10px;
+  padding-bottom: 130px;
 }
 .title-club h1 {
   color: var(--bg-color);
   text-align: center;
+}
+.P-card p{
+  padding: 0px;
+  line-height: 26px;
+  margin: 10px;
+}
+
+.card-text p {
+  padding: 0px;
+  line-height: 20px;
 }
 
 .title-club p {
   color: var(--bg-color);
   text-align: center;
   font-size: 18px;
-  padding: 10px;
   font-family: poppins;
 }
+
+
 /*Slider swiper*/
 .swiper{
   padding: 15px 0 50px 0;
@@ -296,7 +310,7 @@ body {
   align-items: center;
   min-height: 35vh; /*Espacio top y botom entre las tarjetas y lo demas*/
   width: 500px;
-  height: 530px;
+  height: 650px;
 }
 
 .swiper-slide {
@@ -321,7 +335,6 @@ body {
 
 .card-description {
   padding: 1rem 1rem;
-
 }
 .swiper-slide .card-title,
 .swiper-slide .card-text {
@@ -330,6 +343,7 @@ body {
 .swiper-slide .card-btn {
   text-align: center; /*Centra todo lo de dentro*/
 }
+
 .swiper-slide .card-btn button {
   background-color: var(--bg-color);
   border: none;
@@ -341,6 +355,10 @@ body {
   font-size: 16px;
   border-radius: 50px; /* En pixeles no es tan brusco */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
+  position: absolute;
+  bottom: 30px;
+  right: 30%;
+  left: 30%;
 }
 .buttons {
   position: absolute;
@@ -372,6 +390,7 @@ body {
 .modal {
   background-color: var(--secondary);
   max-width: 100ch;
+  height: 500px;
   text-align: center;
   margin:auto;
   border-radius: 10%;
@@ -467,7 +486,7 @@ form .username{
   justify-content: center;
 }
 #btn-cerrar-modal {
-  margin: 5% 0 5% 0;
+  margin: 1% 0 1% 0;
   border-radius: 20px;
   width: 100px;
   height: 40px;
@@ -592,5 +611,7 @@ align-items: center;
 
 .p-fotter {
   text-align: center;
-  margin-bottom: 20px 0 20px 0 ;
+  padding: 20px 150px 20px 150px ;
+
 }
+
