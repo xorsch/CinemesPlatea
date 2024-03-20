@@ -657,3 +657,50 @@ align-items: center;
 
 }
 
+/* Ojo que igual que digo una cosa digo la otra */
+/*MODAL*/
+
+.modal2::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal2 {
+  background-color: var(--secondary);
+  max-width: 100ch;
+  height: 500px;
+  text-align: center;
+  margin:auto;
+  border-radius: 10%;
+  border-style: initial;
+}
+.modal2 h2{
+  padding-top: 10%;
+  color: var(--bg-color);
+}
+
+.modal2 p{
+  font-size: 10px;
+  color: var(--bg-color);
+}
+
+.modal2 form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+
+#modal2-abajo-centrado {
+  margin: 0 20%;
+  color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+}
+
+#btn-cerrar-modal2 {
+  margin: 1% 0 1% 0;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  color: var(--secondary);
+  background-color: var(--bg-color);
+}

@@ -32,13 +32,15 @@
 
         <div class="profile-dropdown">
                 <div onclick="toggle()" class="profile-dropdown-btn">
+
                     <div class="profile-img">
                         <i class="fa-solid fa-circle"></i>
                     </div>
 
-                    <span>Victoria
-                        <i class="fa-solid fa-angle-down"></i>
-                    </span>
+                    
+                    <i class="fa-solid fa-angle-down"></i>
+                    <span>Victoria</span>
+                    
                 </div>
 
                 <ul class="profile-dropdown-list">
@@ -77,7 +79,7 @@
                         </a>
                     </li>
 
-                    <li class="profile-dropdown-list-item">
+                    <li class="profile-dropdown-list-item">                    
                         <a href="#">
                             <i class="fa-solid fa-arrow-right-from-bracket"></i>
                             Log out
@@ -92,27 +94,23 @@
     <main>
 
       <section class="welcome">
-        <!--Taules? Realment taules? un div ho hauria de resoldre -->
         <table>
-                <tr>
-                    <td>
-                        <!-- Per ser coherents hauria de ser con la aboutAs --> 
-                        <h2>
-                            Bienvenidas y bienvenidos al espacio online de Cineclub Platea.
-                        </h2>
-                        <p>
-                            No sólo proyectamos películas, creamos experiencias en torno al
-                            arte cinematográfico, ofreciendo en este espacio virtual
-                            podcast, talleres y charlas en streaming. Nuestra programación
-                            se compone de proyecciones de cuidad selección, abarcando desde
-                            clásicos atemporales hasta las últimas joyas del cine
-                            contemporáneo, ofreciendo una diversidad que refleja la riqueza
-                            de las narrativas cinematográficas, talleres con profesionales
-                            consagrados y debates y charlas sobre temas candentes
-                            relacionados con el arte y la industria cinematográfica.
-                        </p>
-                    </td>
-                </tr>
+          <tr>
+            <td>
+              <!-- Per ser coherents hauria de ser con la aboutAs --> 
+              <h2>Bienvenidas y bienvenidos al espacio online de Cineclub Platea.</h2>
+              <p>No sólo proyectamos películas, creamos experiencias en torno al
+                 arte cinematográfico, ofreciendo en este espacio virtual
+                 podcast, talleres y charlas en streaming. Nuestra programación
+                 se compone de proyecciones de cuidad selección, abarcando desde
+                 clásicos atemporales hasta las últimas joyas del cine
+                 contemporáneo, ofreciendo una diversidad que refleja la riqueza
+                 de las narrativas cinematográficas, talleres con profesionales
+                 consagrados y debates y charlas sobre temas candentes
+                 relacionados con el arte y la industria cinematográfica.
+                </p>
+            </td>
+          </tr>
         </table>
       </section>
 
@@ -148,7 +146,6 @@
 
       <section class="title-club">
         <h2 id="enroll">ÚNETE A NUESTRO CLUB</h2>
-        <!--ha de ser h2 y propietats. també es pot fer amb una propiertat de les fonts -->
         <p class="title-club-p">
           Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea,
           puedes elegir entre estas tres modalidades de suscripción.</p>
@@ -156,8 +153,8 @@
         <div class="swiper mySwiper">
 
           <div class="buttons">
-            <button id="prev">'a'</button>
-            <button id="next">'p'</button>
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
           </div>
 
           <div class="swiper-wrapper">
@@ -179,8 +176,9 @@
                 </div>
 
                 <div class="card-btn">
-                  <button class="btn-abrir-modal">Inscríbete</button>
+                  <button class="btn-abrir-modal2">Inscríbete</button>
                 </div>
+
               </div>
             </div>
 
@@ -203,7 +201,7 @@
                 </div>
                 
                 <div class="card-btn">
-                  <button class="btn-abrir-modal">Inscríbete</button>
+                  <button class="btn-abrir-modal2">Inscríbete</button>
                 </div>
 
               </div>
@@ -222,7 +220,7 @@
                     Invitaciones prioritarias a eventos especiales. Acceso a los talleres y podcast de nuestra web.</p>
                 </div>
                 <div class="card-btn">
-                  <button class="btn-abrir-modal">Inscríbete</button>
+                  <button class="btn-abrir-modal2">Inscríbete</button>
                 </div>
               </div>
             </div>
@@ -231,10 +229,10 @@
         </div>          
       </section>
 
-      <!-- Modal suscripción, i surt l'accés d'usuaris? -->      
+      <!-- Modal d'accés d'usuaris? -->      
       <dialog class="modal">
         <h1>Acceso miembros</h1>
-        <form method="dialog">
+        <form action="action.php" method="dialog">          
           <div class="username">
             <input type="email" id="mail" name="mail">
             <label for="mail">Correo Electrónico</label>
@@ -266,6 +264,22 @@
         </form>
       </dialog>
 
+      <!-- Modal suscripción, i surt l'accés d'usuaris? 
+          Borrador.
+            --> 
+      <dialog class="modal2">
+        <h1>not not</h1>
+        <form action="action.php" method="dialog">
+
+          <input type="email" id="mail2" name="mail2">
+          <label for="mail2">Correo Electrónico</label>
+          <input type="email" id="mail3" name="mail">
+          <label for="pwd">Contraseña</label>
+  
+          <button type="button" id="btn-cerrar-modal2">Iniciar sesión</button>
+        </form>
+      </dialog>
+
       <!-- Boton flotante STT-->
       <div id="scrolltotop_parent">
         <div tabindex="0" id="scrolltotop_arrow"></div>
@@ -274,6 +288,7 @@
     </main>
 
     <footer class="fotter">
+      <!-- TODO: els divs de cineclub i xarxes socials es deformen-->
       <div  class="fotter-h1"> 
         <div class="table-fotter1">
             <h1>Cineclub Platea</h1>
@@ -283,7 +298,7 @@
             <p><a href="http://www.cineclubplatea.cat"> <b>Sitio Web: </b>www.cineclubplatea.cat</a></p>
         </div>
         
-        <!-- que estigui l'ancla al h1 es per coherencia -->
+        <!-- que estigui l'ancla al -->
         <div class="table-fotter2">
           <h1 id="contact">Redes Sociales</h1>
           <p> <b>Facebook </b> @cineclubplatea</p>
