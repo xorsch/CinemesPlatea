@@ -35,8 +35,7 @@ var swiper = new Swiper('.swiper', {
 	navigation: {
 	  nextEl: '#next',
 	  prevEl: '#prev'
-	},
-	spaceBetween: 1
+	}
 });
 
 // DropDown Menu
