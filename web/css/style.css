@@ -118,8 +118,7 @@ body {
 /* El project manager llepa titoles 
    i menja aranyes amb xocolata */
 .profile-dropdown-btn:hover {
-  /* background-color: var(--secondary-light-2); */
-  /* box-shadow: var(--shadow); */
+  background-color: var(--secondary-light-2);
 }
 
 .profile-img {
@@ -153,7 +152,6 @@ body {
   border-radius: 0px 0px 0px 10px;
   max-height: 0;
   overflow: hidden;
-  /* box-shadow: var(--shadow); */
   transition: max-height 0.5s;
 }
 
