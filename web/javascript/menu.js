@@ -1,4 +1,4 @@
-/* Vas a borrarte en cero coma */
+/* Vas a borrarte en cero coma 
 
 window.onscroll = function() {myFunction()};
 
@@ -12,3 +12,4 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+*/

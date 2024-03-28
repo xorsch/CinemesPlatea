@@ -115,8 +115,7 @@ body {
     border 0.3s;
 }
 
-/* El project manager llepa titoles 
-   i menja aranyes amb xocolata */
+/* El project manager llepa titoles */
 .profile-dropdown-btn:hover {
   background-color: var(--secondary-light-2);
 }
@@ -195,7 +194,7 @@ body {
   padding-left: 1.5rem;
   background-color: var(--secondary-light);
 }
-/* css del benvinguts. Guarro però furrula. */
+/* css del benvinguts */
 /* article 1 */
 .welcome { 
   background-color: var(--secondary);

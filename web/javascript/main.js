@@ -13,7 +13,7 @@ if (btnAbrirModal.length > 0) {
     });
 }
 
-// MODAL other 
+// MODAL other.
 const btnAbrirModal2 = document.querySelectorAll(".btn-abrir-modal2");
 const btnCerrarModal2 = document.querySelector("#btn-cerrar-modal2");
 const modal2 = document.querySelector(".modal2");
@@ -34,7 +34,6 @@ document.getElementById("scrolltotop_parent").addEventListener("click", function
 });
 
 // TODO: Caldria que al principi tingués la opacitat mínima
-// xorrades. 
 document.getElementById("scrolltotop_parent").addEventListener("mouseover", mouseOver);
 document.getElementById("scrolltotop_parent").addEventListener("mouseout", mouseOut);
 
@@ -74,6 +73,7 @@ var swiper = new Swiper('.swiper', {
 
 
 // DropDown Menu
+
 let profileDropdownList = document.querySelector(".profile-dropdown-list");
 let btn = document.querySelector(".profile-dropdown-btn");
 
