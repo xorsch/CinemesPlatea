@@ -1,0 +1,77 @@
+{
+  "dbName": "dbCineClub",
+  "dbCreated": "240322",
+  "dbProducts": [
+    {
+      "id": "prod3",
+      "duration": "3",
+      "price": "80.00"
+    },
+    {
+      "id": "prod2",
+      "duration": "4",
+      "price": "15.00"
+    },
+    {
+      "id": "prod1",
+      "duration": "4",
+      "price": "15.00"
+    }
+  ],
+  "dbUsers": [
+    {
+      "id": "u001",
+      "name": "Charles Chaplin",
+      "userName": "ChaCha",
+      "password": "1234",
+      "email": "chacha@yahoo.com",
+      "bank": [
+        {
+          "titular": "Radiation resistance",
+          "IBAN": "Turning tiny",
+          "CSV": "Radiation blast",
+          "EXPIRE": "2/24"
+        }
+      ],
+      "subscription": [
+        {
+          "prod": "id2",
+          "expire": "240931",
+          "price": "60.00"
+        },
+        {
+          "prod": "id3",
+          "expire": "241131",
+          "price": "60.00"
+        },
+        {
+          "prod": "id1",
+          "expira": "241231",
+          "price": "10.00"
+        }
+      ]
+    },
+    {
+      "id": "u002",
+      "name": "Alfred",
+      "userName": "alf",
+      "password": "1234",
+      "email": "info@batman.net",
+      "bank": [
+        {
+          "titular": "Alfred Batman Slave",
+          "IBAN": "1111-2222-3333-5555-1",
+          "CSV": "000",
+          "EXPIRE": "2/24"
+        }
+      ],
+      "subscription": [
+        {
+          "prod": "id2",
+          "expire": "240931",
+          "price": "80.00"
+        }
+      ]
+    }
+  ]
+}

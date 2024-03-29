@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jason Voorhees vol jugar</title>
+    <script defer src="dbJson.js"></script>
+  </head>
+
+  <body>
+    <!-- Una idea de com fer login amb un array json-->
+    <p>version 0.0.5</p>
+    <h2>Demo: Login user</h2>
+    <p id="demo"></p>
+
+    <p id="user_append_1"></p>
+    <p id="user_append"></p>
+    <p id="append_alt"></p>
+
+  </body>
+</html>

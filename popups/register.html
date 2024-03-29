@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test registre Json</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script defer src="javascript/form.js"></script>
+  <script defer src="javascript/main.js"></script>
+</head>
+<body>
+
+  <p>versio 0.0.1</p>
+  <section class="content">
+
+    <h1 class="content__heading">Paso 1 de 2</h1>
+    <p class="content__lede">Elige tu cineclub experience.</p>
+    
+    <form id="xaxi" class="content__form contact-form">
+
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" for="subject">Experiencia cineclub</label>
+        <!-- Cal un script per generar això segons la base de dades-->
+        <select class="contact-form__input contact-form__input--select" id="subject" name="subject">
+          <option value="1">Tarifa estudiantes. Gratis si pagan  500€</option>
+          <option>Tarifa Rancia, no te deja hacer nada 25€</option>
+          <option>Tarifa ultracara, pagas más por lo mismo 1000€</option>
+        </select>
+      </div>
+
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" for="name">Name</label>
+        <input class="contact-form__input contact-form__input--text" id="name" name="name" type="text"/>
+      </div>
+
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" for="surname">Surname</label>
+        <input class="contact-form__input contact-form__input--text" id="surname" name="surname" type="text"/>
+      </div>
+
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" for="email">Email Address</label>
+        <input class="contact-form__input contact-form__input--email" id="email" name="email" type="email"/>
+      </div>
+
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" for="email">Confirm Email Address</label>
+        <input class="contact-form__input contact-form__input--email" id="email2" name="email2" type="email"/>
+      </div>
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" for="address">Address</label>
+        <input class="contact-form__input contact-form__input--text" id="address" name="address" type="text"/>
+      </div>
+
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" for="password">Password</label>
+        <input class="contact-form__input contact-form__input--text" id="password" name="password" type="text"/>
+      </div>
+
+      <!-- TODO: Mostra un subconcepte  -->
+      <div class="contact-form__input-group">
+        <input class="contact-form__input contact-form__input--checkbox" id="condiciones" name="condicio" \
+             type="checkbox" checked='true' value="condicio"/>
+        <label class="contact-form__label contact-form__label--checkbox" \
+          for="condiciones">Aceptas que te enviemos spam y te llamemos a cualquier hora. </label>
+      </div>
+      
+      <!-- <input name="secret" type="hidden" value="1b3a9374-1a8e-434e-90ab-21aa7b9b80e7"/> -->
+      <button class="contact-form__button" type="submit">Siguiente</button>
+      
+    </form>
+
+  </section>
+
+  <div class="results">
+    <h2 class="results__heading">Form Data</h2>
+    <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+  </div>
+
+  </body>
+</html>
+

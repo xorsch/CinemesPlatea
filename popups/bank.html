@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Dades bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="javascript/form.js"></script>
+  <script defer src="javascript/dbJson.js"></script>
+</head>
+<body>
+  
+
+<section class="content">
+  <h1 class="content__heading">Datos de pago</h1>
+  <p class="content__lede">Metodos de pago</p>
+  <form class="content__form contact-form">
+ 
+    <div class="contact-form__input-group">
+      <label class="contact-form__label" for="operator">Op </label>
+      <input class="contact-form__input contact-form__input--text" id="operator" name="operator" type="text"/>
+    </div>
+
+   <div class="contact-form__input-group">
+      <label class="contact-form__label" for="cardholder">Full Name</label>
+      <input class="contact-form__input contact-form__input--text" id="cardholder" name="cardholder" type="text"/>
+    </div>
+
+    <div class="contact-form__input-group">
+      <label class="contact-form__label" for="expire">DD/YY</label>
+      <input class="contact-form__input contact-form__input--email" id="expire" name="expire" type="number"/>
+    </div>
+
+    <div class="contact-form__input-group">
+      <label class="contact-form__label" for="cvv">CVV</label>
+      <input class="contact-form__input contact-form__input--text" id="cvv" name="cvv" type="number"/>
+    </div>
+
+    <div class="contact-form__input-group">
+      <label class="contact-form__label" for="postal">Dirección de facturación</label>
+      <input class="contact-form__input contact-form__input--text" id="postal" name="postal" type="text"/>
+    </div>
+
+    <div class="contact-form__input-group">
+      <h2 class="contact-form__label--checkbox-group">Valor total:</h2>
+      <p>El típico coñazo que nadie lee hasta que es tarde.</p>
+      <p id="resume_text"></p>
+      <input class="contact-form__input contact-form__input--checkbox" id="agree" name="agree" type="checkbox" value="agree">
+      <label class="contact-form__label contact-form__label--checkbox" for="agree">Si acepta esto no podrá reclamar y no se rembolsa en dinero.</label>
+    </div>
+    
+    <button class="contact-form__button" type="submit">Send It!</button>
+  </form>
+</section>
+
+<div class="results">
+  <h2 class="results__heading">Form Data</h2>
+  <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+</div>
+
+</body
+</html>

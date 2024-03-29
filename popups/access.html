@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8">
+    <title>Idea de registre amb Json</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="javascript/main.js"></script> <!-- Ha de desaparèixer-->
+    <script defer src="javascript/dbJson.js"></script>
+  </head>
+  <body>
+
+    <h1>version 0.0.0.1</h1>
+
+    <section class="content">
+      <h1 class="content__heading">Members Access</h1>
+      <form class="content__form contact-form">
+        <div class="contact-form__input-group">
+          <label class="contact-form__label" for="email">Email Address</label>
+          <input class="contact-form__input contact-form__input--email" id="email" name="email" type="email"/>
+        </div>
+        <div class="contact-form__input-group">
+          <label class="contact-form__label" for="password">Password</label>
+          <input class="contact-form__input contact-form__input--email" id="passwd" name="passwd" type="text"/>
+        </div>
+        <input name="secret" type="hidden" value="1b3a9374-1a8e-434e-90ab-21aa7b9b80e7"/>
+        <button class="contact-form__button" type="submit">Log in</button>
+      </form>
+    </section>
+
+    <div class="results">
+      <h2 class="results__heading">Form Data</h2>
+      <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+    </div>
+
+  </body>
+</html>
+
