@@ -1,0 +1,38 @@
+*{
+    box-sizing: content-box;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 243, 60);
+    
+}
+
+.imgmenu{
+    margin-top: 10px;
+    width: 362px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pmenu{
+    float: left;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+.abouth1{
+    text-align: center;
+}
+/* 
+#text-about-us{
+    width: 600px;
+    height: auto;
+}
+#image-about-us{
+    max-width: fit-content;
+}
+ */
+
+
