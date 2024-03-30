@@ -1,0 +1,256 @@
+
+
+*{
+    box-sizing: content-box;
+    font-family: poppins;
+}
+
+body{ 
+    background-color: var(--secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lora;
+    color: var(--bg-color);
+}
+
+h1{
+    font-size: 32px;
+}
+
+p{
+    font-size: 20px;
+    color: var(--bg-color);
+}
+
+:root {
+    /* Variables global */
+    --bg-color: #FFFF4A; 
+    --primary: #242424;
+    --secondary: #3C3C3C;
+    --green: #82cd47;
+    --secondary-light: rgb(34, 124, 112, 0.2);
+    --secondary-light-2: rgb(127, 183, 126, 0.1);
+    --white: #fff;
+    --black: black;
+    --shadow: 0px 2px 8px 0px var(--secondary-light);
+  }
+
+.container{
+    max-width: 1400px;
+}
+
+/* Aqui empieza el codigo especifico */
+
+/* nav */
+
+.menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 243, 60);
+    
+}
+
+.imgmenu{
+    margin-top: 10px;
+    width: 362px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pmenu{
+    float: left;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+.pmenu p{
+    color: var(--primary);
+}
+
+/* welcome section */
+
+.Welcome {
+    width: 1514px;
+    height: 639px;
+    display: flex;
+    background-image: url("../web/img/04.jpeg");
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+  .W-h2 {
+    margin-right: 600px;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 20px;
+    text-decoration-color: #ffff4a3b;
+  }
+  
+  .W-P {
+    font-size: 16px;
+    max-width: 650px;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 20px;
+    text-decoration-color: #ffff4a3b;
+    padding: 20px 0 40px 0;
+  }
+
+/* about us */
+
+.abouth1{
+    padding: 25px ;
+    margin-top:16px;
+    text-align: center;
+}
+
+#t-w{
+    display: flex;
+    align-items: center;
+}
+
+#A-img{
+    display: flex ;
+}
+#image-about-us{
+    height: 100%;
+    width: 100%;
+}
+
+/* unete perro  */
+
+#t-unete h1, #t-unete p {
+    text-align: center;
+    padding: 10px;
+} 
+
+#t-unete h1 {
+    padding: 25px ;
+    margin-top:16px;
+} 
+
+.swiper{
+    padding: 15px 0 50px 0;
+    overflow: visible;
+    font-size: 14px;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 35vh; /*Espacio top y botom entre las tarjetas y lo demas*/
+    width: 374px;
+    height: 750px;
+  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--primary);
+    border-radius: 15px;
+    width: 350px;
+    height:750px ;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+  }
+  
+.swiper-slide img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .swiper-wrapper {
+
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition-property: transform;
+      transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
+      box-sizing: content-box;
+  }
+  .card-description {
+    padding: 1rem 1rem;
+  }
+  
+  .swiper-slide .card-title,
+  .swiper-slide .card-text {
+    margin-bottom: 0.5rem;
+  }
+  
+  .swiper-slide .card-btn {
+    text-align: center; /*Centra todo lo de dentro*/
+  }
+  
+  .swiper-slide .card-btn button {
+    background-color: var(--bg-color);
+    border: none;
+    color: var(--secondary);
+    padding: 10px 20px; /* Espaciado interno */
+    display: inline-block; /* Como elemento en línea */
+    font-size: 16px;
+    border-radius: 50px; /* En pixeles no es tan brusco */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    position: absolute;
+    bottom: 30px;
+    right: 30%;
+    left: 30%;
+  }
+  #buttonsRow {
+    flex-wrap: unset;
+  }
+
+  #buttonI, #buttonD{
+    display:flex ;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+/* botones  */
+
+  .buttons {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    /* right: 26px !important; */
+  }
+  
+  .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--secondary);
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    /* left: 26px !important; */
+  }
+
+  /* fotter */
+footer {
+    background: var(--bg-color);
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer p, footer h1 {
+    color: var(--primary);
+}
+footer p{
+    font-size: 16px;
+}
+#fotter {
+    padding-top: 40px;
+}
+  
+/* 
+#text-about-us{
+    width: 600px;
+    height: auto;
+}
+#image-about-us{
+    max-width: fit-content;
+}
+ */
+
+
