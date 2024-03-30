@@ -1,0 +1,34 @@
+{
+  "nom":"nom",
+  "creacio":"data",
+  "producte": [
+  {
+    "id":"id",
+    "preu":"",
+    "durada":"",
+    "descripcio":"descripcio",
+    "condicio":"bolean"
+  } ],
+  "usuaris": [
+  {
+    "id":"id",
+    "nom":"nom",
+    "cognom":"cognom",
+    "username":"username",
+    "email":"email",
+    "productes": [
+    {
+      "id":"id_producte"
+    } ],
+    "tarjeta":[
+    { 
+      "operador":"operador",
+      "titular":"titular",
+      "num_tarjeta":"num_tarjeta",
+      "csv":"csv tarjeta",
+      "expira":"cad tarjeta",
+      "facturacio":"adr facturació",
+      "condicio":"bolea"
+    }]
+  }]
+}

@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel-style.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="javascript/main.js"></script>
+    <script defer src="javascript/carousel.js"></script>
 </head>
 
 <body>
@@ -95,7 +100,6 @@
         <table>
           <tr>
             <td>
-              <!-- Per ser coherents hauria de ser con la aboutAs --> 
               <h2>Bienvenidas y bienvenidos al espacio online de Cineclub Platea.</h2>
               <p>No sólo proyectamos películas, creamos experiencias en torno al
                  arte cinematográfico, ofreciendo en este espacio virtual
@@ -112,9 +116,12 @@
         </table>
       </section>
 
-      <section class="aboutUs">
-        <h2 id="aboutUs">SOBRE NOSOTROS</h2>">
-        <table>
+      <section class="aboutUs" id="aboutUs">
+
+        <div class="slideshow-container">
+          <article class="mySlides fade">
+            <h2>SOBRE NOSOTROS</h2>
+            <table>
                 <tr>
                     <td>
                         <p>
@@ -140,7 +147,80 @@
                     </td>
                 </tr>
         </table>
-      </section>
+      </article>
+
+    <article class="mySlides fade">
+      <h2>TALLERES I: Análisis de un guión.</h2>
+        <table>
+                <tr>
+                    <td>
+                        <p>
+                            Desde su creación en 1993, Cineclub Platea ha sido un punto de
+                            encuentro para los amantes del séptimo arte. Cineclub Platea
+                            nació de la visión compartida de un grupo apasionado de
+                            cinéfilos que buscaban ir más allá de la simple proyección de
+                            películas. Inspirados por la rica tradición cinematográfica de
+                            Barcelona, decidieron crear un espacio donde la magia del cine
+                            se fusionara con la energía única de la ciudad. A lo largo de
+                            las temporadas, Platea se ha convertido en un marco de
+                            confluencia de aquellos que buscan algo más que una sesión de
+                            cine, incidiendo en la realización de talleres, charlas y
+                            debates en torno al universo cinematográfico, construyendo una
+                            comunidad de cinéfilos que comparten la misma pasión por las
+                            historias bien contadas. Cineclub Platea invita a todos a unirse
+                            a nosotros en esta historia continua, donde cada fotograma es
+                            una oportunidad para descubrir, aprender y disfrutar.
+                        </p>
+                    </td>
+                    <td>
+                        <img src="img/cinema-03.jpeg" width="747" height="640" alt="Sala platea">
+                    </td>
+                </tr>
+        </table>
+    </article>
+
+  <article class="mySlides fade">    
+       <h2>TALLERES: Captar y mantener la atención del vidente </h2>
+        <table>
+                <tr>
+                    <td>
+                        <p>
+                            Desde su creación en 1993, Cineclub Platea ha sido un punto de
+                            encuentro para los amantes del séptimo arte. Cineclub Platea
+                            nació de la visión compartida de un grupo apasionado de
+                            cinéfilos que buscaban ir más allá de la simple proyección de
+                            películas. Inspirados por la rica tradición cinematográfica de
+                            Barcelona, decidieron crear un espacio donde la magia del cine
+                            se fusionara con la energía única de la ciudad. A lo largo de
+                            las temporadas, Platea se ha convertido en un marco de
+                            confluencia de aquellos que buscan algo más que una sesión de
+                            cine, incidiendo en la realización de talleres, charlas y
+                            debates en torno al universo cinematográfico, construyendo una
+                            comunidad de cinéfilos que comparten la misma pasión por las
+                            historias bien contadas. Cineclub Platea invita a todos a unirse
+                            a nosotros en esta historia continua, donde cada fotograma es
+                            una oportunidad para descubrir, aprender y disfrutar.
+                        </p>
+                    </td>
+                    <td>
+                        <img src="img/cinema-04.jpeg" width="747" height="640" alt="Sala platea">
+                    </td>
+                </tr>
+        </table>
+  </article>
+
+          <a class="prev" style="background-color:red;" onclick="plusSlides(-1)">❮</a>
+          <a class="next" style="background-color:red;" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <!-- tants punts com tants articles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+     </section>
 
       <section class="title-club">
         <h2 id="enroll">ÚNETE A NUESTRO CLUB</h2>
@@ -305,9 +385,6 @@
       <p class="p-fotter">Maquetación y diseño del Landing Page Roger Artero Martínez sujeto bajo Creative Commons Reconocimiento, Compartir igual, No Comercial 3.0 (CC BY NC - SA 3.0)<br>
          Fotografías, logo y textos, propiedad Agrupació Fotográfica Castelló sujeto bajo licencia Creative Commons Reconocimiento, Compartir igual 4.0 (CC BY - SA 4.0)</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="javascript/main.js"></script>
-</body>
+  </body>
 
 </html>

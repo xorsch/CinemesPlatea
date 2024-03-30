@@ -1,0 +1,110 @@
+{
+  "nom":"nom",
+  "creacio":"data",
+  "producte":[
+    {
+      "id":"prod01",
+      "preu":"25.00€",
+      "durada":"23",
+      "descripcio":"Bla blar i escriure.",
+      "condicio":"eliminar"
+    },
+    {
+      "id":"prod02",
+      "preu":"55.00€",
+      "durada":"10",
+      "descripcio":"Bla blar i beure i veure.",
+      "condicio":"eliminar"
+    },
+    {
+      "id":"prod03",
+      "preu":"15.00€",
+      "durada":"50",
+      "descripcio":"Bla, bla i dues sessions",
+      "condicio":"eliminar"
+    }
+  ],
+  "usuaris":[
+    {
+      "id":"usr001",
+      "nom":"Peric",
+      "cognom":"Melic",
+      "username":"Perme",
+      "password":"1234",
+      "email":"per@gmail.com",
+      "productes":[
+        {
+          "id":"prod001"
+        }
+      ],
+      "tarjeta":[
+        {
+          "operador":"Bankia",
+          "titular":"Peric Melic Basauri",
+          "num_tarjeta":"1111-1111-1111-1111",
+          "csv":"123",
+          "expira":"01/24",
+          "facturacio":"Carrer St Orni s/n, Sant Esteve de les roures",
+          "condicio":"accepta"
+        }
+      ]
+    },
+    {
+      "id":"usr002",
+      "nom":"Arnau",
+      "cognom":"Compte",
+      "username":"arnau",
+      "password":"1234",
+      "email":"arnau@comptes.cat",
+      "productes":[
+        {
+          "id":"prod001",
+          "accepta":"si"
+        },
+        {
+          "id":"prod002",
+          "accepta":"si"
+        },
+        {
+          "id":"prod003",
+          "accepta":"sí"
+        }
+      ],
+      "tarjeta":[
+        {
+          "operador":"Berga Banc",
+          "titular":"Arnau Compte De",
+          "num_tarjeta":"0000-1111-2222-3333",
+          "csv":"999",
+          "expira":"30/30",
+          "facturacio":"C/de la donzella 1, Berga",
+          "condicio":"si"
+        }
+      ]
+    },
+    {
+      "id":"usr002",
+      "nom":"Mujamed",
+      "cognom":"Abraham",
+      "username":"aluakbar",
+      "password":"1234",
+      "email":"aluakbar@gmail.ik",
+      "productes":[
+        {
+          "id":"prod001"
+        }
+      ],
+      "tarjeta":[
+        {
+          "operador":"EUA Bank",
+          "titular":"Alu Ak Bar",
+          "num_tarjeta":"1111-2222-3333-4444",
+          "csv":"111",
+          "expira":"21/01",
+          "facturacio":"Av Arenes 333, A pesar de mar",
+          "accepta":"si"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "nom":"database",
+  "creacio":"240330",
+  "producte":[
+    {
+      "id":"prod001",
+      "preu":"25.00",
+      "durada":"33",
+      "descripcio":"Bla,bla un mes",
+      "condicio":"accepta"
+    },
+    {
+      "id":"prod002",
+      "preu":"65.00",
+      "durada":"33",
+      "descripcio":"Bla,bla un mes",
+      "condicio":"accepta"
+    }
+  ],
+  "usuaris":[
+    {
+      "id":"usr001",
+      "nom":"Peric",
+      "cognom":"Melic",
+      "username":"perime",
+      "email":"peric@gmail.com",
+      "productes":[
+        {
+          "id":"prod001",
+          "accepta":"si"
+        },
+        {
+          "id":"prod001",
+          "accepta":"si"
+        }
+      ],
+      "tarjeta":[
+        {
+          "operador":"Bankia",
+          "titular":"Peric Melic Cilici",
+          "num_tarjeta":"1111-1111-1111-1111",
+          "csv":"999",
+          "expira":"02/24",
+          "facturacio":"Platges de Lleida 1, A pesar de mar",
+          "condicio":"bolea"
+        },
+        {
+          "operador":"Caixa Ramón",
+          "titular":"Peric Melic Cilici",
+          "num_tarjeta":"1111-1111-1111-1111",
+          "csv":"999",
+          "expira":"02/24",
+          "facturacio":"Sant Orni s/n, Sant Esteve de les roures.",
+          "condicio":"bolea"
+        }
+      ]
+    }
+  ]
+}
