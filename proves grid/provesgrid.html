@@ -12,12 +12,47 @@
 <body>
     <head>
         <div class="menu">
-            <img class="imgmenu" src="https://placehold.co/362x169" alt="logo">
+            <img class="imgmenu" src="../web/img/Logo.png" alt="logo">
             <div class="pmenu">
                 <P>Sobre nosotros</P>
                 <P>Contacto</P>
                 <P>Únete a nuestro club</P>
                 <P>Acceso a miembros</P>
+                <div class="dropdown">
+                  <div class="profile-dropdown">
+                    <div onclick="toggle()" class="profile-dropdown-btn">
+    
+                        <div class="profile-img">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <span>Victoria</span>
+                        
+                    </div>  
+                    <ul class="profile-dropdown-list">
+                        <li class="profile-dropdown-list-item">
+                            <a href="#">
+                                <i class="fa-regular fa-user"></i>
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li class="profile-dropdown-list-item">
+                            <a href="#">
+                                <i class="fa-solid fa-sliders"></i>
+                                Settings
+                            </a>
+                        </li>
+                        <li class="profile-dropdown-list-item">                    
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Log out
+                            </a>
+                        </li>
+    
+                    </ul>
+            </div>
+
+                </div>
             </div>
         </div>
     </head>
@@ -78,7 +113,7 @@
         
     </section>
     
-    <section>
+    <!-- <section>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      
@@ -175,8 +210,100 @@
         </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
+    <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      
+              </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="t-unete">
+              <h1>Únete a nuestro club</h1>
+              <p>Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea, puedes elegir entre estas tres modalidades de suscripción</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      
+          </div>
+          </div>  
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="swippercards">   
+         
+                  <div class="swiper-slide">
+                    <img src="../web/img/01.jpeg" alt="">
+      
+                    <div class="card-description">
+      
+                      <div class="card-text">
+                        <p>Club Cinéfilo:</p>                             
+                        <p>Precio: 60 € / año</p>
+                      </div>
+      
+                      <div class="P-card">
+                        <p>Acceso ilimitado a todas las proyecciones, incluyendo estrenos exclusivos. Asientos preferenciales en las proyecciones.
+                          Acceso a los talleres y podcast de nuestra web. Descuentos significativos en cines asociados. Invitaciones exclusivas 
+                                    a preestrenos y encuentros con cineastas.</p>                  
+                      </div>
+      
+                      <div class="card-btn">
+                        <button class="btn-abrir-modal">Inscríbete</button>
+                      </div>
+      
+                    </div>
+                  </div>
+              
+              
+                <div class="swiper-slide">
+                  <img src="../web/img/02.jpeg" alt="">
+                  <div class="card-description">
+                    <div class="card-title">
+                    </div>
+    
+                    <div class="card-text">
+                      <p>Club Pigmalión</p> 
+                      <p>(solo para estudiantes):</p>
+                      <p>Precio: 15 € / año</p>
+                    </div>
+    
+                    <div class="P-card">
+                      <p>Acceso a proyecciones comerciales regulares a precio reducido en Cines Odeón. Acceso exclusivo a sesiones de debate
+                        y análisis cinematográfico conducidas por profesionales del cine. Acceso gratuito a charlas y talleres. Oportunidades
+                        de voluntariado y participación activa en la programación del cineclub.</p>
+                    </div>
+                    
+                    <div class="card-btn">
+                      <button class="btn-abrir-modal">Inscríbete</button>
+                    </div>
+    
+                  </div>
+                </div>
+              
+                <div class="swiper-slide">
+                  <img src="../web/img/03.jpeg" alt="">
+                  <div class="card-description">
+                    
+                    <div class="card-text">
+                      <p>Club Amigo:</p> 
+                      <p>Precio: 30 € / año</p>
+                    </div>
+                    <div class="P-card">
+                      <p>Descuento en todas las proyecciones regulares del año, charlas y talleres.
+                        Invitaciones prioritarias a eventos especiales. Acceso a los talleres y podcast de nuestra web.</p>
+                    </div>
+                    <div class="card-btn">
+                      <button class="btn-abrir-modal">Inscríbete</button>
+                      
+  
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+          </div>
+        </div>
+        <!-- Boton flotante STT-->
+      <div id="scrolltotop_parent">
+        <div tabindex="0" id="scrolltotop_arrow"></div>
+      </div>
+      </section>
     
   
     
