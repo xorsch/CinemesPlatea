@@ -33,11 +33,6 @@ p{
     --black: black;
     --shadow: 0px 2px 8px 0px var(--secondary-light);
   }
-
-.container{
-    max-width: 1400px;
-}
-
 /* Aqui empieza el codigo especifico */
 
 /* nav */
@@ -68,8 +63,7 @@ p{
 /* welcome section */
 
 .Welcome {
-    width: 1514px;
-    height: 639px;
+    min-height: 60vh;
     display: flex;
     background-image: url("../web/img/04.jpeg");
     margin: auto;
@@ -77,20 +71,18 @@ p{
     justify-content: flex-end;
     align-items: flex-start;
 }
-
-  .W-h2 {
-    margin-right: 600px;
+  .W-h2, .W-P{
     text-decoration-line: line-through;
     text-decoration-thickness: 20px;
     text-decoration-color: #ffff4a3b;
+  }
+  .W-h2 {
+    margin-right: 300px;
   }
   
   .W-P {
     font-size: 16px;
     max-width: 650px;
-    text-decoration-line: line-through;
-    text-decoration-thickness: 20px;
-    text-decoration-color: #ffff4a3b;
     padding: 20px 0 40px 0;
   }
 
@@ -109,10 +101,16 @@ p{
 
 #A-img{
     display: flex ;
+    justify-content: center;
+    align-items: center;
 }
+
+.About-p{
+  padding: 20px;
+}
+
 #image-about-us{
-    height: 100%;
-    width: 100%;
+  max-height: 38vh;
 }
 
 /* unete perro  */
@@ -233,8 +231,16 @@ footer {
 footer p, footer h1 {
     color: var(--primary);
 }
+footer h1{
+    margin-top: 10px;
+}
+
 footer p{
     font-size: 16px;
+    margin:0;
+}
+.copyright{
+  padding: 10px;
 }
 #fotter {
     padding-top: 40px;
