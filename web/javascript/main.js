@@ -40,12 +40,12 @@ document.getElementById("scrolltotop_parent").addEventListener("mouseout", mouse
 
 function mouseOver() {
 	// console.log("ratoli fora" );
-	document.getElementById("scrolltotop_parent").style.opacity = 0,8;
+	document.getElementById("scrolltotop_parent").style.opacity = 1;
 }
 
 function mouseOut() {
 	// console.log("ratoli fora" );
-	document.getElementById("scrolltotop_parent").style.opacity = 0,2;
+	document.getElementById("scrolltotop_parent").style.opacity = 0;
 }
 
 
