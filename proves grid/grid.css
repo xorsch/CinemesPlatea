@@ -90,8 +90,6 @@ p{
     border 0.3s;
 }
 
-/* El project manager llepa titoles 
-   i menja aranyes amb xocolata */
 .profile-dropdown-btn:hover {
   background-color: var(--secondary-light-2);
 }
@@ -120,7 +118,6 @@ p{
 
 .profile-dropdown-list {
   position: absolute;
-  top: 58px;
   width: 210px;
   right: 0;
   background-color: var(--bg-color);
@@ -128,6 +125,7 @@ p{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
+  z-index: 3;
 }
 
 .profile-dropdown-list hr {
@@ -175,6 +173,7 @@ p{
 
 .Welcome {
     min-height: 60vh;
+    max-height: min-content;
     display: flex;
     background-image: url("../web/img/04.jpeg");
     flex-direction: column;
