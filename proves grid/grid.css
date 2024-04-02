@@ -1,23 +1,12 @@
-*{
-    box-sizing: content-box;
-    font-family: poppins;
-}
-
-body{ 
-    background-color: var(--secondary);
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Lora;
     color: var(--bg-color);
+    font-size: 3vh;
 }
 
-h1{
-    font-size: 2rem;
-}
 
 p{  
-    font-size: 1.25rem;
     color: var(--bg-color);
 }
 
@@ -53,23 +42,21 @@ p{
 .pmenu{
     float: left;
     display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
     justify-content: space-evenly;
 }
 .pmenu p{
     color: var(--primary);
     padding-left: 40px;
+    margin-bottom:0 ;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* dropdown / css por simplificar */
 .dropdown{
   position: absolute;
-  top: 200px;
+  top: 10px;
   right: 0px;
-}
-.profile-dropdown {
-  position: relative;
-  width: fit-content;
 }
 
 .profile-dropdown-btn {
@@ -79,19 +66,15 @@ p{
   justify-content: space-between;
   padding-right: 10px;
   font-size: 24px;
-  margin-right: 10px;
   font-weight: 500;
+  margin-right: 10px;
   width: 200px;
   border-radius: 50px;
-  color: var(--black);
+  color: var(--primary);
   background-color: var(--bg-color);
   cursor: pointer;
   transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
     border 0.3s;
-}
-
-.profile-dropdown-btn:hover {
-  background-color: var(--secondary-light-2);
 }
 
 .profile-img {
@@ -117,11 +100,8 @@ p{
 }
 
 .profile-dropdown-list {
-  position: absolute;
-  width: 210px;
-  right: 0;
   background-color: var(--bg-color);
-  border-radius: 0px 0px 0px 10px;
+  border-radius: 0 0 0 10px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
@@ -172,10 +152,12 @@ p{
 /* welcome section */
 
 .Welcome {
-    min-height: 60vh;
-    max-height: min-content;
+    min-height: 30vh;
+    max-height: 1000px;
+    height: 70vh;
     display: flex;
     background-image: url("../web/img/04.jpeg");
+    background-size: cover;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
@@ -184,17 +166,19 @@ p{
     text-decoration-line: line-through;
     text-decoration-thickness: 1.25rem;
     text-decoration-color: #ffff4a3b;
-    margin-left: 20px;
+    padding-left: 20px;
+    font-family: lora;
+    color: var(--bg-color);
   }
   .W-h2 {
-    margin-right: 300px;
+    margin-right: 10vw;
   }
   
   .W-P {
-    font-size: 1rem;
+    font-size: 2vh;
     max-width: 650px;
-    padding: 20px 0 40px 0;
-    margin-left: 40px;
+    width: 80vw;
+    padding: 20px 0 40px 40px;
   }
 
 /* about us */
@@ -203,6 +187,12 @@ p{
     padding: 25px ;
     margin: top 1rem;
     text-align: center;
+    color: var(--bg-color);
+    font-family: lora;
+}
+
+.About-p {
+  font-size: 2vh;
 }
 
 #t-w{
@@ -236,6 +226,8 @@ p{
     margin-top:16px;
 } 
 
+/* swiper */
+
 .swiper{
     padding: 15px 0 50px 0;
     overflow: visible;
@@ -251,7 +243,7 @@ p{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: var(--primary);
+    background: #242424;
     border-radius: 15px;
     width: 350px;
     height:750px ;
@@ -274,6 +266,7 @@ p{
       transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
       box-sizing: content-box;
   }
+
   .card-description {
     padding: 1rem 1rem;
   }
@@ -331,6 +324,7 @@ p{
   }
 
   /* Botón flotante scrollToTop*/
+
 #scrolltotop_parent {
   position: fixed;
   bottom: 40px;
@@ -361,14 +355,16 @@ p{
 }
 
   /* fotter */
+
 footer {
     background: var(--bg-color);
     margin-top: 50px;
     text-align: center;
 }
 
-footer p, footer h1 {
-    color: var(--primary);
+footer h1{
+  color: #242424;
+    
 }
 footer h1{
     margin-top: 10px;
@@ -378,6 +374,7 @@ footer p{
   font-family: lora;
     font-size: 16px;
     margin:0;
+    color:#242424;
 }
 .copyright{
   padding: 10px;
@@ -386,14 +383,3 @@ footer p{
     padding-top: 20px;
 }
   
-/* 
-#text-about-us{
-    width: 600px;
-    height: auto;
-}
-#image-about-us{
-    max-width: fit-content;
-}
- */
-
-
