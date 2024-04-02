@@ -1,10 +1,22 @@
-
+*{
+  font-family: poppins;
+}
+section{
+  background-color: #242424;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: Lora;
     color: var(--bg-color);
     font-size: 3vh;
 }
-
+.link{
+  color: #3C3C3C;
+}
+.link:hover{
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+}
 p{  
     color: var(--bg-color);
 }
@@ -45,7 +57,7 @@ p{
     justify-content: space-evenly;
 }
 .pmenu p{
-    color: var(--primary);
+    color: #242424;
     padding-left: 40px;
     margin-bottom:0 ;
     margin-left: auto;
@@ -64,12 +76,12 @@ p{
   align-items: center;
   justify-content: space-between;
   padding-right: 10px;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   margin-right: 10px;
   width: 200px;
   border-radius: 50px;
-  color: var(--primary);
+  color: #242424 ;
   background-color: var(--bg-color);
   cursor: pointer;
   transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
@@ -320,7 +332,7 @@ padding: 50px;
     margin: 0 40px;
  }
  .swiper-backface-hidden .swiper-slide{
-  background:#242424;
+  background:#3C3C3C;
   border-radius: 25px;
  }
 .card{
@@ -356,11 +368,11 @@ padding: 50px;
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color:#242424;
+    background-color:#3C3C3C;
 }
 .overalay::after{
     border-radius: 0 25px 0 0;
-    background-color: #242424;
+    background-color: #3C3C3C;
 
 }
 .card-image{
@@ -373,7 +385,7 @@ padding: 50px;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #242424;
+    border: 5px solid #3c3c3c;
 }
 .Name{ 
     font-size: 18px;
@@ -470,7 +482,7 @@ padding: 50px;
 
 footer {
     background: var(--bg-color);
-    margin-top: 50px;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -479,7 +491,7 @@ footer h1{
     
 }
 footer h1{
-    margin-top: 10px;
+    padding-top: px;
 }
 
 footer p{
@@ -493,4 +505,31 @@ footer p{
 }
 #fotter {
     padding-top: 20px;
+}
+
+/* media query  */
+@media (max-width: 700px) {
+
+  .imgmenu{
+    width:150px; 
+  }
+  .pmenu{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    justify-content: center;
+}
+.pmenu p{
+  padding-left: 0;
+
+}
+.Welcome{
+  height: 100%;
+}
+#image-about-us{
+  min-width: 300px;
+}
+#scrolltotop_parent, #scrolltotop_parent:hover{
+  display: none;
+}
 }
