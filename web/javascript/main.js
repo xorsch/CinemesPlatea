@@ -58,38 +58,53 @@ document.getElementById("scrolltotop_parent").addEventListener("mouseout", mouse
 
 function mouseOver() {
 	// console.log("ratoli fora" );
-	document.getElementById("scrolltotop_parent").style.opacity = 0,8;
+	document.getElementById("scrolltotop_parent").style.opacity = 1;
 }
 
 function mouseOut() {
 	// console.log("ratoli fora" );
-	document.getElementById("scrolltotop_parent").style.opacity = 0,2;
+	document.getElementById("scrolltotop_parent").style.opacity = 0;
 }
 
 
-// Cards carrusel Swiper
-var swiper = new Swiper('.swiper', {
-	effect:"coverflow",
-	grabCursor: true,
-	centeredSlides: true,
-	slidesPerView: 1,
-	loop: true,
-	coverflowEffect:{
-		depth: 500,
-		modifer:0,
-		slidesShadows: true,
-		rotate:0,
-		stretch:0
-	},
-	grid: {
-	  cols: 3,
-	},
-	navigation: {
-	  nextEl: '#next',
-	  prevEl: '#prev'
-	}
-});
+// // Cards carrusel Swiper
+// var swiper = new Swiper('.swiper', {
+// 	effect:"coverflow",
+// 	grabCursor: true,
+// 	centeredSlides: true,
+// 	slidesPerView: 1,
+// 	loop: true,
+// 	coverflowEffect:{
+// 		depth: 500,
+// 		modifer:0,
+// 		slidesShadows: true,
+// 		rotate:0,
+// 		stretch:0
+// 	},
+// 	grid: {
+// 	  cols: 3,
+// 	},
+// 	navigation: {
+// 	  nextEl: '#next',
+// 	  prevEl: '#prev'
+// 	}
+// });
 
+// swiper ruchi
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    slidesPerGroup: 1,
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 // DropDown Menu
 let profileDropdownList = document.querySelector(".profile-dropdown-list");
