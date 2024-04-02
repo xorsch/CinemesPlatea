@@ -5,7 +5,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3vh;
 }
 
-
 p{  
     color: var(--bg-color);
 }
@@ -180,8 +179,10 @@ p{
     width: 80vw;
     padding: 20px 0 40px 40px;
   }
-
 /* about us */
+.about-us{
+padding: 50px;
+}
 
 .abouth1{
     padding: 25px ;
@@ -228,7 +229,7 @@ p{
 
 /* swiper */
 
-.swiper{
+/* .swiper{
     padding: 15px 0 50px 0;
     overflow: visible;
     font-size: 14px;
@@ -236,7 +237,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 35vh; /*Espacio top y botom entre las tarjetas y lo demas*/
+    min-height: 35vh; 
     width: 374px;
     height: 750px;
   }
@@ -277,18 +278,18 @@ p{
   }
   
   .swiper-slide .card-btn {
-    text-align: center; /*Centra todo lo de dentro*/
-  }
+    text-align: center; 
+  } 
   
   .swiper-slide .card-btn button {
     background-color: var(--bg-color);
     border: none;
     color: var(--secondary);
-    padding: 10px 20px; /* Espaciado interno */
-    display: inline-block; /* Como elemento en línea */
+    padding: 10px 20px; 
+    display: inline-block;
     font-size: 16px;
-    border-radius: 50px; /* En pixeles no es tan brusco */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 50px; 
+    cursor: pointer; 
     position: absolute;
     bottom: 30px;
     right: 30%;
@@ -300,8 +301,119 @@ p{
   #swippercards{
     display: inline-flex;
     justify-content: space-between;
-  }
+  } */
 
+  /* 
+  swiper ruchi */
+.swiper-ruchi{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding:20px;
+}
+.slide-content{
+    margin: 0 40px;
+ }
+ .swiper-backface-hidden .swiper-slide{
+  background:#242424;
+  border-radius: 25px;
+ }
+.card{
+    border-radius: 25px;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+   
+}
+.overalay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    border-radius: 25px 25px 0 25px;
+}
+.overalay::before,
+.overalay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color:#242424;
+}
+.overalay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #242424;
+
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #242424;
+}
+.Name{ 
+    font-size: 18px;
+    font-weight: 500;
+    color:var(--bg-color);
+}
+.subtitle{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--bg-color);
+    text-align: center;
+}
+.description{
+    font-size: 14px;
+    color: var(--bg-color);
+    text-align: center;
+    justify-content: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #3c3c3c;
+    padding: 8px 16px;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background:#242424;
+    color: var(--bg-color);
+}
+.swiper-pagination{
+    position: relative;
+    padding-top: 20px;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after{
+  color: #FFFF4A;
+}
 /* botones  */
 
   .buttons {
@@ -382,4 +494,3 @@ footer p{
 #fotter {
     padding-top: 20px;
 }
-  
