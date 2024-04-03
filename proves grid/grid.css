@@ -195,7 +195,7 @@ p{
     color: var(--bg-color);
   }
   .W-h2 {
-    margin-right: 10vw;
+    padding-right: 10vw;
   }
   
   .W-P {
@@ -519,6 +519,21 @@ footer p{
 }
 #fotter {
     padding-top: 20px;
+}
+
+.user{
+  height: 100vh;
+
+}
+
+.tarjeta-user{
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #3C3C3C;
+  margin-top:20px;
+}
+.tarjeta-user .tarj-h{
+  color: #FFFF4A;
 }
 
 /* media query  */
