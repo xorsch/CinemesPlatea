@@ -13,10 +13,6 @@ const btnAbrirModal = document.querySelectorAll(".btn-abrir-modal");
 const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
 const modal = document.querySelector(".modal");
 
-const btnAbrirModal2 = document.querySelectorAll(".btn-abrir-modal2");
-const btnCerrarModal2 = document.querySelector("#btn-cerrar-modal2");
-const modal2 = document.querySelector(".modal2");
-
 // Agregar eventos a los botones
 if (btnCerrarModal && modal) {
     btnCerrarModal.addEventListener("click", () => cerrarModal(modal));
@@ -28,69 +24,42 @@ if (btnAbrirModal.length > 0) {
     });
 }
 
-if (btnCerrarModal2 && modal2) {
-    btnCerrarModal2.addEventListener("click", () => cerrarModal(modal2));
-}
-
-if (btnAbrirModal2.length > 0) {
-    btnAbrirModal2.forEach((btn) => {
-        btn.addEventListener("click", () => abrirModal(modal2));
-    });
-}
-
 // Agregar evento para cerrar el modal al hacer clic en el backdrop
 document.addEventListener("click", (event) => {
-    if (event.target === modal || event.target === modal2) {
+    if (event.target === modal) {
         cerrarModal(modal);
-        cerrarModal(modal2);
     }
 });
 
 // Botón flotante scrollToTop
-document.getElementById("scrolltotop_parent").addEventListener("click", function() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
+let scrolltotop_parent = document.getElementById("scrolltotop_parent");
 
-// TODO: Caldria que al principi tingués la opacitat mínima
-// xorrades. 
-document.getElementById("scrolltotop_parent").addEventListener("mouseover", mouseOver);
-document.getElementById("scrolltotop_parent").addEventListener("mouseout", mouseOut);
+if (scrolltotop_parent) {
+    scrolltotop_parent.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // TODO: Caldria que al principi tingués la opacitat mínima
+    // xorrades.
+    scrolltotop_parent.addEventListener("mouseover", mouseOver);
+    scrolltotop_parent.addEventListener("mouseout", mouseOut);
+}
 
 function mouseOver() {
-	// console.log("ratoli fora" );
-	document.getElementById("scrolltotop_parent").style.opacity = 1;
+    if (scrolltotop_parent) {
+        // console.log("ratoli fora" );
+        scrolltotop_parent.style.opacity = 1;
+    }
 }
 
 function mouseOut() {
-	// console.log("ratoli fora" );
-	document.getElementById("scrolltotop_parent").style.opacity = 0;
+    if (scrolltotop_parent) {
+        // console.log("ratoli fora" );
+        scrolltotop_parent.style.opacity = 0;
+    }
 }
 
-
-// // Cards carrusel Swiper
-// var swiper = new Swiper('.swiper', {
-// 	effect:"coverflow",
-// 	grabCursor: true,
-// 	centeredSlides: true,
-// 	slidesPerView: 1,
-// 	loop: true,
-// 	coverflowEffect:{
-// 		depth: 500,
-// 		modifer:0,
-// 		slidesShadows: true,
-// 		rotate:0,
-// 		stretch:0
-// 	},
-// 	grid: {
-// 	  cols: 3,
-// 	},
-// 	navigation: {
-// 	  nextEl: '#next',
-// 	  prevEl: '#prev'
-// 	}
-// });
-
-// swiper ruchi
+// Swiper ruchi
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 1,
     spaceBetween: 15,
@@ -107,14 +76,21 @@ var swiper = new Swiper(".slide-content", {
   });
 
 // DropDown Menu
-let profileDropdownList = document.querySelector(".profile-dropdown-list");
-let btn = document.querySelector(".profile-dropdown-btn");
+const profileDropdownList = document.querySelector(".profile-dropdown-list");
+const btn = document.querySelector(".profile-dropdown-btn");
 
-let classList = profileDropdownList.classList;
+const toggle = (event) => {
+  event.stopPropagation();
+  profileDropdownList.classList.toggle("active");
+};
 
-const toggle = () => classList.toggle("active");
+// Ensure that the dropdown list is only hidden if the click event happens outside of it
+const hideListOnOutsideClick = (event) => {
+  if (!btn.contains(event.target) && profileDropdownList.classList.contains("active")) {
+    profileDropdownList.classList.remove("active");
+  }
+};
 
-window.addEventListener("click", function (e) {
-  if (!btn.contains(e.target)) classList.remove("active");  
-  alert("nepe");
-}); 
+// Attach event listeners
+btn.addEventListener("click", toggle);
+document.addEventListener("click", hideListOnOutsideClick);
