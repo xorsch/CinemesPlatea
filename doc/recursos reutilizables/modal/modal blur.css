@@ -1,0 +1,117 @@
+
+.contenedor .contenido{
+    background-color: rgb(97, 152, 131);
+    border-radius: 25px;
+    padding: 20px;
+}
+.contenido h1, .contenido p{
+    padding: 20px;
+}
+.contenido p{
+    font-family: poppins;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.button, #btn-cerrar-modal{
+    font-family: poppins;
+    border-radius: 15px;
+    background-color: #FFFF4A;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button:hover, #btn-cerrar-modal:hover{
+    background-color: #3c3c3c;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.button .link{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-secondary{
+    position: absolute;
+    top: 15px;
+    right:15px;
+    background-color: #FFFF4A;
+    color: #242424;
+}
+.modal-content, .modal-content .modal-footer, .modal-content .modal-header{
+    background-color: #242424;
+    color: #FFFF4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: none;
+}
+.modal-content p{
+    padding: 5px;
+    font-size: 12px;
+    margin: 0;
+    
+}
+.modal-content form{
+    display:flex;
+    flex-direction: column;
+}
+.form, #mail {
+  }
+
+  .form, #pwd {
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border-bottom: 2px solid var(--bg-color);
+  }
+  .sesion{
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .form_input {
+    width: 100%;
+    padding: 0 5px;
+    height: 20px;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    outline: none;
+    background-color: #3c3c3c;
+    transition: 0.5s;
+  }
+  .form_input p{
+    padding: 0;
+  }
+  .form_label {
+    padding: 0 0.5rem;
+    cursor: text;
+    color: #FFFF4A;
+    transform: translateY(-80%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: top 200ms ease-in, left 200ms ease-in;
+  }
+  
+  .form_input:valid ~ .form_label,
+  .form_input:focus ~ .form_label {
+    top: -0.5rem;
+    left: 0.8rem;
+    color: #FFFF4A;
+  }
+
+  .modal-footer{
+    display: flex;
+    flex-direction: column;
+  }
