@@ -227,7 +227,7 @@ p {
 /* about us */
 .about-us {
   padding: 50px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .abouth1 {
@@ -323,10 +323,11 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--bg-color);
+  background: url(/web/img/02.jpeg);
+  background-size: cover;
+  background-position: center;
   border-radius: 25px 25px 0 25px;
 }
-
 .overalay::before,
 .overalay::after {
   content: '';
