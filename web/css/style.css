@@ -603,6 +603,10 @@ footer {
 .td_foot {
   text-align: center;
 }
+.info-footer{
+  display: flex;
+  justify-content: center;
+}
 
 /* pop ups */
 .popup {
