@@ -1,32 +1,50 @@
-// MODAL
+// Función para manejar la apertura del modal
+function abrirModal(modal) {
+    modal.showModal();
+}
+
+// Función para manejar el cierre del modal
+function cerrarModal(modal) {
+    modal.close();
+}
+
+// Obtener los elementos del DOM
 const btnAbrirModal = document.querySelectorAll(".btn-abrir-modal");
 const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
 const modal = document.querySelector(".modal");
 
-if ((btnCerrarModal && modal) != null) {
-    btnCerrarModal.addEventListener("click", () => { modal.close(); });
-}
-
-if (btnAbrirModal.length > 0) {
-    btnAbrirModal.forEach((btn) => {
-        btn.addEventListener("click", () => { modal.showModal(); });
-    });
-}
-
-// MODAL other 
 const btnAbrirModal2 = document.querySelectorAll(".btn-abrir-modal2");
 const btnCerrarModal2 = document.querySelector("#btn-cerrar-modal2");
 const modal2 = document.querySelector(".modal2");
 
-if ((btnCerrarModal2 && modal) != null) {
-    btnCerrarModal2.addEventListener("click", () => { modal2.close(); });
+// Agregar eventos a los botones
+if (btnCerrarModal && modal) {
+    btnCerrarModal.addEventListener("click", () => cerrarModal(modal));
+}
+
+if (btnAbrirModal.length > 0) {
+    btnAbrirModal.forEach((btn) => {
+        btn.addEventListener("click", () => abrirModal(modal));
+    });
+}
+
+if (btnCerrarModal2 && modal2) {
+    btnCerrarModal2.addEventListener("click", () => cerrarModal(modal2));
 }
 
 if (btnAbrirModal2.length > 0) {
     btnAbrirModal2.forEach((btn) => {
-        btn.addEventListener("click", () => { modal2.showModal(); });
+        btn.addEventListener("click", () => abrirModal(modal2));
     });
 }
+
+// Agregar evento para cerrar el modal al hacer clic en el backdrop
+document.addEventListener("click", (event) => {
+    if (event.target === modal || event.target === modal2) {
+        cerrarModal(modal);
+        cerrarModal(modal2);
+    }
+});
 
 // Botón flotante scrollToTop
 document.getElementById("scrolltotop_parent").addEventListener("click", function() {
