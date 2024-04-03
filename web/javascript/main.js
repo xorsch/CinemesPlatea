@@ -53,12 +53,19 @@ function mouseOver() {
 }
 
 function mouseOut() {
+	// console.log("ratoli fora" );
+	document.getElementById("scrolltotop_parent").style.opacity = 0;
+}
+
+
+// swiper ruchi
     if (scrolltotop_parent) {
         // console.log("ratoli fora" );
         scrolltotop_parent.style.opacity = 0;
     }
-}
 
+
+// Swiper ruchi
 
 
 // swiper ruchi
