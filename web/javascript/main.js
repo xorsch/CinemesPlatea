@@ -121,3 +121,9 @@ const hideListOnOutsideClick = (event) => {
 // Attach event listeners
 btn.addEventListener("click", toggle);
 document.addEventListener("click", hideListOnOutsideClick);
+
+//Contacto
+const btn_Comment = document.querySelector("#comment-btn");
+document.addEventListener("click", (event) => {
+    alert("Comentario enviado con éxito!");
+  });
