@@ -59,7 +59,24 @@ function mouseOut() {
     }
 }
 
-
+// Swiper dmon
+var swiper = new Swiper(".slide-content-about-us", {
+    spaceBetween: 30,
+    effect:"fade",
+    loop: true,
+    autoplay: {
+        delay: 1400,
+        disableOnInteraction: false,
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });
 
 // swiper ruchi
 var swiper = new Swiper(".slide-content", {
@@ -78,7 +95,6 @@ var swiper = new Swiper(".slide-content", {
   });
 
 // DropDown Menu
-
 const profileDropdownList = document.querySelector(".profile-dropdown-list");
 const btn = document.querySelector(".profile-dropdown-btn");
 
