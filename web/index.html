@@ -1,263 +1,358 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cineclub Platea</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    
-    <link rel="stylesheet" href="css/grid.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/grid.css" />
 
-<style>
-  body{
-    background-color: #3C3C3C;
-  }
-</style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-color: #3c3c3c;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <div class="menu">
-            <img class="imgmenu" src="../web/img/Logo.png" alt="logo">
-            <div class="pmenu">
-                <P><a href="#about-us">Sobre nosotros</a></P>
-                <P><a href="#unete">Únete a nuestro club</a></P>
-                <P><a href="#footer">Contacto</a></P>
-                <P><a href="user.html">Acceso a miembros</a></P>
-                <div class="dropdown">
-                  <div class="profile-dropdown">
-                    <div onclick="toggle()" class="profile-dropdown-btn">
-    
-                        <div class="profile-img">
-                            <i class="fa-solid fa-circle"></i>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                        <span>Victoria</span>
-                        
-                    </div>  
-                    <div class="profile-dropdown-list">
-                      <div><p class="profile-dropdown-list-item"> <a href="#">
-                        <i class="fa-regular fa-user"></i>
-                        Edit Profile
-                    </a></p></div>
-                      <div><p class="profile-dropdown-list-item"><a href="#">
-                        <i class="fa-solid fa-sliders"></i>
-                        Settings
-                    </a></p></div>
-                      <div><p class="profile-dropdown-list-item"><a href="#">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        Log out
-                    </a></p></div>
-                    </div>
-
-            </div>
-
+      <div class="menu">
+        <img class="imgmenu" src="../web/img/Logo.png" alt="logo" />
+        <div class="pmenu">
+          <p><a href="#about-us">Sobre nosotros</a></p>
+          <p><a href="#unete">Únete a nuestro club</a></p>
+          <p><a href="#footer">Contacto</a></p>
+          <p><a href="user.html">Acceso a miembros</a></p>
+          <div class="dropdown">
+            <div class="profile-dropdown">
+              <div onclick="toggle()" class="profile-dropdown-btn">
+                <div class="profile-img">
+                  <i class="fa-solid fa-circle"></i>
                 </div>
+                <i class="fa-solid fa-angle-down"></i>
+                <span>Victoria</span>
+              </div>
+              <div class="profile-dropdown-list">
+                <div>
+                  <p class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-regular fa-user"></i>
+                      Edit Profile
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <p class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-solid fa-sliders"></i>
+                      Settings
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <p class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                      Log in
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </header>
     <section id="welcome">
-        <div class="container">
-          <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <table >
-                      <tr >
-                        <td class="Welcome">
-                          
-                          <h2 class="W-h2">Bienvenidas y bienvenidos al espacio online de Cineclub Platea.</h2>
-                          <p class="W-P">No sólo proyectamos películas, creamos experiencias en torno al
-                             arte cinematográfico, ofreciendo en este espacio virtual
-                             podcast, talleres y charlas en streaming. Nuestra programación
-                             se compone de proyecciones de cuidad selección, abarcando desde
-                             clásicos atemporales hasta las últimas joyas del cine
-                             contemporáneo, ofreciendo una diversidad que refleja la riqueza
-                             de las narrativas cinematográficas, talleres con profesionales
-                             consagrados y debates y charlas sobre temas candentes
-                             relacionados con el arte y la industria cinematográfica
-                            </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <table>
+              <tr>
+                <td class="Welcome">
+                  <h2 class="W-h2">
+                    Bienvenidas y bienvenidos al espacio online de Cineclub
+                    Platea.
+                  </h2>
+                  <p class="W-P">
+                    No sólo proyectamos películas, creamos experiencias en torno
+                    al arte cinematográfico, ofreciendo en este espacio virtual
+                    podcast, talleres y charlas en streaming. Nuestra
+                    programación se compone de proyecciones de cuidad selección,
+                    abarcando desde clásicos atemporales hasta las últimas joyas
+                    del cine contemporáneo, ofreciendo una diversidad que
+                    refleja la riqueza de las narrativas cinematográficas,
+                    talleres con profesionales consagrados y debates y charlas
+                    sobre temas candentes relacionados con el arte y la
+                    industria cinematográfica
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="about-us" id="about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h1 class="abouth1">Sobre nosotros</h1>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="t-w">
+            <p class="About-p">
+              Desde su creación en 1993, Cineclub Platea ha sido un punto de
+              encuentro para los amantes del séptimo arte. Cineclub Platea nació
+              de la visión compartida de un grupo apasionado de cinéfilos que
+              buscaban ir más allá de la simple proyección de películas.
+              Inspirados por la rica tradición cinematográfica de Barcelona,
+              decidieron crear un espacio donde la magia del cine se fusionara
+              con la energía única de la ciudad. A lo largo de las temporadas,
+              Platea se ha convertido en un marco de confluencia de aquellos que
+              buscan algo más que una sesión de cine, incidiendo en la
+              realización de talleres, charlas y debates en torno al universo
+              cinematográfico, construyendo una comunidad de cinéfilos que
+              comparten la misma pasión por las historias bien contadas.
+              Cineclub Platea invita a todos a unirse a nosotros en esta
+              historia continua, donde cada fotograma es una oportunidad para
+              descubrir, aprender y disfrutar.
+            </p>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="A-img">
+            <div class="swiper mySwiper">
+              <div class="slide-content-about-us">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      id="image-about-us"
+                      src="../web/img/cinema-02.jpeg"
+                      alt="Sala platea"
+                    />
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <h1 class="abouth1">Sobre nosotros</h1>
+                  <div class="swiper-slide">
+                    <img
+                      id="image-about-us"
+                      src="../web/img/cinema-03.jpeg"
+                      alt="Sala platea"
+                    />
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div class="swiper-slide">
+                    <img
+                      id="image-about-us"
+                      src="../web/img/cinema-04.jpeg"
+                      alt="Sala platea"
+                    />
                   </div>
+                  <div class="swiper-slide">
+                    <img
+                      id="image-about-us"
+                      src="../web/img/cinema-05.jpeg"
+                      alt="Sala platea"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-            <div class="container">
-              <div class="row">
+        </div>
+      </div>
+    </section>
 
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="t-w">
-                    <p class="About-p"> Desde su creación en 1993, Cineclub Platea ha sido un punto de encuentro para los amantes del séptimo arte. Cineclub Platea nació de la visión compartida de un grupo apasionado de cinéfilos que buscaban ir más allá de la simple proyección de películas. Inspirados por la rica tradición cinematográfica de Barcelona, decidieron crear un espacio donde la magia del cine se fusionara con la energía única de la ciudad. A lo largo de las temporadas, Platea se ha convertido en un marco de confluencia de aquellos que buscan algo más que una sesión de cine, incidiendo en la realización de talleres, charlas y debates en torno al universo cinematográfico, construyendo una comunidad de cinéfilos que comparten la misma pasión por las historias bien contadas. Cineclub Platea invita a todos a unirse a nosotros en esta historia continua, donde cada fotograma es una oportunidad para descubrir, aprender y disfrutar.
-                  </p></div>
-              
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="A-img" >
-                    <div class="swiper mySwiper">
-                      <div class="slide-content-about-us">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img id="image-about-us" src="../web/img/cinema-02.jpeg"alt="Sala platea">
-                          </div>
-                          <div class="swiper-slide">
-                            <img id="image-about-us" src="../web/img/cinema-03.jpeg"alt="Sala platea">
-                          </div>
-                          <div class="swiper-slide">
-                            <img id="image-about-us" src="../web/img/cinema-04.jpeg"alt="Sala platea">
-                          </div>
-                          <div class="swiper-slide">
-                            <img id="image-about-us" src="../web/img/cinema-05.jpeg"alt="Sala platea">
-                          </div>
+    <section id="unete">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="t-unete">
+            <h1 class="abouth1">Únete a nuestro club</h1>
+            <p>
+              Si quieres disfrutar de las ventajas de pertenecer al Cineclub
+              Platea, puedes elegir entre estas tres modalidades de suscripción
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
+        </div>
+        <!-- class="swiper-ruchi" -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="slide-container swiper">
+                <div class="slide-content">
+                  <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                      <div class="image-content">
+                        <span class="overalay"></span>
+
+                        <div class="card-image">
+                          <img
+                            src="../web/img/03.jpeg"
+                            alt=""
+                            class="card-img"
+                          />
                         </div>
                       </div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-pagination"></div>
+                      <div class="card-content">
+                        <h2 class="Name">Club Cinéfilo</h2>
+                        <h3 class="subtitle">Precio: 60 € / año</h3>
+                        <p class="description">
+                          Acceso ilimitado a todas las proyecciones, incluyendo
+                          estrenos exclusivos. Asientos preferenciales en las
+                          proyecciones. Acceso a los talleres y podcast de
+                          nuestra web. Descuentos significativos en cines
+                          asociados. Invitaciones exclusivas a preestrenos y
+                          encuentros con cineastas.
+                        </p>
+                        <button class="button">Hazte socio</button>
+                      </div>
                     </div>
-                  </div>
-              </div>
-            </div>
-        
-    </section>
-    
-        <section id="unete">
-          <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      
-                </div>
-              <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="t-unete">
-                <h1 class="abouth1">Únete a nuestro club</h1>
-                <p>Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea, puedes elegir entre estas tres modalidades de suscripción</p>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      
-            </div>
-            </div>
-            <!-- class="swiper-ruchi" -->
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="slide-container swiper">
-                   <div class="slide-content">
-                    <div class="card-wrapper swiper-wrapper">
-                    
-                      <div class="card swiper-slide">
-                          <div class="image-content">
-                            <span class="overalay"></span>
-    
-                            <div class="card-image">
-                               <img src="../web/img/03.jpeg" alt="" class="card-img"> 
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="Name">Club Cinéfilo</h2>
-                            <h3 class="subtitle">Precio: 60 € / año</h3>
-                            <p class="description">Acceso ilimitado a todas las proyecciones, incluyendo estrenos exclusivos. Asientos preferenciales en las proyecciones.
-                                Acceso a los talleres y podcast de nuestra web. Descuentos significativos en cines asociados. Invitaciones exclusivas 
-                                          a preestrenos y encuentros con cineastas.</p>
-                                <button class="button">Hazte socio</button>
-                        </div>
-                    </div>
-                    
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overalay"></span>
-    
-                            <div class="card-image">
-                               <img src="../web/img/01.jpeg" alt="" class="card-img"> 
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="Name">Club Amigo:</h2>
-                            <h3 class="subtitle">Precio: 30 € / año</h3>
-                            <p class="description">Descuento en todas las proyecciones regulares del año, charlas y talleres.
-                                Invitaciones prioritarias a eventos especiales. Acceso a los talleres y podcast de nuestra web.</p>
-                                <button class="button">Hazte socio</button>
-                        </div>
-                    </div>
-                    
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overalay"></span>
-    
-                            <div class="card-image">
-                               <img src="../web/img/02.jpeg" alt="" class="card-img"> 
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="Name">Club Pigmalión</h2>
-                            <h3 class="subtitle">(solo para estudiantes):
-                                Precio: 15 € / año</h3>
-                            <p class="description">Acceso a proyecciones comerciales regulares a precio reducido en Cines Odeón. Acceso exclusivo a sesiones de debate
-                                y análisis cinematográfico conducidas por profesionales del cine. Acceso gratuito a charlas y talleres. Oportunidades
-                                de voluntariado y participación activa en la programación del cineclub.</p>
-                                <button class="button">Hazte socio</button>
-                        </div>
-                    </div>
-                    
-                </div>
-    
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-         </div>
-        </div>
-      </div>
-        </section>
 
-        <!-- Boton flotante STT-->
-      <div id="scrolltotop_parent">
-        <div tabindex="0" id="scrolltotop_arrow"></div>
-      </div>
+                    <div class="card swiper-slide">
+                      <div class="image-content">
+                        <span class="overalay"></span>
 
-    <footer id="footer">
-        <div class="container"> 
-            <div class="row" id="fotter">
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      
+                        <div class="card-image">
+                          <img
+                            src="../web/img/01.jpeg"
+                            alt=""
+                            class="card-img"
+                          />
+                        </div>
+                      </div>
+                      <div class="card-content">
+                        <h2 class="Name">Club Amigo:</h2>
+                        <h3 class="subtitle">Precio: 30 € / año</h3>
+                        <p class="description">
+                          Descuento en todas las proyecciones regulares del año,
+                          charlas y talleres. Invitaciones prioritarias a
+                          eventos especiales. Acceso a los talleres y podcast de
+                          nuestra web.
+                        </p>
+                        <button class="button">Hazte socio</button>
+                      </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                      <div class="image-content">
+                        <span class="overalay"></span>
+
+                        <div class="card-image">
+                          <img
+                            src="../web/img/02.jpeg"
+                            alt=""
+                            class="card-img"
+                          />
+                        </div>
+                      </div>
+                      <div class="card-content">
+                        <h2 class="Name">Club Pigmalión</h2>
+                        <h3 class="subtitle">
+                          (solo para estudiantes): Precio: 15 € / año
+                        </h3>
+                        <p class="description">
+                          Acceso a proyecciones comerciales regulares a precio
+                          reducido en Cines Odeón. Acceso exclusivo a sesiones
+                          de debate y análisis cinematográfico conducidas por
+                          profesionales del cine. Acceso gratuito a charlas y
+                          talleres. Oportunidades de voluntariado y
+                          participación activa en la programación del cineclub.
+                        </p>
+                        <button class="button">Hazte socio</button>
+                      </div>
+                    </div>
                   </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                  <h1>Cineclub Platea</h1>
-                  <p><b>Dirección: </b>Carrer de la Filmació, 123, 08001 Barcelona</p>
-                  <p><a class="link" href="mailto:info@cineclubplatea.cat"><b>Correo Electrónico: </b> info@cineclubplatea.cat</a></p>
-                  <p><b>Teléfono: </b>555 123 456 </p>  
-                  <p><a class="link" href="http://www.cineclubplatea.cat"> <b>Sitio Web: </b>www.cineclubplatea.cat</a></p>       
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="">
-                    <h1>Redes Sociales</h1>
-                <p> <b>Facebook </b> @cineclubplatea</p>
-                <p> <b>Instagram </b>@cineclubplatea</p>
-                <p> <b>Twitter </b>@cineclubplatea</p>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">   
-                  </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
-    <div class="container">
+        </div>
+      </div>
+    </section>
+
+    <div class="comment-area">
+      <form action="#Comentario.php">
+        <input type="area" alt="Caja_de_comentarios" placeholder="Añadir un comentario" id="comentArea"/>
+        <input type="button" alt="Boton_submit" id="comment-btn" value="Boton"/>
+      </form>
+    </div>
+    <!-- Boton flotante STT-->
+    <div id="scrolltotop_parent">
+      <svg xmlns="http://www.w3.org/2000/svg" id="scrolltotop_arrow" viewBox="0 0 32 32"><g data-name="90-Arrow Up"><path d="M16 0a16 16 0 1 0 16 16A16 16 0 0 0 16 0zm0 30a14 14 0 1 1 14-14 14 14 0 0 1-14 14z"/><path d="m15.29 10.29-8 8L8.7 19.7l7.3-7.29 7.29 7.29 1.41-1.41-8-8a1 1 0 0 0-1.41 0z"/></g></svg>
+    </div>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row" id="fotter">
+          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h1>Cineclub Platea</h1>
+            <p><b>Dirección: </b>Carrer de la Filmació, 123, 08001 Barcelona</p>
+            <p>
+              <a class="link" href="mailto:info@cineclubplatea.cat"
+                ><b>Correo Electrónico: </b> info@cineclubplatea.cat</a
+              >
+            </p>
+            <p><b>Teléfono: </b>555 123 456</p>
+            <p>
+              <a class="link" href="http://www.cineclubplatea.cat">
+                <b>Sitio Web: </b>www.cineclubplatea.cat</a
+              >
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="">
+            <h1>Redes Sociales</h1>
+            <p><b>Facebook </b> @cineclubplatea</p>
+            <p><b>Instagram </b>@cineclubplatea</p>
+            <p><b>Twitter </b>@cineclubplatea</p>
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p class="copyright">Maquetación y diseño del Landing Page Roger Artero Martínez sujeto bajo Creative Commons Reconocimiento, Compartir igual, No Comercial 3.0 (CC BY NC - SA 3.0) Fotografías, logo y textos, propiedad Agrupació Fotográfica Castelló sujeto bajo licencia Creative Commons Reconocimiento, Compartir igual 4.0 (CC BY - SA 4.0)</p>
+            <p class="copyright">
+              Maquetación y diseño del Landing Page Roger Artero Martínez sujeto
+              bajo Creative Commons Reconocimiento, Compartir igual, No
+              Comercial 3.0 (CC BY NC - SA 3.0) Fotografías, logo y textos,
+              propiedad Agrupació Fotográfica Castelló sujeto bajo licencia
+              Creative Commons Reconocimiento, Compartir igual 4.0 (CC BY - SA
+              4.0)
+            </p>
+          </div>
         </div>
-    </div>
       </div>
     </footer>
-  
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../web/javascript/main.js"></script>
-</body>
+  </body>
 </html>

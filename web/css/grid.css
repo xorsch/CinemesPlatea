@@ -22,7 +22,7 @@ h6 {
 }
 
 .link {
-  color: #3C3C3C;
+  color: #3c3c3c;
 }
 
 .link:hover {
@@ -37,9 +37,9 @@ p {
 
 :root {
   /* Variables global */
-  --bg-color: #FFFF4A;
+  --bg-color: #ffff4a;
   --primary: #242424;
-  --secondary: #3C3C3C;
+  --secondary: #3c3c3c;
   --green: #82cd47;
   --secondary-light: rgb(34, 124, 112, 0.2);
   --secondary-light-2: rgb(127, 183, 126, 0.1);
@@ -294,7 +294,7 @@ p {
 }
 
 .swiper-backface-hidden .swiper-slide {
-  background: #3C3C3C;
+  background: #3c3c3c;
   border-radius: 25px;
 }
 
@@ -314,7 +314,6 @@ p {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
-
 }
 
 .overalay {
@@ -330,19 +329,18 @@ p {
 }
 .overalay::before,
 .overalay::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #3C3C3C;
+  background-color: #3c3c3c;
 }
 
 .overalay::after {
   border-radius: 0 25px 0 0;
-  background-color: #3C3C3C;
-
+  background-color: #3c3c3c;
 }
 
 .card-image {
@@ -404,7 +402,7 @@ p {
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after,
 .swiper-button-prev:after {
-  color: #FFFF4A;
+  color: #ffff4a;
 }
 
 /* botones  */
@@ -428,6 +426,19 @@ p {
   /* left: 26px !important; */
 }
 
+/* Formulario comentario */
+.comment-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+#comentArea{
+  height: 300px;
+  width: 600px;
+  text-align: start;
+  top: 0;
+}
 /* Botón flotante scrollToTop*/
 
 #scrolltotop_parent {
@@ -436,8 +447,8 @@ p {
   left: 40px;
   background-color: var(--bg-color);
   color: var(--secondary);
-  width: 80px;
-  height: 80px;
+  width: 105px;
+  height: 105px;
   text-align: center;
   border-radius: 50%;
   line-height: 90px;
@@ -446,20 +457,15 @@ p {
   transition: opacity 0.6s ease-in-out;
 }
 
-#scrolltotop_arrow {
-  border: solid var(--secondary);
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  text-align: center;
-  padding: 3px;
-  transform: rotate(-135deg) scale(4);
-}
-
 #scrolltotop_parent:hover {
   opacity: 0.5;
 }
-
-/* fotter */
+/* Contacto */
+#comment-btn {
+  height: 50px;
+  width: 50px;
+}
+/* footer */
 
 footer {
   background: var(--bg-color);
@@ -469,7 +475,6 @@ footer {
 
 footer h1 {
   color: #242424;
-
 }
 
 footer h1 {
@@ -483,7 +488,6 @@ footer p {
   color: #242424;
 }
 
-
 .copyright {
   padding: 10px;
 }
@@ -494,16 +498,14 @@ footer p {
 
 /* user page */
 
-
 .user {
   min-height: 80vh;
-
 }
 
 .img-cont {
   height: 100px;
   width: 100px;
-  background-color: #3C3C3C;
+  background-color: #3c3c3c;
   border-radius: 50%;
   padding: 30px;
   margin-top: 20px;
@@ -516,21 +518,21 @@ footer p {
   padding: 30px;
   font-family: lora;
   font-size: 40px;
-  color: #FFFF4A;
+  color: #ffff4a;
 }
 
 /* detalles usuario */
 .tarjeta-user {
   padding: 20px;
   border-radius: 15px;
-  background-color: #3C3C3C;
+  background-color: #3c3c3c;
   margin-bottom: 20px;
 }
 
 .tarjeta-user .tarj-h h2 {
-  color: #FFFF4A;
+  color: #ffff4a;
   font-size: 20px;
-  border-bottom: solid 2px #FFFF4A;
+  border-bottom: solid 2px #ffff4a;
   margin-right: 55px;
   text-transform: uppercase;
   padding-bottom: 5px;
@@ -547,7 +549,7 @@ footer p {
 .tarjeta-user p span {
   font-size: 16px;
   font-weight: 600;
-  color: #FFFF4A;
+  color: #ffff4a;
   display: inline-flex;
   align-items: center;
 }
@@ -568,7 +570,6 @@ footer p {
 
 /* membresia  */
 
-
 /* switch boton */
 .switcher {
   transform: (-50%, -50%);
@@ -585,15 +586,14 @@ footer p {
 }
 
 .slider {
-
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #FFFF4A;
-  transition: .4s;
+  background-color: #ffff4a;
+  transition: 0.4s;
   border-radius: 25px;
 }
 
@@ -613,18 +613,17 @@ footer p {
   border-radius: 50px;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: #242424;
 }
 
-input:checked+.slider::before {
+input:checked + .slider::before {
   transform: translateX(25px);
 }
 
 /* media query  */
 
 @media (max-width: 700px) {
-
   .imgmenu {
     width: 150px;
   }
@@ -638,7 +637,6 @@ input:checked+.slider::before {
 
   .pmenu p {
     padding-left: 0;
-
   }
 
   .Welcome {
