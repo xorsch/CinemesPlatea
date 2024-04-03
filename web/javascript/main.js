@@ -67,29 +67,6 @@ function mouseOut() {
 }
 
 
-// // Cards carrusel Swiper
-// var swiper = new Swiper('.swiper', {
-// 	effect:"coverflow",
-// 	grabCursor: true,
-// 	centeredSlides: true,
-// 	slidesPerView: 1,
-// 	loop: true,
-// 	coverflowEffect:{
-// 		depth: 500,
-// 		modifer:0,
-// 		slidesShadows: true,
-// 		rotate:0,
-// 		stretch:0
-// 	},
-// 	grid: {
-// 	  cols: 3,
-// 	},
-// 	navigation: {
-// 	  nextEl: '#next',
-// 	  prevEl: '#prev'
-// 	}
-// });
-
 // swiper ruchi
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 1,
