@@ -63,7 +63,7 @@ function mouseOut() {
         // console.log("ratoli fora" );
         scrolltotop_parent.style.opacity = 0;
     }
-}
+
 
 // Swiper ruchi
 var swiper = new Swiper(".slide-content", {
