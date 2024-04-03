@@ -70,6 +70,7 @@ p{
 .pmenu p a{
   color: #242424;
 }
+
 /* dropdown / css por simplificar */
 .dropdown{
   position: static;
@@ -252,82 +253,6 @@ height: 100vh;
     padding: 25px ;
     margin-top:16px;
 } 
-
-/* swiper */
-
-/* .swiper{
-    padding: 15px 0 50px 0;
-    overflow: visible;
-    font-size: 14px;
-    color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 35vh; 
-    width: 374px;
-    height: 750px;
-  }
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #242424;
-    border-radius: 15px;
-    width: 350px;
-    height:750px ;
-    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
-  }
-  
-.swiper-slide img {
-    width: 100%;
-    height: 180px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  
-  .swiper-wrapper {
-
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      transition-property: transform;
-      transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
-      box-sizing: content-box;
-  }
-
-  .card-description {
-    padding: 1rem 1rem;
-  }
-  
-  .swiper-slide .card-title,
-  .swiper-slide .card-text {
-    margin-bottom: 0.5rem;
-  }
-  
-  .swiper-slide .card-btn {
-    text-align: center; 
-  } 
-  
-  .swiper-slide .card-btn button {
-    background-color: var(--bg-color);
-    border: none;
-    color: var(--secondary);
-    padding: 10px 20px; 
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 50px; 
-    cursor: pointer; 
-    position: absolute;
-    bottom: 30px;
-    right: 30%;
-    left: 30%;
-  }
-  #buttonsRow {
-    flex-wrap: unset;
-  }
-  #swippercards{
-    display: inline-flex;
-    justify-content: space-between;
-  } */
 
   /* 
   swiper ruchi */
@@ -522,7 +447,7 @@ footer p{
 }
 
 .user{
-  height: 100vh;
+  min-height: 100vh;
 
 }
 
@@ -535,6 +460,26 @@ footer p{
 .tarjeta-user .tarj-h{
   color: #FFFF4A;
 }
+.img-cont{
+  height: 100px;
+  width: 100px;
+  background-color: #3C3C3C;
+  border-radius: 50%;
+  padding: 30px;
+  margin-top: 20px;
+  background: url(../web/img/07.jpeg);
+  background-size: cover;
+}
+
+.h-user{
+  margin-top: 20px;
+  padding: 30px;
+  font-family: lora;
+  font-size: 40px;
+  color: #FFFF4A;
+}
+
+
 
 /* media query  */
 @media (max-width: 700px) {
