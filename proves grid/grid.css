@@ -227,7 +227,7 @@ p {
 /* about us */
 .about-us {
   padding: 50px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .abouth1 {
