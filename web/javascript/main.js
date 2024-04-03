@@ -89,6 +89,7 @@ var swiper = new Swiper(".slide-content", {
     spaceBetween: 15,
     slidesPerGroup: 1,
     loop: false,
+    grabCursor: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -96,7 +97,7 @@ var swiper = new Swiper(".slide-content", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
+    }
   });
 
 // DropDown Menu
