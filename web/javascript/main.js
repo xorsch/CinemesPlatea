@@ -66,6 +66,9 @@ function mouseOut() {
 
 
 // Swiper ruchi
+
+
+// swiper ruchi
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 1,
     spaceBetween: 15,
@@ -82,6 +85,7 @@ var swiper = new Swiper(".slide-content", {
   });
 
 // DropDown Menu
+
 const profileDropdownList = document.querySelector(".profile-dropdown-list");
 const btn = document.querySelector(".profile-dropdown-btn");
 
