@@ -58,7 +58,7 @@ p{
 }
 .pmenu p{
     color: #242424;
-    padding-left: 40px;
+    padding: 10px;
     margin-bottom:0 ;
     margin-left: auto;
     margin-right: auto;
@@ -66,8 +66,9 @@ p{
 }
 /* dropdown / css por simplificar */
 .dropdown{
-  position: unset;
-  top: 10px;
+  position: static;
+  padding: 10px;
+  top: 0px;
   right: 0px;
 }
 
@@ -118,6 +119,11 @@ p{
   overflow: hidden;
   transition: max-height 0.5s;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  align-items: flex-start;
 }
 
 .profile-dropdown-list hr {
@@ -126,6 +132,8 @@ p{
 
 .profile-dropdown-list.active {
   max-height: 500px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .profile-dropdown-list-item {
@@ -134,8 +142,6 @@ p{
 }
 
 .profile-dropdown-list-item a {
-  display: flex;
-  align-items: center;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
