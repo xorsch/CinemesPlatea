@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cineclub Platea</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
@@ -21,10 +21,10 @@
         <div class="menu">
             <img class="imgmenu" src="../web/img/Logo.png" alt="logo">
             <div class="pmenu">
-                <P>Sobre nosotros</P>
-                <P>Contacto</P>
-                <P>Únete a nuestro club</P>
-                <P>Acceso a miembros</P>
+                <P><a href="#about-us">Sobre nosotros</a></P>
+                <P><a href="#unete">Únete a nuestro club</a></P>
+                <P><a href="#footer">Contacto</a></P>
+                <P><a href="#">Acceso a miembros</a></P>
                 <div class="dropdown">
                   <div class="profile-dropdown">
                     <div onclick="toggle()" class="profile-dropdown-btn">
@@ -50,35 +50,14 @@
                         Log out
                     </a></p></div>
                     </div>
-                    
-                    <!-- <ul class="profile-dropdown-list">
-                        <li class="profile-dropdown-list-item">
-                            <a href="#">
-                                <i class="fa-regular fa-user"></i>
-                                Edit Profile
-                            </a>
-                        </li>
-                        <li class="profile-dropdown-list-item">
-                            <a href="#">
-                                <i class="fa-solid fa-sliders"></i>
-                                Settings
-                            </a>
-                        </li>
-                        <li class="profile-dropdown-list-item">                    
-                            <a href="#">
-                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                Log out
-                            </a>
-                        </li>
-    
-                    </ul> -->
+
             </div>
 
                 </div>
             </div>
         </div>
     </head>
-    <section >
+    <section id="welcome">
         <div class="container">
           <div class="row">
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -107,7 +86,7 @@
         </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -134,184 +113,7 @@
         
     </section>
     
-    <!-- no borrar por si acaso .Roger
-    <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      
-            </div>
-          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="t-unete">
-            <h1>Únete a nuestro club</h1>
-            <p>Si quieres disfrutar de las ventajas de pertenecer al Cineclub Platea, puedes elegir entre estas tres modalidades de suscripción</p>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      
-        </div>
-        </div>
-        <div class="container">
-        <div class="row"  id="buttonsRow">
-          <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1" id="buttonI">
-          <div class="buttons">
-          <button id="prev">&lt;</button>
-        </div>
-          </div>
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                <div class="swiper-slide">
-                  <img src="../web/img/01.jpeg" alt="">
-    
-                  <div class="card-description">
-    
-                    <div class="card-text">
-                      <p>Club Cinéfilo:</p>                             
-                      <p>Precio: 60 € / año</p>
-                    </div>
-    
-                    <div class="P-card">
-                      <p>Acceso ilimitado a todas las proyecciones, incluyendo estrenos exclusivos. Asientos preferenciales en las proyecciones.
-                      <p>Acceso a los talleres y podcast de nuestra web. Descuentos significativos en cines asociados. Invitaciones exclusivas 
-                                  a preestrenos y encuentros con cineastas.</p>                  
-                    </div>
-    
-                    <div class="card-btn">
-                      <button class="btn-abrir-modal">Inscríbete</button>
-                    </div>
-    
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-              <div class="swiper-slide">
-                <img src="../web/img/02.jpeg" alt="">
-                <div class="card-description">
-                  <div class="card-title">
-                  </div>
-  
-                  <div class="card-text">
-                    <p>Club Pigmalión</p> 
-                    <p>(solo para estudiantes):</p>
-                    <p>Precio: 15 € / año</p>
-                  </div>
-  
-                  <div class="P-card">
-                    <p>Acceso a proyecciones comerciales regulares a precio reducido en Cines Odeón. Acceso exclusivo a sesiones de debate
-                      y análisis cinematográfico conducidas por profesionales del cine. Acceso gratuito a charlas y talleres. Oportunidades
-                      de voluntariado y participación activa en la programación del cineclub.</p>
-                  </div>
-                  
-                  <div class="card-btn">
-                    <button class="btn-abrir-modal">Inscríbete</button>
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-              <div class="swiper-slide">
-                <img src="../web/img/03.jpeg" alt="">
-                <div class="card-description">
-                  
-                  <div class="card-text">
-                    <p>Club Amigo:</p> 
-                    <p>Precio: 30 € / año</p>
-                  </div>
-                  <div class="P-card">
-                    <p>Descuento en todas las proyecciones regulares del año, charlas y talleres.
-                      Invitaciones prioritarias a eventos especiales. Acceso a los talleres y podcast de nuestra web.</p>
-                  </div>
-                  <div class="card-btn">
-                    <button class="btn-abrir-modal">Inscríbete</button>
-                    
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1" id="buttonD">
-            <div class="buttons">
-              <button id="next">&gt;</button>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section>
-        
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="swippercards">   
-         
-                  <div class="swiper-slide">
-                    <img src="../web/img/01.jpeg" alt="">
-      
-                    <div class="card-description">
-      
-                      <div class="card-text">
-                        <p>Club Cinéfilo:</p>                             
-                        <p>Precio: 60 € / año</p>
-                      </div>
-      
-                      <div class="P-card">
-                        <p>Acceso ilimitado a todas las proyecciones, incluyendo estrenos exclusivos. Asientos preferenciales en las proyecciones.
-                          Acceso a los talleres y podcast de nuestra web. Descuentos significativos en cines asociados. Invitaciones exclusivas 
-                                    a preestrenos y encuentros con cineastas.</p>                  
-                      </div>
-      
-                      <div class="card-btn">
-                        <button class="btn-abrir-modal">Inscríbete</button>
-                      </div>
-      
-                    </div>
-                  </div>
-              
-              
-                <div class="swiper-slide">
-                  <img src="../web/img/02.jpeg" alt="">
-                  <div class="card-description">
-                    <div class="card-title">
-                    </div>
-    
-                    <div class="card-text">
-                      <p>Club Pigmalión</p> 
-                      <p>(solo para estudiantes):</p>
-                      <p>Precio: 15 € / año</p>
-                    </div>
-    
-                    <div class="P-card">
-                      <p>Acceso a proyecciones comerciales regulares a precio reducido en Cines Odeón. Acceso exclusivo a sesiones de debate
-                        y análisis cinematográfico conducidas por profesionales del cine. Acceso gratuito a charlas y talleres. Oportunidades
-                        de voluntariado y participación activa en la programación del cineclub.</p>
-                    </div>
-                    
-                    <div class="card-btn">
-                      <button class="btn-abrir-modal">Inscríbete</button>
-                    </div>
-    
-                  </div>
-                </div>
-              
-                <div class="swiper-slide">
-                  <img src="../web/img/03.jpeg" alt="">
-                  <div class="card-description">
-                    
-                    <div class="card-text">
-                      <p>Club Amigo:</p> 
-                      <p>Precio: 30 € / año</p>
-                    </div>
-                    <div class="P-card">
-                      <p>Descuento en todas las proyecciones regulares del año, charlas y talleres.
-                        Invitaciones prioritarias a eventos especiales. Acceso a los talleres y podcast de nuestra web.</p>
-                    </div>
-                    <div class="card-btn">
-                      <button class="btn-abrir-modal">Inscríbete</button>
-                      
-  
-                  </div>
-                </div>
-            </div>
-            
-        </div>
-          </div>
-        </div> -->
-        <section>
+        <section id="unete">
           <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      
@@ -402,7 +204,7 @@
         <div tabindex="0" id="scrolltotop_arrow"></div>
       </div>
 
-    <footer>
+    <footer id="footer">
         <div class="container"> 
             <div class="row" id="fotter">
                 <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">      

@@ -1,6 +1,9 @@
 *{
   font-family: poppins;
 }
+html {
+	scroll-behavior: smooth;
+}
 section{
   background-color: #242424;
 }
@@ -63,6 +66,9 @@ p{
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
+}
+.pmenu p a{
+  color: #242424;
 }
 /* dropdown / css por simplificar */
 .dropdown{
