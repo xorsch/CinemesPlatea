@@ -64,16 +64,15 @@ function mouseOut() {
         scrolltotop_parent.style.opacity = 0;
     }
 
-
-// Swiper ruchi
-
-
-// swiper ruchi
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 1,
-    spaceBetween: 15,
-    slidesPerGroup: 1,
-    loop: false,
+// Swiper dmon
+var swiper = new Swiper(".slide-content-about-us", {
+    spaceBetween: 30,
+    effect:"fade",
+    loop: true,
+    autoplay: {
+        delay: 1400,
+        disableOnInteraction: false,
+      },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -81,11 +80,27 @@ var swiper = new Swiper(".slide-content", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    }
+  });
+
+// Swiper ruchi
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    slidesPerGroup: 1,
+    loop: false,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
   });
 
 // DropDown Menu
-
 const profileDropdownList = document.querySelector(".profile-dropdown-list");
 const btn = document.querySelector(".profile-dropdown-btn");
 
