@@ -260,6 +260,9 @@ p {
   min-height: fit-content;
   max-height: 38vh;
 }
+.about-us .swiper-horizontal {
+  width: 50vh;
+}
 
 /* unete perro  */
 
@@ -327,6 +330,7 @@ p {
   background-position: center;
   border-radius: 25px 25px 0 25px;
 }
+
 .overalay::before,
 .overalay::after {
   content: "";
@@ -427,16 +431,18 @@ p {
 }
 
 /* Formulario comentario */
-.section-area{
+.section-area {
   min-height: 40vh;
   padding: 50px;
 }
+
 .comment-area {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#comentArea{
+
+#comentArea {
   height: 300px;
   width: 100%;
   text-align: start;
@@ -444,24 +450,29 @@ p {
   border-radius: 15px;
   overflow: hidden;
 }
-textarea{
+
+textarea {
   padding: 20px;
+  max-height: 500px;
 }
 
-.coment{
+.coment {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-input#comment-btn, input#reset-btn {  
+
+input#comment-btn,
+input#reset-btn {
   height: 50px;
   width: 100px;
 }
-.coment-button{
+
+.coment-button {
   padding: 20px;
   display: inline;
   justify-content: space-between;
-  }
+}
 
 /* Botón flotante scrollToTop*/
 
@@ -484,11 +495,13 @@ input#comment-btn, input#reset-btn {
 #scrolltotop_parent:hover {
   opacity: 0.5;
 }
+
 /* Contacto */
 #comment-btn {
   height: 50px;
   width: 50px;
 }
+
 /* footer */
 
 footer {
@@ -637,11 +650,11 @@ footer p {
   border-radius: 50px;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #242424;
 }
 
-input:checked + .slider::before {
+input:checked+.slider::before {
   transform: translateX(25px);
 }
 
