@@ -307,6 +307,7 @@ p {
 
 .card {
   border-radius: 25px;
+  height: 55vh;
 }
 
 .image-content,
@@ -314,6 +315,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 10px 14px;
 }
 
@@ -329,10 +331,25 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background: url(/web/img/02.jpeg);
+  border-radius: 25px 25px 0 25px;
+}
+
+.overalay#cinefilo {
+  background: url(../img/01.jpeg);
   background-size: cover;
   background-position: center;
-  border-radius: 25px 25px 0 25px;
+}
+
+.overalay#amigo {
+  background: url(../img/02.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overalay#pigmalion {
+  background: url(../img/03.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 .overalay::before,
@@ -690,5 +707,10 @@ input:checked+.slider::before {
   #scrolltotop_parent,
   #scrolltotop_parent:hover {
     display: none;
+  }
+
+  .card {
+    border-radius: 25px;
+    height: 65vh;
   }
 }
