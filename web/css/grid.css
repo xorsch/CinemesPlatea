@@ -56,6 +56,8 @@ p {
   display: flex;
   flex-direction: column;
   background-color: var(--bg-color);
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .imgmenu {
@@ -79,6 +81,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
+  /* border-right: solid 2px #3c3c3c ; */
 }
 
 .pmenu p a {
@@ -86,11 +89,10 @@ p {
 }
 
 /* dropdown / css por simplificar */
-.dropdown {
-  position: static;
-  padding: 10px;
-  top: 0px;
-  right: 0px;
+.menu .dropdown {
+  padding-left: 10px;
+
+
 }
 
 .profile-dropdown-btn {
