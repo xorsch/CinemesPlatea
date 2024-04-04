@@ -581,9 +581,8 @@ footer p {
 .tarjeta-user p {
   font-size: 14px;
   color: #ffffd8;
-  line-height: 10px;
   text-align: start;
-  padding-top: 10px;
+  margin: 0;
 }
 
 .tarjeta-user p span {
