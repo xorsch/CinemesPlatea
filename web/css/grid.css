@@ -6,8 +6,8 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  background-color: #242424;
+body {
+  background: var(--primary);
 }
 
 h1,
@@ -26,7 +26,7 @@ h6 {
 }
 
 .link:hover {
-  color: black;
+  color: var(--black);
   font-weight: 900;
   text-decoration: none;
 }
@@ -38,13 +38,14 @@ p {
 :root {
   /* Variables global */
   --bg-color: #ffff4a;
+  --yellow: #ffff4a3b;
   --primary: #242424;
   --secondary: #3c3c3c;
   --green: #82cd47;
   --secondary-light: rgb(34, 124, 112, 0.2);
   --secondary-light-2: rgb(127, 183, 126, 0.1);
   --white: #fff;
-  --black: black;
+  --black: rgb(0, 0, 0);
   --shadow: 0px 2px 8px 0px var(--secondary-light);
 }
 
@@ -85,7 +86,7 @@ p {
 }
 
 .pmenu p a {
-  color: #242424;
+  color: var(--primary);
 }
 
 /* dropdown / css por simplificar */
@@ -106,7 +107,7 @@ p {
   margin-right: 10px;
   width: 200px;
   border-radius: 50px;
-  color: #242424;
+  color: var(--primary);
   background-color: var(--bg-color);
   cursor: pointer;
   transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
@@ -209,7 +210,7 @@ p {
 .W-P {
   text-decoration-line: line-through;
   text-decoration-thickness: 1.25rem;
-  text-decoration-color: #ffff4a3b;
+  text-decoration-color: var(--yellow);
   padding-left: 20px;
   font-family: lora;
   color: var(--bg-color);
@@ -301,7 +302,7 @@ p {
 }
 
 .swiper-backface-hidden .swiper-slide {
-  background: #3c3c3c;
+  background: var(--secondary);
   border-radius: 25px;
 }
 
@@ -360,12 +361,12 @@ p {
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #3c3c3c;
+  background-color: var(--secondary);
 }
 
 .overalay::after {
   border-radius: 0 25px 0 0;
-  background-color: #3c3c3c;
+  background-color: var(--secondary);
 }
 
 .card-image {
@@ -379,7 +380,7 @@ p {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #3c3c3c;
+  border: 5px solid var(--secondary);
 }
 
 .Name {
@@ -405,7 +406,7 @@ p {
 .button {
   border: none;
   font-size: 16px;
-  color: #3c3c3c;
+  color: var(--secondary);
   padding: 8px 16px;
   background-color: var(--bg-color);
   border-radius: 6px;
@@ -427,7 +428,7 @@ p {
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after,
 .swiper-button-prev:after {
-  color: #ffff4a;
+  color: var(--bg-color);
 }
 
 /* botones  */
@@ -532,7 +533,7 @@ footer {
 }
 
 footer h1 {
-  color: #242424;
+  color: var(--primary);
 }
 
 footer h1 {
@@ -543,7 +544,7 @@ footer p {
   font-family: lora;
   font-size: 16px;
   margin: 0;
-  color: #242424;
+  color: var(--primary);
 }
 
 .copyright {
@@ -563,7 +564,7 @@ footer p {
 .img-cont {
   height: 100px;
   width: 100px;
-  background-color: #3c3c3c;
+  background-color: var(--secondary);
   border-radius: 50%;
   padding: 30px;
   margin-top: 20px;
@@ -576,7 +577,7 @@ footer p {
   padding: 30px;
   font-family: lora;
   font-size: 40px;
-  color: #ffff4a;
+  color: var(--bg-color);
 }
 
 /* detalles usuario */
@@ -588,9 +589,9 @@ footer p {
 }
 
 .tarjeta-user .tarj-h h2 {
-  color: #ffff4a;
+  color: var(--bg-color);
   font-size: 20px;
-  border-bottom: solid 2px #ffff4a;
+  border-bottom: solid 2px var(--bg-color);
   margin-right: 55px;
   text-transform: uppercase;
   padding-bottom: 5px;
@@ -598,7 +599,7 @@ footer p {
 
 .tarjeta-user p {
   font-size: 14px;
-  color: #ffffd8;
+  color: var(--white);
   text-align: start;
   margin: 0;
 }
@@ -606,7 +607,7 @@ footer p {
 .tarjeta-user p span {
   font-size: 16px;
   font-weight: 600;
-  color: #ffff4a;
+  color: var(--bg-color);
   display: inline-flex;
   align-items: center;
 }
@@ -649,7 +650,7 @@ footer p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ffff4a;
+  background-color: var(--bg-color);
   transition: 0.4s;
   border-radius: 25px;
 }
@@ -665,17 +666,18 @@ footer p {
   width: 25px;
   left: 2.5px;
   bottom: 2.5px;
-  background-color: #3c3c3c;
+  background-color: var(--secondary);
   transition: 0.4s;
   border-radius: 50px;
 }
 
 input:checked+.slider {
-  background-color: #242424;
+  background-color: var(--primary);
 }
 
 input:checked+.slider::before {
   transform: translateX(25px);
+  background-color: var(--bg-color);
 }
 
 /* media query  */
