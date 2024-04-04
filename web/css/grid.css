@@ -48,7 +48,9 @@ p {
   --black: rgb(0, 0, 0);
   --shadow: 0px 2px 8px 0px var(--secondary-light);
 }
-:root,:root.r {
+
+:root,
+:root.r {
   /* Variables global */
   --bg-color: #D80032;
   --yellow: #D800323b;
@@ -104,9 +106,12 @@ p {
 
 /* dropdown / css por simplificar */
 .menu .dropdown {
-  padding-left: 10px;
-
-
+  right: 0px;
+  position: absolute;
+  top: 205px;
+  z-index: 1;
+  border-radius: 0 0 0 15px;
+   background-color: var(--bg-color);
 }
 
 .profile-dropdown-btn {
@@ -121,7 +126,7 @@ p {
   width: 200px;
   border-radius: 50px;
   color: var(--primary);
-  background-color: var(--bg-color);
+
   cursor: pointer;
   transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
     border 0.3s;
@@ -151,7 +156,6 @@ p {
 }
 
 .profile-dropdown-list {
-  background-color: var(--bg-color);
   border-radius: 0 0 0 10px;
   max-height: 0;
   overflow: hidden;
@@ -204,65 +208,17 @@ p {
   padding-left: 1.5rem;
   background-color: var(--secondary-light);
 }
+
 /* switcher theme */
-.theme-btn{
-  border:none;
-  background:none;
-  
+.theme-btn {
+background: none;
+position: absolute;
+    left: 0;
 }
-.theme-btn:focus-visible{
-  outline: none;
-}
-.switcher {
-  transform: (-50%, -50%);
-  text-align: center;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  justify-content: space-evenly;
-  width: 55px;
-  height: 30px;
-  margin: 0 10px;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--bg-color);
-  transition: 0.4s;
-  border-radius: 25px;
-}
-
-.switch input {
-  display: none;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 25px;
-  width: 25px;
-  left: 2.5px;
-  bottom: 2.5px;
-  background-color: var(--secondary);
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-input:checked+.slider {
-  background-color: var(--primary);
-}
-
-input:checked+.slider::before {
-  transform: translateX(25px);
-  background-color: var(--bg-color);
-}
+.theme-btn#light {
+  padding: 100px;
+    
+  }
 
 /* welcome section */
 
@@ -722,7 +678,6 @@ footer p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--bg-color);
   transition: 0.4s;
   border-radius: 25px;
 }
@@ -769,6 +724,21 @@ input:checked+.slider::before {
   .pmenu p {
     padding-left: 0;
   }
+
+  .menu
+  .dropdown {
+    position: static;
+    background: var(--bg-color);
+  }
+
+  .theme-btn
+  {
+    position: static;
+  }
+
+  .theme-btn#light{
+    padding: 0;
+  } 
 
   .Welcome {
     height: 100%;
