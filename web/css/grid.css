@@ -35,10 +35,23 @@ p {
   color: var(--bg-color);
 }
 
-:root {
+:root.y {
   /* Variables global */
   --bg-color: #ffff4a;
   --yellow: #ffff4a3b;
+  --primary: #242424;
+  --secondary: #3c3c3c;
+  --green: #82cd47;
+  --secondary-light: rgb(34, 124, 112, 0.2);
+  --secondary-light-2: rgb(127, 183, 126, 0.1);
+  --white: #fff;
+  --black: rgb(0, 0, 0);
+  --shadow: 0px 2px 8px 0px var(--secondary-light);
+}
+:root,:root.r {
+  /* Variables global */
+  --bg-color: #D80032;
+  --yellow: #D800323b;
   --primary: #242424;
   --secondary: #3c3c3c;
   --green: #82cd47;
@@ -190,6 +203,65 @@ p {
 .profile-dropdown-list-item:hover {
   padding-left: 1.5rem;
   background-color: var(--secondary-light);
+}
+/* switcher theme */
+.theme-btn{
+  border:none;
+  background:none;
+  
+}
+.theme-btn:focus-visible{
+  outline: none;
+}
+.switcher {
+  transform: (-50%, -50%);
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  justify-content: space-evenly;
+  width: 55px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-color);
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 2.5px;
+  bottom: 2.5px;
+  background-color: var(--secondary);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input:checked+.slider {
+  background-color: var(--primary);
+}
+
+input:checked+.slider::before {
+  transform: translateX(25px);
+  background-color: var(--bg-color);
 }
 
 /* welcome section */
