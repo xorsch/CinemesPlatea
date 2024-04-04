@@ -427,18 +427,42 @@ p {
 }
 
 /* Formulario comentario */
+.section-area{
+  min-height: 40vh;
+  padding: 50px;
+}
 .comment-area {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
 }
 #comentArea{
   height: 300px;
-  width: 600px;
+  width: 100%;
   text-align: start;
   top: 0;
+  border-radius: 15px;
+  overflow: hidden;
 }
+textarea{
+  padding: 20px;
+}
+
+.coment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input#comment-btn, input#reset-btn {  
+  height: 50px;
+  width: 100px;
+}
+.coment-button{
+  padding: 20px;
+  display: inline;
+  justify-content: space-between;
+  }
+
 /* Botón flotante scrollToTop*/
 
 #scrolltotop_parent {
