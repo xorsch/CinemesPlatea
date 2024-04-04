@@ -125,5 +125,5 @@ document.addEventListener("click", hideListOnOutsideClick);
 //Contacto
 const btn_Comment = document.querySelector("#comment-btn");
 btn_Comment.addEventListener("click", (event) => {
-    alert("Comentario enviado con éxito!");
-  });
+  alert("Comentario enviado con éxito!");
+});
