@@ -127,3 +127,6 @@ const btn_Comment = document.querySelector("#comment-btn");
 btn_Comment.addEventListener("click", (event) => {
   alert("Comentario enviado con éxito!");
 });
+
+// toggle theme
+const setTheme = theme => document.documentElement.className = theme;
