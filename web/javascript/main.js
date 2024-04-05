@@ -133,12 +133,6 @@ btn_Comment.addEventListener("click", (event) => {
 // const setTheme = theme => document.documentElement.className = theme;
 
 // Cambiar el tema según la selección del usuario
-// Theme Toggle Function
-const themeToggle = () => {
-  const switchInput = document.querySelector(".switch input");
-  switchInput.addEventListener("change", () => toggleTheme());
-};
-
 // Toggle Theme Function
 const toggleTheme = () => {
   const body = document.body;
@@ -156,5 +150,14 @@ const initializeTheme = () => {
   }
 };
 
-themeToggle();
+// Theme Toggle Function
+const themeToggle = () => {
+  const switchInput = document.querySelector(".switch input");
+  switchInput.addEventListener("change", toggleTheme);
+};
+
+// Inicializar el tema
 initializeTheme();
+// Configurar el interruptor
+themeToggle();
+
