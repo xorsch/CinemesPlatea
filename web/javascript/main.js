@@ -128,6 +128,33 @@ btn_Comment.addEventListener("click", (event) => {
   alert("Comentario enviado con éxito!");
 });
 
-// toggle theme
+// toggle theme (Switcher)
 
-const setTheme = theme => document.documentElement.className = theme;
+// const setTheme = theme => document.documentElement.className = theme;
+
+// Cambiar el tema según la selección del usuario
+// Theme Toggle Function
+const themeToggle = () => {
+  const switchInput = document.querySelector(".switch input");
+  switchInput.addEventListener("change", () => toggleTheme());
+};
+
+// Toggle Theme Function
+const toggleTheme = () => {
+  const body = document.body;
+  const currentTheme = body.classList.contains("dark-theme") ? "light" : "dark";
+  body.classList.remove(currentTheme === "light" ? "dark-theme" : "light-theme");
+  body.classList.add(currentTheme === "light" ? "light-theme" : "dark-theme");
+  localStorage.setItem("theme", currentTheme);
+};
+
+// Initialize Theme
+const initializeTheme = () => {
+  const storedTheme = localStorage.getItem("theme");
+  if (storedTheme) {
+    toggleTheme();
+  }
+};
+
+themeToggle();
+initializeTheme();
