@@ -90,10 +90,15 @@ btn.addEventListener("click", toggle);
 document.addEventListener("click", hideListOnOutsideClick);
 
 //Contacto
+// Verifica si el botón existe en la página actual
 const btn_Comment = document.querySelector("#comment-btn");
-btn_Comment.addEventListener("click", (event) => {
-  alert("Comentario enviado con éxito!");
-});
+if (btn_Comment) {
+  btn_Comment.addEventListener("click", (event) => {
+    alert("Comentario enviado con éxito!");
+  });
+} else {
+  console.warn("El botón con id 'comment-btn' no existe en esta página.");
+}
 
 // toggle theme (Switcher)
 
@@ -121,7 +126,38 @@ const themeToggle = () => {
   switchInput.addEventListener("change", toggleTheme);
 };
 
-// Inicializar el tema
+if (initializeTheme && themeToggle){
+  // Inicializar el tema
 initializeTheme();
 // Configurar el interruptor
 themeToggle();
+}
+
+// Drag&Drop
+
+// const row = document.querySelectorAll('.row');
+
+// row.addEventListener('dragstart', e => {
+//   console.log('Drag start');
+// });
+// // Inicializa las tarjetas arrastrables
+// $('.tarjeta-user').draggable({
+//   revert: true,
+//   revertDuration: 0
+// });
+
+// // Inicializa las áreas donde se pueden soltar las tarjetas
+// $('.row').droppable({
+//   accept: '.tarjeta-user',
+//   drop: function(event, ui) {
+//       var draggable = ui.draggable;
+//       var droppable = $(this);
+//       var clone = draggable.clone();
+
+//       // Cuando una tarjeta es soltada en una zona, la clonamos y la añadimos a esa zona
+//       droppable.append(clone);
+//   }
+// });
+
+const cardEl = document.getElementById('sortable-cards');
+Sortable.create(cardEl);
