@@ -1,36 +1,3 @@
-// Función para manejar la apertura del modal
-function abrirModal(modal) {
-  modal.showModal();
-}
-
-// Función para manejar el cierre del modal
-function cerrarModal(modal) {
-  modal.close();
-}
-
-// Obtener los elementos del DOM
-const btnAbrirModal = document.querySelectorAll(".btn-abrir-modal");
-const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
-const modal = document.querySelector(".modal");
-
-// Agregar eventos a los botones
-if (btnCerrarModal && modal) {
-  btnCerrarModal.addEventListener("click", () => cerrarModal(modal));
-}
-
-if (btnAbrirModal.length > 0) {
-  btnAbrirModal.forEach((btn) => {
-    btn.addEventListener("click", () => abrirModal(modal));
-  });
-}
-
-// Agregar evento para cerrar el modal al hacer clic en el backdrop
-document.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    cerrarModal(modal);
-  }
-});
-
 // Botón flotante scrollToTop
 let scrolltotop_parent = document.getElementById("scrolltotop_parent");
 
@@ -130,8 +97,6 @@ btn_Comment.addEventListener("click", (event) => {
 
 // toggle theme (Switcher)
 
-// const setTheme = theme => document.documentElement.className = theme;
-
 // Cambiar el tema según la selección del usuario
 // Toggle Theme Function
 const toggleTheme = () => {
@@ -160,4 +125,3 @@ const themeToggle = () => {
 initializeTheme();
 // Configurar el interruptor
 themeToggle();
-

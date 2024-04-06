@@ -499,7 +499,7 @@ input:checked +.slider:before {
   justify-content: center;
 }
 
-.button {
+.button,.btn {
   border: none;
   font-size: 16px;
   color: var(--secondary);
@@ -511,7 +511,7 @@ input:checked +.slider:before {
   transition: all 0.3s ease;
 }
 
-.button:hover {
+.button:hover,.btn:hover {
   background: #242424;
   color: var(--bg-color);
 }
@@ -773,6 +773,12 @@ input:checked+.slider {
 input:checked+.slider::before {
   transform: translateX(25px);
   background-color: var(--bg-color);
+}
+
+/* Modal */
+
+.modal-content {
+  background-color: var(--primary);
 }
 
 /* media query  */
