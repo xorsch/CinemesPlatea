@@ -1,0 +1,31 @@
+
+:root {
+  --color-var-1: "#EDF2F4";
+  --color-var-2: "#036666";
+  --color-var-3: "#358F80";
+  --color-var-4: "#99E2B4";
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.p1 { 
+  background-color: var(--color-var-1);   
+}
+
+.p2 { 
+  background-color: var(--color-var-2);
+}
+
+.p3 { 
+  background-color: var(--color-var-3);
+}
+
+.p4 { 
+  background-color: var(--color-var-4);
+}
+
+
