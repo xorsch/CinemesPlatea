@@ -35,25 +35,10 @@ p {
   color: var(--bg-color);
 }
 
-:root.y {
+:root,:root.y {
   /* Variables global */
   --bg-color: #ffff4a;
   --yellow: #ffff4a3b;
-  --primary: #242424;
-  --secondary: #3c3c3c;
-  --green: #82cd47;
-  --secondary-light: rgb(34, 124, 112, 0.2);
-  --secondary-light-2: rgb(127, 183, 126, 0.1);
-  --white: #fff;
-  --black: rgb(0, 0, 0);
-  --shadow: 0px 2px 8px 0px var(--secondary-light);
-}
-
-:root,
-:root.r {
-  /* Variables global */
-  --bg-color: #D80032;
-  --yellow: #D800323b;
   --primary: #242424;
   --secondary: #3c3c3c;
   --green: #82cd47;
@@ -105,7 +90,18 @@ p {
   text-decoration: none;
 }
 
+.nav-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 .pmenu p a:hover {
+  color: var(--primary);
   text-decoration: underline;
 }
 
@@ -215,26 +211,18 @@ p {
 }
 
 /* switcher theme */
-/* .theme-btn {
-background: none;
-position: absolute;
-    left: 0;
-}
-.theme-btn#light {
-  padding: 100px;
-    
-} */
+
 .light-theme {
-  background-color: #fff;
+  background-color: var(--secondary);
   color: #333;
 }
 
 .dark-theme {
-  background-color: #333;
+  background-color: var(--primary);
   color: #fff;
 }
 
-.switch {
+.switch, .switch2 {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -739,7 +727,7 @@ footer p {
   text-align: center;
 }
 
-.switch {
+.switch, .switch2 {
   position: relative;
   display: inline-block;
   justify-content: space-evenly;
