@@ -1,3 +1,16 @@
+// Current page
+document.addEventListener('DOMContentLoaded', function() {
+  const currentPage = window.location.pathname;
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    if (link.href.includes(currentPage)) {
+      link.classList.add('active');
+    }
+    console.log(currentPage);
+  });
+});
+
 // Botón flotante scrollToTop
 let scrolltotop_parent = document.getElementById("scrolltotop_parent");
 
@@ -97,10 +110,10 @@ if (btn_Comment) {
     alert("Comentario enviado con éxito!");
   });
 } else {
-  console.warn("El botón con id 'comment-btn' no existe en esta página.");
+  console.log("El botón con id 'comment-btn' no existe en esta página.");
 }
 
-// toggle theme (Switcher)
+// Toggle theme (Switcher)
 
 // Cambiar el tema según la selección del usuario
 // Toggle Theme Function
