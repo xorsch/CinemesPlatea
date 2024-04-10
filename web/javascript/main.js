@@ -135,29 +135,9 @@ themeToggle();
 
 // Drag&Drop
 
-// const row = document.querySelectorAll('.row');
-
-// row.addEventListener('dragstart', e => {
-//   console.log('Drag start');
-// });
-// // Inicializa las tarjetas arrastrables
-// $('.tarjeta-user').draggable({
-//   revert: true,
-//   revertDuration: 0
-// });
-
-// // Inicializa las áreas donde se pueden soltar las tarjetas
-// $('.row').droppable({
-//   accept: '.tarjeta-user',
-//   drop: function(event, ui) {
-//       var draggable = ui.draggable;
-//       var droppable = $(this);
-//       var clone = draggable.clone();
-
-//       // Cuando una tarjeta es soltada en una zona, la clonamos y la añadimos a esa zona
-//       droppable.append(clone);
-//   }
-// });
-
 const cardEl = document.getElementById('sortable-cards');
-Sortable.create(cardEl);
+if (cardEl) {
+    Sortable.create(cardEl);
+} else {
+    console.log('Element with id "sortable-cards" not found.');
+}
