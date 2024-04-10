@@ -35,7 +35,8 @@ p {
   color: var(--bg-color);
 }
 
-:root,:root.y {
+:root,
+:root.y {
   /* Variables global */
   --bg-color: #ffff4a;
   --yellow: #ffff4a3b;
@@ -50,7 +51,6 @@ p {
 }
 
 /* Aqui empieza el codigo especifico */
-
 /* nav */
 
 .menu {
@@ -103,6 +103,7 @@ p {
 .pmenu p a:hover {
   color: var(--primary);
   text-decoration: underline;
+  text-underline-position: under;
 }
 
 /* dropdown / css por simplificar */
@@ -167,6 +168,7 @@ p {
   align-items: center;
   display: flex;
   align-items: flex-start;
+  margin-top: 28px;
 }
 
 .profile-dropdown-list hr {
@@ -222,7 +224,8 @@ p {
   color: #fff;
 }
 
-.switch, .switch2 {
+.switch,
+.switch2 {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -243,8 +246,8 @@ p {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition:.4s;
-  transition:.4s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .slider:before {
@@ -255,19 +258,19 @@ p {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition:.4s;
-  transition:.4s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-input:checked +.slider {
+input:checked+.slider {
   background-color: #2196F3;
 }
 
-input:focus +.slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked +.slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -318,8 +321,12 @@ input:checked +.slider:before {
 
 /* about us */
 .about-us {
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
+  background-color: var(--secondary);
 }
 
 .abouth1 {
@@ -492,7 +499,8 @@ input:checked +.slider:before {
   justify-content: center;
 }
 
-.button,.btn {
+.button,
+.btn {
   border: none;
   font-size: 16px;
   color: var(--secondary);
@@ -504,7 +512,8 @@ input:checked +.slider:before {
   transition: all 0.3s ease;
 }
 
-.button:hover,.btn:hover {
+.button:hover,
+.btn:hover {
   background: #242424;
   color: var(--bg-color);
 }
@@ -544,7 +553,7 @@ input:checked +.slider:before {
 /* Formulario comentario */
 .section-area {
   min-height: 40vh;
-  padding: 50px;
+  padding: 20px;
 }
 
 .comment-area {
@@ -650,6 +659,11 @@ footer p {
 
 /* user page */
 
+#datos-user {
+  display: flex;
+  align-items: center;
+}
+
 .user {
   min-height: 80vh;
 }
@@ -660,14 +674,12 @@ footer p {
   background-color: var(--secondary);
   border-radius: 50%;
   padding: 30px;
-  margin-top: 20px;
   background: url(../img/07.jpeg);
   background-size: cover;
 }
 
 .h-user {
   margin-top: 20px;
-  padding: 30px;
   font-family: lora;
   font-size: 40px;
   color: var(--bg-color);
@@ -679,6 +691,15 @@ footer p {
   border-radius: 15px;
   background-color: #3c3c3c;
   margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#img-user {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .tarjeta-user .tarj-h h2 {
@@ -717,6 +738,7 @@ footer p {
   align-items: stretch;
   flex-direction: row;
   justify-content: space-between;
+  padding: 5px;
 }
 
 /* membresia  */
@@ -727,7 +749,8 @@ footer p {
   text-align: center;
 }
 
-.switch, .switch2 {
+.switch,
+.switch2 {
   position: relative;
   display: inline-block;
   justify-content: space-evenly;
@@ -796,20 +819,18 @@ input:checked+.slider::before {
     padding-left: 0;
   }
 
-  .menu
-  .dropdown {
+  .menu .dropdown {
     position: static;
     background: var(--bg-color);
   }
 
-  .theme-btn
-  {
+  .theme-btn {
     position: static;
   }
 
-  .theme-btn#light{
+  .theme-btn#light {
     padding: 0;
-  } 
+  }
 
   .Welcome {
     height: 100%;
