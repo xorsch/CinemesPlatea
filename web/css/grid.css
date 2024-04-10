@@ -594,6 +594,53 @@ input#reset-btn {
   justify-content: space-between;
 }
 
+/* carousel comentarios */
+.slider-carousel{
+  max-width: 1100px;
+  display: flex;
+  position: relative;
+  background-color: none;
+  position: initial;
+}
+
+.slider-carousel .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.slider-carousel .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider-carousel .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider-carousel .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  height: 100px;
+  text-align: center;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.no-js .owl-carousel.owl-carousel.owl-loaded{
+display:none;
+}
+
+
 /* Botón flotante scrollToTop*/
 
 #scrolltotop_parent {
