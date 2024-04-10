@@ -649,6 +649,11 @@ footer p {
 
 /* user page */
 
+#datos-user{
+  display: flex;
+  align-items: center;
+}
+
 .user {
   min-height: 80vh;
 }
@@ -659,14 +664,12 @@ footer p {
   background-color: var(--secondary);
   border-radius: 50%;
   padding: 30px;
-  margin-top: 20px;
   background: url(../img/07.jpeg);
   background-size: cover;
 }
 
 .h-user {
   margin-top: 20px;
-  padding: 30px;
   font-family: lora;
   font-size: 40px;
   color: var(--bg-color);
@@ -678,8 +681,16 @@ footer p {
   border-radius: 15px;
   background-color: #3c3c3c;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
+#img-user {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 .tarjeta-user .tarj-h h2 {
   color: var(--bg-color);
   font-size: 20px;
@@ -716,6 +727,7 @@ footer p {
   align-items: stretch;
   flex-direction: row;
   justify-content: space-between;
+  padding: 5px;
 }
 
 /* membresia  */
