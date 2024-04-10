@@ -117,26 +117,37 @@ if (btn_Comment) {
 
 // Cambiar el tema según la selección del usuario
 // Toggle Theme Function
-const toggleTheme = () => {
+const toggleTheme = (forceTheme) => {
   const body = document.body;
-  const currentTheme = body.classList.contains("dark-theme") ? "light" : "dark";
+  let currentTheme = body.classList.contains("dark-theme") ? "light" : "dark";
+  // Si se proporciona un tema, usar ese tema en lugar del tema actual
+  if (forceTheme) {
+    currentTheme = forceTheme;
+  }
   body.classList.remove(currentTheme === "light" ? "dark-theme" : "light-theme");
   body.classList.add(currentTheme === "light" ? "light-theme" : "dark-theme");
   localStorage.setItem("theme", currentTheme);
+
+  // Actualizar el estado del interruptor
+  const switchInput = document.querySelector(".switch input");
+  switchInput.checked = currentTheme === "dark";
 };
 
 // Initialize Theme
 const initializeTheme = () => {
   const storedTheme = localStorage.getItem("theme");
   if (storedTheme) {
-    toggleTheme();
+    toggleTheme(storedTheme);
   }
 };
 
 // Theme Toggle Function
 const themeToggle = () => {
   const switchInput = document.querySelector(".switch input");
-  switchInput.addEventListener("change", toggleTheme);
+  switchInput.addEventListener("change", () => {
+    const currentTheme = document.body.classList.contains("dark-theme") ? "light" : "dark";
+    toggleTheme(currentTheme);
+  });
 };
 
 if (initializeTheme && themeToggle){
@@ -145,6 +156,8 @@ initializeTheme();
 // Configurar el interruptor
 themeToggle();
 }
+
+
 
 // Drag&Drop
 
