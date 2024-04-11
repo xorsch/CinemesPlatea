@@ -1,20 +1,6 @@
 <?php
 
-$dsn = "mysql:host=127.0.0.1;dbname=cineclub;charset=utf8mb4";
-
-$options = [
-  PDO::ATTR_EMULATE_PREPARES   => false, // Disable emulation mode for "real" prepared statements
-  PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, // Disable errors in the form of exceptions
-  PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // Make the default fetch be an associative array
-];
-
-try {
-  $pdo = new PDO($dsn, "user", "user", $options);
-} 
-catch (Exception $e) {
-  error_log($e->getMessage());
-  exit('Something bad happened'); 
-}
+  include "config.php";
 
 
 class Membres {
@@ -25,6 +11,37 @@ class Membres {
   public $email;
   public $adreca;
   public $telefon;
+};
+
+
+Class ProducteContractats {
+  public $idMembre;
+  public $idProducte; 
+  public $idTarjeta; 
+  public $alta; 
+  public $expira;
+  public $autorenovacio;
+  public $cobrat;
+};
+
+
+Class Tarjetes {
+  public $idTarjeta;
+  public $entidad;
+  public $titular;
+  public $bin;
+  public $caduca;
+  public $cvv;
+  public $activa;
+};
+
+
+class Gustos {
+  public $idMembre;
+  public $mail_info;
+  public $mail_new;
+  public $cookie_perm;
+  public $cookie_func;
 };
 
 
@@ -43,6 +60,8 @@ foreach( $membres as $membre ){
   $mTelefon = $membres['telefon'];
 }
 
+$versio = '0.0.1';
+$plataforma = 'Windows 11';
 
 $mNom     = 'Laia';
 $mCognom  = 'Correcuita';
@@ -50,41 +69,20 @@ $mEmail   = 'laia@gmail.com';
 $mAdreca  = 'c/Me Cagu en Deu i sa Mare';
 $mTelefon = '666 666 666';
 
-class Gustos {
-  public $idMembre;
-  public $mail_info;
-  public $mail_new;
-  public $cookie_perm;
-  public $cookie_func;
-};
-
 $idMembre = 3;
 $consultaB = "SELECT * FROM MembreGustos WHERE MembreGustos.idMembre ='$idMembre'";
 $gustos    = $pdo->query( $consultaB )->fetchAll(PDO::FETCH_CLASS, 'Gustos');
 
 
 
-// Consulta  SELECT * FROM MembreProducte WHERE idMembre = 3;
-Class producteContractat {
-  public $idMembre;
-  public $idProducte; 
-  public $idTarjeta; 
-  public $alta; 
-  public $expira;
-  public $autorenovacio;
-  public $cobrat;
- }
+// $consultaP = "SELECT * FROM MembreProducte WHERE idMembre = '$idMembre'";
+// $consultaP = "SELECT * FROM MembreProducte WHERE idMembre = '$idMembre'";
+// $gustos    = $pdo->query( $consultaG )->fetchAll(PDO::FETCH_CLASS, 'Gustos');
 
-// SELECT * FROM Tarjetes WHERE idTarjeta=3
-Class Tarjeta {
-  public $idTarjeta;
-  public $entidad;
-  public $titular;
-  public $bin;
-  public $caduca;
-  public $cvv;
-  public $activa;
-};
+// $idTarjeta = 3;
+// $consultaT = "SELECT * FROM Tarjetes WHERE idTarjeta='$idTarjeta'"
+// $consultaT = "SELECT * FROM Tarjetes WHERE idTarjeta='$idTarjeta'"
+// $tarjetes  = $pdo->query( $consultaT )->fetchAll(PDO::FETCH_CLASS, 'Tarjetes');
 
 
 include "head.php"; 
@@ -94,11 +92,15 @@ include "header.php"
 
     <section class="user">
       <div class="container" id="sortable-cards">
+        
+        <!-- Avatar i nom usuari --> 
         <div class="row">
         
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3"></div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+            <p>bon dia</p>
+          </div>
         
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
             <div class="tarjeta-user">
               <div class="img-cont">
                 <div class="img-user"></div>
@@ -106,14 +108,18 @@ include "header.php"
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
             <div class="tarjeta-user">
               <div class="h-user">
               <h1><?php echo "Paco Mer Luzo"; ?></h1>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4"></div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+            <p style="color:red;">iasdasd</p>
+          </div>
+
         </div>
 
         <div class="row">
@@ -245,10 +251,10 @@ include "header.php"
                 <h2>Info</h2>
               </div>
               <div class="tarj-p">
-                <p><span>Versión: </span> <?php echo phpVersion(); ?></p>
-                <p><span>Plataforma: iFone XIIII</span></p>
+                <p><span>Versión: </span> <?php echo $versio ?></p>
+                <p><span>Plataforma: </span> <?php echo $plataforma ?></p>
                 <?php $date = date('h:i a', time()); ?>
-                <p><span>Hora actual: </span> <?php echo $date; ?>  </p>
+                <p><span>Hora actual: </span> <?php echo $date ?>  </p>
               </div>
             </div>
           </div>
