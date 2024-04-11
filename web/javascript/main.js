@@ -167,13 +167,3 @@ if (cardEl) {
 } else {
     console.log('Element with id "sortable-cards" not found.');
 }
-
-// carousel ruchi
-
-$(".slider-carousel").owlCarousel({
-  loop: true,
-  autoplay: true,
-  autoplayTimeout: 1000, //2000ms = 2s;
-  autoplayHoverPause: true,
-
-});
