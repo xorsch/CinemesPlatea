@@ -9,16 +9,11 @@ $options = [
 ];
 
 try {
-
   $pdo = new PDO($dsn, "user", "user", $options);
-
 } 
 catch (Exception $e) {
-
   error_log($e->getMessage());
   exit('Something bad happened'); 
-  // Pagina on han anat malament les coses?
-  
 }
 
 ?>
