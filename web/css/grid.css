@@ -349,6 +349,11 @@ input:checked +.slider:before {
   padding: 20px;
 }
 
+.image-about-us {
+  min-height: fit-content;
+  max-height: 38vh;
+}
+
 #image-about-us {
   min-height: fit-content;
   max-height: 38vh;
@@ -813,6 +818,10 @@ input:checked+.slider::before {
 
   .Welcome {
     height: 100%;
+  }
+
+  .image-about-us {
+    min-width: 300px;
   }
 
   #image-about-us {

@@ -1,4 +1,5 @@
 // Current page
+
 document.addEventListener('DOMContentLoaded', function() {
   const currentPage = window.location.pathname;
   const navLinks = document.querySelectorAll('.nav-link');
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
 // Botón flotante scrollToTop
 let scrolltotop_parent = document.getElementById("scrolltotop_parent");
 
@@ -19,8 +21,6 @@ if (scrolltotop_parent) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  // TODO: Caldria que al principi tingués la opacitat mínima
-  // xorrades.
   scrolltotop_parent.addEventListener("mouseover", mouseOver);
   scrolltotop_parent.addEventListener("mouseout", mouseOut);
 }
@@ -99,8 +99,10 @@ const hideListOnOutsideClick = (event) => {
 };
 
 // Attach event listeners
+
 btn.addEventListener("click", toggle);
 document.addEventListener("click", hideListOnOutsideClick);
+
 
 //Contacto
 // Verifica si el botón existe en la página actual
