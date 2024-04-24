@@ -846,8 +846,32 @@ input:checked+.slider::before {
 
 .modal-content {
   background-color: var(--primary);
-}
+  border-radius: 10px;
+ 
 
+}
+div.modal-header{
+  justify-content: center;
+  align-items: center;
+  margin:auto; 
+  border: none;
+}
+div.modal-header .close{
+  background-color: var(--secondary);
+  position: absolute;
+  right: 30px;
+  top:30px;
+  border-radius: 5px;
+
+}
+div.modal-body{
+  display: flex;
+  justify-content: center;
+}
+div.modal-footer{
+  border:none;
+  justify-content: center;
+}
 /* media query  */
 
 @media (max-width: 700px) {
